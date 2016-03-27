@@ -1,0 +1,3 @@
+javac TableRowColumnTest.java
+java TableRowColumnTest
+pause

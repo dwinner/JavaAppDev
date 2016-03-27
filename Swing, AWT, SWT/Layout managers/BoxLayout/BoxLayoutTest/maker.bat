@@ -1,0 +1,3 @@
+javac BoxLayoutTest.java
+java BoxLayoutTest
+pause

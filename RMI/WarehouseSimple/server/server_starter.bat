@@ -1,0 +1,1 @@
+java -Djava.rmi.server.codebase=http://localhost:8084/ WarehouseServer

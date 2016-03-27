@@ -1,0 +1,3 @@
+javac CompositeTest.java
+java CompositeTest
+pause

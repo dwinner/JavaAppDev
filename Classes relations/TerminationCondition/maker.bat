@@ -1,0 +1,3 @@
+javac TerminationCondition.java
+java TerminationCondition
+pause

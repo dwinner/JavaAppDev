@@ -1,0 +1,3 @@
+javac InetAddressTest.java
+java InetAddressTest
+pause

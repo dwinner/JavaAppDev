@@ -1,0 +1,1 @@
+cl -D_WINDOWS -I c:/jdk/include -I c:/jdk/include/win32 InvocationTest.c c:/jdk/lib/jvm.lib advapi32.lib

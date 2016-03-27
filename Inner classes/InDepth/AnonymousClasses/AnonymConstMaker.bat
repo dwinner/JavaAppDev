@@ -1,0 +1,3 @@
+javac AnonymousConstructor.java
+java AnonymousConstructor
+pause

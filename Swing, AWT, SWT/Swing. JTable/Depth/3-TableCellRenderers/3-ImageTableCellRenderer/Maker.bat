@@ -1,0 +1,3 @@
+javac ImageTableCellRendererTest.java
+java ImageTableCellRendererTest
+pause

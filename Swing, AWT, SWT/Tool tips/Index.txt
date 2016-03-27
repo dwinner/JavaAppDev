@@ -1,0 +1,6 @@
+	Всплывающие подсказки.
+	
+ToolTipDemo:		Добавление подсказок к компонентам;
+ToolTipExample:		Пример подсказок;
+ToolTipLocations:	Контроль над расположением подсказок в Swing;
+ToolTipManager:		Настройка подсказок через ToolTipManager;

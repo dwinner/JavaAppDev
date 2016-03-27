@@ -1,0 +1,2 @@
+javac SimpleComboEditorTest.java
+java SimpleComboEditorTest

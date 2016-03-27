@@ -1,0 +1,3 @@
+javac ScrollJPanelDemo.java
+java ScrollJPanelDemo
+pause

@@ -1,0 +1,3 @@
+javac ContentPaneAdd.java
+java ContentPaneAdd
+pause

@@ -1,0 +1,3 @@
+javac OptionDialogTest.java
+java OptionDialogTest
+pause

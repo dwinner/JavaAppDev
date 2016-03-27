@@ -1,0 +1,3 @@
+javac FactoryEvents.java
+java FactoryEvents
+pause

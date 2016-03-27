@@ -1,0 +1,3 @@
+javac MultiNestingAccess.java
+java MultiNestingAccess
+pause

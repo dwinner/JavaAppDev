@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/D%3A/web/Java.IDE/JavaFX/BuildingBlocks/5-Math/Distance_1D/dist/" href="Distance_1D_browser.jnlp">
+    <information>
+        <title>Distance_1D</title>
+        <vendor>${application.vendor}</vendor>
+        <homepage href="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/D%3A/web/Java.IDE/JavaFX/BuildingBlocks/5-Math/Distance_1D/dist/"/>
+        <description>Distance_1D</description>
+        <icon kind="splash" href="http://dl.javafx.com/1.3/splash.png"/>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="Distance_1D.jar" main="true" size="16417"/>
+    </resources>
+    <applet-desc name="Distance_1D" main-class="com.sun.javafx.runtime.adapter.Applet" progress-class="com.javafx.progressbar.ProgressManager" width="200" height="200">
+        <param name="MainJavaFXScript" value="math.Distance1D"/>
+    </applet-desc>
+    <update check="always"/>
+</jnlp>

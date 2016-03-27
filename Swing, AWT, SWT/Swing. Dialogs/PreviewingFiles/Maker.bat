@@ -1,0 +1,3 @@
+javac PreviewingFiles.java
+java PreviewingFiles
+pause

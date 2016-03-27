@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://www.aztpa.ru/a/oaa/mfg/legacydata/v01/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	name="A_OAA_MFG_LegacyData_v01"
+	targetNamespace="http://www.aztpa.ru/a/oaa/mfg/legacydata/v01/">
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://www.aztpa.ru/a/oaa/mfg/legacydata/v01/">
+			<xsd:element name="updateProcessOperations">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="process" type="tns:TechnologyProcess"
+							minOccurs="1" maxOccurs="unbounded" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			
+			<xsd:element name="updateProcessOperationsResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="result" type="tns:ActionResult"
+							minOccurs="1" maxOccurs="1" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+			<xsd:complexType name="Step">
+				<xsd:sequence>
+					<xsd:element name="stepNum" type="xsd:int" minOccurs="1"
+						maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="stepName" type="xsd:string"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="workTypeCode" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="normTime" type="xsd:double"
+						minOccurs="1" maxOccurs="1"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Steps">
+				<xsd:sequence>
+					<xsd:element name="step" type="tns:Step" minOccurs="0"
+						maxOccurs="unbounded"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Operation">
+				<xsd:sequence>
+					<xsd:element name="operId" type="xsd:int"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="operNum" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="department" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="site" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="operName" type="xsd:string"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="operType" type="xsd:string" minOccurs="0" maxOccurs="1"></xsd:element>
+					<xsd:element name="operSubtype" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="normTime" type="xsd:double"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="equipCode" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="equipModel" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="equipName" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="steps" type="tns:Steps"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Operations">
+				<xsd:sequence>
+					<xsd:element name="operation" type="tns:Operation"
+						minOccurs="0" maxOccurs="unbounded"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="TechnologyProcess">
+				<xsd:sequence>
+					<xsd:element name="processId" type="xsd:long"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="operations" type="tns:Operations"
+						minOccurs="0" maxOccurs="1"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="ActionResult">
+				<xsd:sequence>
+					<xsd:element name="result" minOccurs="1" maxOccurs="1">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="OK"></xsd:enumeration>
+								<xsd:enumeration value="ERROR"></xsd:enumeration>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element name="errorCode" type="xsd:int" minOccurs="0"
+						maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="message" type="xsd:string"
+						minOccurs="0" maxOccurs="1"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="updateProcessOperationsRequest">
+		<wsdl:part element="tns:updateProcessOperations" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="updateProcessOperationsResponse">
+		<wsdl:part element="tns:updateProcessOperationsResponse"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:portType name="LegacyDataPortType">
+		<wsdl:operation name="updateProcessOperations">
+			<wsdl:input message="tns:updateProcessOperationsRequest" />
+			<wsdl:output message="tns:updateProcessOperationsResponse" />
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="LegacyDataBinding" type="tns:LegacyDataPortType">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="updateProcessOperations">
+			<soap:operation
+				soapAction="http://www.aztpa.ru/a/oaa/mfg/legacydata/v01/updateProcessOperations" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="LegacyData">
+		<wsdl:port binding="tns:LegacyDataBinding" name="LegacyDataSOAP">
+			<soap:address
+				location="http://lptest11.aztpa.ru:10102/A_OAA_MFG_LegacyData_v01/LegacyData" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

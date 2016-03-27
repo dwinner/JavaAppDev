@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/SendMe/DesignPatterns/StateTest/src/statetest/StateTest.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/StateTest/src/statetest/State.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/StateTest/src/statetest/Location.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/StateTest/src/statetest/LocationImpl.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/StateTest/src/statetest/Contact.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/StateTest/src/statetest/ContactImpl.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/StateTest/src/statetest/Appointment.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/StateTest/src/statetest/CalendarEditor.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/StateTest/src/statetest/FileLoader.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/StateTest/src/statetest/StateGui.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/StateTest/src/statetest/DataCreator.java</file>
+    </open-files>
+</project-private>

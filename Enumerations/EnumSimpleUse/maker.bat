@@ -1,0 +1,3 @@
+javac SimpleUseEnum.java
+java SimpleUseEnum
+pause

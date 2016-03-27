@@ -1,0 +1,3 @@
+javac PriorityQueueDemo.java
+java PriorityQueueDemo
+pause

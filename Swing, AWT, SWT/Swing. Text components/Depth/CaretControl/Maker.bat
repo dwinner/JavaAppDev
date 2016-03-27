@@ -1,0 +1,3 @@
+javac ControllingCaret.java
+java ControllingCaret
+pause

@@ -1,0 +1,3 @@
+javac GenericReflectionTest.java
+java GenericReflectionTest
+pause

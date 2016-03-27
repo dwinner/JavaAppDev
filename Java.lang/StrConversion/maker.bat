@@ -1,0 +1,3 @@
+javac StringConversions.java
+java StringConversions
+pause

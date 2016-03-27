@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="11-TitledPaneTest.jnlp">
+  <information>
+    <title>11-TitledPaneTest</title>
+    <vendor>oracle_pr1</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.0+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="11-TitledPaneTest.jar" size="924337" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="11-TitledPaneTest" >
+    <param name="requiredFXVersion" value="2.0+"/>
+  </applet>
+  <jfx:javafx-desc  width="800" height="600" main-class="pkg11.titledpanetest.TitledPaneTest"  name="11-TitledPaneTest" />
+  <update check="always"/>
+</jnlp>

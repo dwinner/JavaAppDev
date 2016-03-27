@@ -1,0 +1,3 @@
+javac SimpleToolbars.java
+java SimpleToolbars
+pause

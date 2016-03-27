@@ -1,0 +1,3 @@
+javac ImageProcessingTest.java
+java ImageProcessingTest
+pause

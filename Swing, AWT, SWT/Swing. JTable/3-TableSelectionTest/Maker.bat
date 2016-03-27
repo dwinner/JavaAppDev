@@ -1,0 +1,3 @@
+javac TableSelectionTest.java
+java TableSelectionTest
+pause

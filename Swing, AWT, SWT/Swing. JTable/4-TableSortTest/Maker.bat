@@ -1,0 +1,3 @@
+javac TableSortTest.java
+java TableSortTest
+pause

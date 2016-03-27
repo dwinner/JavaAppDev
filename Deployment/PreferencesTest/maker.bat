@@ -1,0 +1,3 @@
+javac PreferencesTest.java
+java PreferencesTest
+pause

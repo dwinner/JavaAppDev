@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/topRightImageViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/satellite_images_desc"
+                android:src="@drawable/satellite_fourth"/>
+
+        <ImageView
+                android:id="@+id/topLeftImageViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/satellite_images_desc"
+                android:src="@drawable/satellite_fourth"/>
+
+        <TextView
+                android:id="@+id/SettingsTitleTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:shadowColor="@android:color/darker_gray"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:text="@string/settings_top_title"
+                android:textColor="@color/settings_title_color"
+                android:textSize="@dimen/settings_title_size"/>
+    </RelativeLayout>
+
+    <ScrollView
+            android:id="@+id/satellitesInfoScrollViewId"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.85"
+            android:scrollbars="vertical">
+
+        <TableLayout
+                android:id="@+id/satellitesInfoTableLayoutId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+        </TableLayout>
+    </ScrollView>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/deleteButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/del_btn_txt" />
+
+        <Button
+            android:id="@+id/addButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/add_btn_text" />
+
+        <Button
+            android:id="@+id/saveButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/save_btn_text" />
+
+    </RelativeLayout>
+
+</LinearLayout>

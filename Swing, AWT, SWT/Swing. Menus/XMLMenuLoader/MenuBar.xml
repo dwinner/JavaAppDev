@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menubar name="mainMenu">
+    <menu name="file" text="File" mnemonic="F">
+        <menuitem name="open" text="Open" mnemonic="O" enabled="false" />
+        <menuitem name="close" text="Close" mnemonic="X" enabled="false" />
+        <menuitem name="separator" />
+        <menuitem name="print" text="Print" mnemonic="P" />
+        <menuitem name="preview" text="Preview" mnemonic="V" />
+        <menuitem name="separator" />
+        <menuitem name="exit" text="Exit" mnemonic="E" accelerator="Alt X" />
+    </menu>
+</menubar>

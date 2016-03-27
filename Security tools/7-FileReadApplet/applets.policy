@@ -1,0 +1,6 @@
+keystore "client.certs", "JKS";
+grant signedBy "acmeroot"
+{
+    permission java.lang.RuntimePermission "usePolicy";
+    permission java.io.FilePermission "D:\*", read;
+}

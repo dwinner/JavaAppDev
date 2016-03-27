@@ -1,0 +1,3 @@
+javac InterruptibleSocketTest.java
+java InterruptibleSocketTest
+pause

@@ -1,0 +1,3 @@
+javac SpinnerEditors.java
+java SpinnerEditors
+pause

@@ -1,0 +1,3 @@
+javac TabbedPaneTest.java
+java TabbedPaneTest
+pause

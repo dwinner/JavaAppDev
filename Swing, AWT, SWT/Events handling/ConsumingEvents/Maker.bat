@@ -1,0 +1,3 @@
+javac ConsumingEvents.java
+javac ConsumingEvents
+pause

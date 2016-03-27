@@ -1,0 +1,3 @@
+javac FileChooserDemo.java
+java FileChooserDemo
+pause

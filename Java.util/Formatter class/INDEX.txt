@@ -1,0 +1,21 @@
+    Форматирование.
+    
+ArgIndexesFormatter:    Относительные индексы в форматировании;
+
+DateTimeFormatting:     Форматирование времени и даты;
+
+FieldWidthDemo:         Установка ширины поля;
+
+FilledWidthFormatter:   Демонстрация применения спецификатора ширины поля;
+
+Formatter:              Очень простой пример применения Formatter;
+
+FormatterOfAnyDigits:   Демонстрирует применение спецификатора формата %g;
+
+FormatterPrecisionDemo: Модификаторы точности;
+
+LeftJustify:            Выравнивание влево;
+
+NewLineFormatter:       Демонстрация применения спецификаторов формата %n и %%;
+
+SpaceAsFillFormatter:   Демонстрация применения пробела в качестве спецификатора формата;

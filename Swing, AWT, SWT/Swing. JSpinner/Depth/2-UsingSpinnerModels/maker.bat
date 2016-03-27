@@ -1,0 +1,3 @@
+javac UsingSpinnerModels.java
+java UsingSpinnerModels
+pause

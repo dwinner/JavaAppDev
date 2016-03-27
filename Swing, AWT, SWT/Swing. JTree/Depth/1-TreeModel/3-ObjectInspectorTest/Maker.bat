@@ -1,0 +1,3 @@
+javac ObjectInspectorTest.java
+java ObjectInspectorTest
+pause

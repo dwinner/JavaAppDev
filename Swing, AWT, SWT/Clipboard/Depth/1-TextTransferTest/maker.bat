@@ -1,0 +1,3 @@
+javac TextTransferTest.java
+java TextTransferTest
+pause

@@ -1,0 +1,3 @@
+javac TransformTest.java
+java TransformTest
+pause

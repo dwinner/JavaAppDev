@@ -1,0 +1,3 @@
+javac GroupLayoutTest.java
+java GroupLayoutTest
+pause

@@ -1,0 +1,2 @@
+javac ButtonMnemonics.java
+java ButtonMnemonics

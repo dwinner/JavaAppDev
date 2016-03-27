@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/D%3A/web/Java.IDE/JavaFX/BuildingBlocks/1-Color/Linear_Gradient/dist/" href="Linear_Gradient.jnlp">
+    <information>
+        <title>Linear_Gradient</title>
+        <vendor>${application.vendor}</vendor>
+        <homepage href="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/D%3A/web/Java.IDE/JavaFX/BuildingBlocks/1-Color/Linear_Gradient/dist/"/>
+        <description>Linear_Gradient</description>
+        <icon kind="splash" href="http://dl.javafx.com/1.3/splash.png"/>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="Linear_Gradient.jar" main="true" size="15284"/>
+    </resources>
+    <application-desc main-class="com.sun.javafx.runtime.main.Main" progress-class="com.javafx.progressbar.ProgressManager">
+        <argument>MainJavaFXScript=color.GradientSample</argument>
+    </application-desc>
+    <update check="always"/>
+</jnlp>

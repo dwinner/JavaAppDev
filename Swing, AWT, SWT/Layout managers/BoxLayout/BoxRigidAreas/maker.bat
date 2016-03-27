@@ -1,0 +1,3 @@
+javac BoxRigidAreas.java
+java BoxRigidAreas
+pause

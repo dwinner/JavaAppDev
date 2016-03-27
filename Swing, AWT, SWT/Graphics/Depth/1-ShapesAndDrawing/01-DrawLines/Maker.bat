@@ -1,0 +1,2 @@
+javac Lines.java
+pause

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+"
+          codebase="http://droiddraw.googlecode.com/files/">
+    <information>
+      <title>DroidDraw</title>
+      <vendor>droiddraw.org</vendor>
+      <homepage href="http://www.droiddraw.org" />
+      <description>DroidDraw GUI Editor for Android</description>
+    </information>
+    <offline-allowed/>
+    <security>
+    </security>
+    <property name="jnlp" value="true" />
+   <resources>
+      <j2se version="1.4+"/>
+      <jar href="droiddrawr1b23.jar" main="true" />
+   </resources>
+   <application-desc main-class="org.droiddraw.JnlpMain"/>
+</jnlp>
+        

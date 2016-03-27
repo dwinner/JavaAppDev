@@ -1,0 +1,51 @@
+Compiled from "VerifierTest.java"
+public class VerifierTest extends java.applet.Applet {
+  public VerifierTest();
+    Code:
+       0: aload_0       
+       1: invokespecial #1                  // Method java/applet/Applet."<init>":()V
+       4: return        
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: new           #3                  // class java/lang/StringBuilder
+       6: dup           
+       7: invokespecial #4                  // Method java/lang/StringBuilder."<init>":()V
+      10: ldc           #5                  // String 1 + 2 == 
+      12: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      15: invokestatic  #7                  // Method fun:()I
+      18: invokevirtual #8                  // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      21: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      24: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      27: return        
+
+  public static int fun();
+    Code:
+       0: iconst_1      
+       1: istore_0      
+       2: iconst_2      
+       3: istore_1      
+       4: iload_0       
+       5: iload_1       
+       6: iadd          
+       7: istore_2      
+       8: iload_2       
+       9: ireturn       
+
+  public void paint(java.awt.Graphics);
+    Code:
+       0: aload_1       
+       1: new           #3                  // class java/lang/StringBuilder
+       4: dup           
+       5: invokespecial #4                  // Method java/lang/StringBuilder."<init>":()V
+       8: ldc           #5                  // String 1 + 2 == 
+      10: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      13: invokestatic  #7                  // Method fun:()I
+      16: invokevirtual #8                  // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      19: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      22: bipush        20
+      24: bipush        20
+      26: invokevirtual #11                 // Method java/awt/Graphics.drawString:(Ljava/lang/String;II)V
+      29: return        
+}

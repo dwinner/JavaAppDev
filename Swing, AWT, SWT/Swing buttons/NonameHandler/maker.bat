@@ -1,0 +1,2 @@
+javac ButtonIcons.java
+java ButtonIcons

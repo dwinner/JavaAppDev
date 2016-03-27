@@ -1,0 +1,2 @@
+javac ComboBoxTest.java
+java ComboBoxTest

@@ -1,0 +1,3 @@
+javac PrintServiceTest.java
+java PrintServiceTest
+pause

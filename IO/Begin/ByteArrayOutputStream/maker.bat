@@ -1,0 +1,3 @@
+javac ByteArrayOutputStreamDemo.java
+java ByteArrayOutputStreamDemo
+pause

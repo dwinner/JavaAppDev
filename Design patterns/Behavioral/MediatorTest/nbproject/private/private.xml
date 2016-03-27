@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/SendMe/DesignPatterns/MediatorTest/src/mediatortest/MediatorTest.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/MediatorTest/src/mediatortest/Contact.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/MediatorTest/src/mediatortest/ContactImpl.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/MediatorTest/src/mediatortest/ContactMediator.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/MediatorTest/src/mediatortest/ContactDisplayPanel.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/MediatorTest/src/mediatortest/ContactEditorPanel.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/MediatorTest/src/mediatortest/ContactSelectorPanel.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/MediatorTest/src/mediatortest/ContactMediatorImpl.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/MediatorTest/src/mediatortest/MediatorGui.java</file>
+    </open-files>
+</project-private>

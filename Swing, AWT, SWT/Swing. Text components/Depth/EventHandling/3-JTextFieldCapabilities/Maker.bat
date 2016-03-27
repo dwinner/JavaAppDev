@@ -1,0 +1,3 @@
+javac JTextFieldDemo.java
+java JTextFieldDemo
+pause

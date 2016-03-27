@@ -1,0 +1,3 @@
+javac LayeredPaneEffects.java
+java LayeredPaneEffects
+pause

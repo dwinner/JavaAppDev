@@ -1,0 +1,47 @@
+    Технологии развертывания в Java
+    
+AppletApplication:      Апплет и приложение, два в одном;
+
+AppletApplicationOld:   Апплет и приложение, два в одном, старая версия;
+
+AppletBase:             База запуска апплета;
+
+AppletContext:          Контекст окружения апплета;
+
+AppletScelet:           Скелетная схема апплета;
+
+Bookmark:               Апплет для поддержки закладок;
+
+CalculatorApplet:       Апплет для калькулятора:
+
+CallParams:             Использование внешних параметров;
+
+Chart:                  Пример заполнения статистической диаграммы;
+
+DocumentBase:           Отображение баз кода и документа;
+
+ImprovedRunningMessage: Параметризованный заголовок;
+
+NotHelloWorldApplet:    Очень простой апплет;
+
+PopupCalculatorApplet:  Создание апплета с отдельным вызывающим окном;
+
+PreferencesTest:        Тестирования параметров предпочтений;
+
+PropertiesTest:         Программа тестирования свойств;
+
+ResourceTest:           Загрузка внешних ресурсов;
+
+RunningMessage:         Апплет с бегущим заголовком;
+
+SimpleApplet:           Пример апплета;
+
+StatusWindow:           Использование окна состояния;
+
+SystemInfo:             Системные свойства;
+
+WebStart:               Основы WebStart;
+
+WebStartCalculator:     Калькулятор на основе Java WebStart;
+
+WebStartTest:           Законченный пример технологии WebStart;

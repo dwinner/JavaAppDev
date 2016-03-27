@@ -1,0 +1,3 @@
+javac AbstractAreas.java
+java AbstractAreas
+pause

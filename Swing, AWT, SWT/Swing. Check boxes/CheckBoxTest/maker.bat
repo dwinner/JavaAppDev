@@ -1,0 +1,2 @@
+javac CheckBoxTest.java
+java CheckBoxTest

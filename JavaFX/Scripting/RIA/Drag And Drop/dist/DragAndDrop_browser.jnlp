@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="file:/D:/web/Java.IDE/JavaFX/RIA/Drag%20And%20Drop/dist/" href="DragAndDrop_browser.jnlp">
+    <information>
+        <title>DragAndDrop</title>
+        <vendor>JavaFX Samples Team</vendor>
+        <homepage href=""/>
+        <description>DragAndDrop</description>
+        <icon kind="splash" href="http://dl.javafx.com/1.3/splash.png"/>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="DragAndDrop.jar" main="true" size="129319"/>
+    </resources>
+    <applet-desc name="DragAndDrop" main-class="com.sun.javafx.runtime.adapter.Applet" progress-class="com.javafx.progressbar.ProgressManager" width="240" height="320">
+        <param name="MainJavaFXScript" value="draganddrop.Main2"/>
+    </applet-desc>
+    <update check="always"/>
+</jnlp>

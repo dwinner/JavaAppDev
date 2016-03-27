@@ -1,0 +1,2 @@
+javac PaintingWithBorders.java
+java PaintingWithBorders

@@ -1,0 +1,3 @@
+javac SplitPaneDemo.java
+java SplitPaneDemo
+pause

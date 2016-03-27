@@ -1,0 +1,3 @@
+javac CustomTreeEditor.java
+java CustomTreeEditor
+pause

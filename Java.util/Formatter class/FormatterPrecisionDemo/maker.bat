@@ -1,0 +1,3 @@
+javac PrecisionDemo.java
+java PrecisionDemo
+pause

@@ -1,0 +1,3 @@
+javac SwingPainting.java
+java SwingPainting
+pause

@@ -1,0 +1,3 @@
+javac InnerClassDemo.java
+java InnerClassDemo
+pause

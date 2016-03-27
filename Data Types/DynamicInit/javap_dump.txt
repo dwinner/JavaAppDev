@@ -1,0 +1,35 @@
+Compiled from "DynInit.java"
+class DynInit {
+  DynInit();
+    Code:
+       0: aload_0       
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return        
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: ldc2_w        #2                  // double 3.0d
+       3: dstore_1      
+       4: ldc2_w        #4                  // double 4.0d
+       7: dstore_3      
+       8: dload_1       
+       9: dload_1       
+      10: dmul          
+      11: dload_3       
+      12: dload_3       
+      13: dmul          
+      14: dadd          
+      15: invokestatic  #6                  // Method java/lang/Math.sqrt:(D)D
+      18: dstore        5
+      20: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      23: new           #8                  // class java/lang/StringBuilder
+      26: dup           
+      27: invokespecial #9                  // Method java/lang/StringBuilder."<init>":()V
+      30: ldc           #10                 // String Gypotenuse is 
+      32: invokevirtual #11                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      35: dload         5
+      37: invokevirtual #12                 // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+      40: invokevirtual #13                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      43: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      46: return        
+}

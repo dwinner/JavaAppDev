@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/D%3A/web/Java.IDE/JavaFX/RIA/Delicious1/dist/" href="Delicious1_browser.jnlp">
+    <information>
+        <title>Delicious1</title>
+        <vendor>${application.vendor}</vendor>
+        <homepage href="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/D%3A/web/Java.IDE/JavaFX/RIA/Delicious1/dist/"/>
+        <description>Delicious1</description>
+        <icon kind="splash" href="http://dl.javafx.com/1.3/splash.png"/>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="Delicious1.jar" main="true" size="167035"/>
+    </resources>
+    <applet-desc name="Delicious1" main-class="com.sun.javafx.runtime.adapter.Applet" progress-class="com.javafx.progressbar.ProgressManager" width="200" height="200">
+        <param name="MainJavaFXScript" value="delicious.Main"/>
+    </applet-desc>
+    <update check="always"/>
+</jnlp>

@@ -1,0 +1,3 @@
+javac UsingProgressBars.java
+java UsingProgressBars
+pause

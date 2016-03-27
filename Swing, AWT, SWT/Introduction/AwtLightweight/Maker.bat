@@ -1,0 +1,3 @@
+javac AWTLightweights.java
+java AWTLightweights
+pause

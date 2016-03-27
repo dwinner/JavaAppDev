@@ -1,0 +1,3 @@
+javac SubStringCons.java
+java SubStringCons
+pause

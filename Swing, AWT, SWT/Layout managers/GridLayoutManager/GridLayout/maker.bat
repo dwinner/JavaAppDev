@@ -1,0 +1,3 @@
+javac GridLayoutTest.java
+java GridLayoutTest
+pause

@@ -1,0 +1,3 @@
+javac MessageDialogs.java
+java MessageDialogs
+pause

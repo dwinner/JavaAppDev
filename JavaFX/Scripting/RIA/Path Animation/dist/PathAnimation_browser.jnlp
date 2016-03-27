@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/D%3A/web/Java.IDE/JavaFX/RIA/Path+Animation/dist/" href="PathAnimation_browser.jnlp">
+    <information>
+        <title>PathAnimation</title>
+        <vendor>JavaFX Samples Team</vendor>
+        <homepage href="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/D%3A/web/Java.IDE/JavaFX/RIA/Path+Animation/dist/"/>
+        <description>PathAnimation</description>
+        <icon kind="splash" href="http://dl.javafx.com/1.3/splash.png"/>
+        <offline-allowed/>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="PathAnimation.jar" main="true" size="361378"/>
+    </resources>
+    <applet-desc name="PathAnimation" main-class="com.sun.javafx.runtime.adapter.Applet" progress-class="com.javafx.progressbar.ProgressManager" width="480" height="640">
+        <param name="MainJavaFXScript" value="pathanimation.Main"/>
+    </applet-desc>
+    <update check="always"/>
+</jnlp>

@@ -1,0 +1,27 @@
+1: //: FileOutputShortcut.java
+2: import java.io.*;
+3: 
+4: public class FileOutputShortcut
+5: {
+6:     static String file = "FileOutputShortcut.out";
+7:   
+8:     public static void main(String[] args)
+9:         throws IOException
+10:     {
+11:         BufferedReader in = new BufferedReader(
+12:             new StringReader(
+13:                 BufferedInputFile.read("FileOutputShortcut.java")
+14:             )
+15:         );
+16:         // Сокращенная запись:
+17:         PrintWriter out = new PrintWriter(file);
+18:         int lineCount = 1;
+19:         String s;
+20:         while ((s = in.readLine()) != null )
+21:             out.println(lineCount++ + ": " + s);
+22:         out.close();
+23:         // Вывод содержимого файла:
+24:         System.out.println(BufferedInputFile.read(file));
+25:     }
+26: }
+27: /* (Execute to see output) *///:~

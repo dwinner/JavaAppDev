@@ -1,0 +1,19 @@
+    Перечисления
+
+AnonymInEnums:      Анонимы в перечислениях
+
+AppleEnum:          Перечисление сортов яблок
+
+EnumAsClass:        Использование конструктора enum
+
+EnumConstructors:   Конструкторы и enum
+
+EnumMethods:        Методы перечислений
+
+EnumSimpleUse:      Простой пример перечисления
+
+EnumTest:           Перечислимые типы (Core Java)
+
+EnumValues:         Встроенные методы перечислений
+
+Solutions:          Программа принятия решений

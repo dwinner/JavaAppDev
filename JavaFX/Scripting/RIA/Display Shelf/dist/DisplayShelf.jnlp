@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:8084/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/D%3A/web/Java.IDE/JavaFX/RIA/Display+Shelf/dist/" href="DisplayShelf.jnlp">
+    <information>
+        <title>DisplayShelf</title>
+        <vendor>JavaFX Samples Team</vendor>
+        <homepage href="http://localhost:8084/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/D%3A/web/Java.IDE/JavaFX/RIA/Display+Shelf/dist/"/>
+        <description>DisplayShelf</description>
+        <icon kind="splash" href="http://dl.javafx.com/1.3/splash.png"/>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="DisplayShelf.jar" main="true" size="250404"/>
+    </resources>
+    <application-desc main-class="com.sun.javafx.runtime.main.Main" progress-class="com.javafx.progressbar.ProgressManager">
+        <argument>MainJavaFXScript=displayshelf.Main</argument>
+    </application-desc>
+    <update check="always"/>
+</jnlp>

@@ -1,0 +1,3 @@
+javac SerializationDemo.java
+java SerializationDemo
+pause

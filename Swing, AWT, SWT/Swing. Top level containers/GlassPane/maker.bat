@@ -1,0 +1,3 @@
+javac HelpSystemDemo.java
+java HelpSystemDemo
+pause

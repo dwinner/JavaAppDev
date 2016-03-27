@@ -1,0 +1,3 @@
+javac ConstructorTest.java
+java ConstructorTest
+pause

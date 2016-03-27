@@ -1,0 +1,3 @@
+javac RadioButtonTest.java
+java RadioButtonTest
+pause

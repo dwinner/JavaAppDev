@@ -1,0 +1,3 @@
+javac PrintWriterDemo.java
+java PrintWriterDemo
+pause

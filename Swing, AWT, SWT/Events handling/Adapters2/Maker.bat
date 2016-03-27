@@ -1,0 +1,1 @@
+javac AdapterDemo.java

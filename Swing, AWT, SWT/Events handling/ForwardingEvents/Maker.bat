@@ -1,0 +1,3 @@
+javac ForwardingEvents.java
+java ForwardingEvents
+pause

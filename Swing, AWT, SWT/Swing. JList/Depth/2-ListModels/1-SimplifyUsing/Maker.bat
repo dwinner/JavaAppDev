@@ -1,0 +1,3 @@
+javac UsingListModel.java
+java UsingListModel
+pause

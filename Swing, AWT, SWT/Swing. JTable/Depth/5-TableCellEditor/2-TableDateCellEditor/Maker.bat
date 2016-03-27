@@ -1,0 +1,3 @@
+javac DateCellEditorTest.java
+java DateCellEditorTest
+pause

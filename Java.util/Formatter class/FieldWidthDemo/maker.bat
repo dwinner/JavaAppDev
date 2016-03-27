@@ -1,0 +1,3 @@
+javac FieldWidthDemo.java
+java FieldWidthDemo
+pause

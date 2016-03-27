@@ -1,0 +1,3 @@
+javac IconLabelDemo.java
+java IconLabelDemo
+pause

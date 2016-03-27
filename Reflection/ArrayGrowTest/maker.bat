@@ -1,0 +1,3 @@
+javac ArrayGrowTest.java
+java ArrayGrowTest
+pause

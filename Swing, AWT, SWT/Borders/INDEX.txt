@@ -1,0 +1,13 @@
+    Рамки в Swing
+    
+BorderFactoryMethods:   Фабрика рамок;
+
+BordersDemo:            Рамки линейные, рельефные;
+
+BorderTest:             Некоторые возможные типы рамок;
+
+CustomBorder:           Рамка, составленная из кривых Безье;
+
+PaintingWithBorders:    Рисование компонента с учетом рамки;
+
+PanelBorders:           Рамки Swing в панелях содержимого;

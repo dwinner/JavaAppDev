@@ -1,0 +1,2 @@
+javac HourGlass.java
+pause

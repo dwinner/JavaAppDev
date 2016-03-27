@@ -1,0 +1,27 @@
+    Отношения между классами.
+    
+Abstract:               Абстрактные методы и классы
+
+ArrayListTest:          Использование класса ArrayList
+
+CleanupProblem:         Обеспечение необходимого завершения
+
+Composition:            Совмещение композиции и наследования
+
+Covariant:              Ковариантность
+
+DelegationMethods:      Делегирование объектов
+
+DynamicDispatch:        Динамическая диспетчеризация методов
+
+EqualsTest:             Использование метода equals
+
+instanceof:             Операция instanceof
+
+ManagerTest:            Наследование
+
+PersonTest:             Абстрактные классы
+
+RuntimePoly:            Полиморфизм времени выполнения
+
+TerminationCondition:   "Условие готовности" и метод finalize();

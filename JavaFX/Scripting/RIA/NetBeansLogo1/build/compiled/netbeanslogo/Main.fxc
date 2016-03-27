@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model modelID="fxc" modelVersion="69" rootInstance="DesignModel1" version="1">
+    <Instance classID="DesignModel" instanceID="DesignModel1">
+        <List name="stateVariables">
+            <Item value="inst:StateVariableModel1"/>
+        </List>
+        <List name="resources">
+            <Item value="inst:ReflectionEffectModel1"/>
+        </List>
+        <List name="dataSources"/>
+        <List name="templates">
+            <Item value="inst:IndexButtonsTemplateModel1"/>
+        </List>
+        <List name="customClasses"/>
+        <Reference name="scene" value="inst:SceneModel1"/>
+        <Reference name="designWidth" value="flt:320.0"/>
+        <Reference name="designHeight" value="flt:240.0"/>
+        <Reference name="designProfile" value="profile:MOBILE"/>
+        <Reference name="synchronizeDeviceAndSceneSizes" value="bool:true"/>
+    </Instance>
+    <Instance classID="StateVariableModel" instanceID="StateVariableModel1">
+        <Reference name="instanceName" value="str:currentState"/>
+        <List name="states">
+            <Item value="inst:StateModel1"/>
+            <Item value="inst:StateModel2"/>
+            <Item value="inst:StateModel3"/>
+        </List>
+        <Reference name="startState" value="inst:StateModel1"/>
+        <Reference name="stateChangeType" value="statechange:PAUSE_AND_PLAY_FROM_START"/>
+        <Reference name="doNotAnimateOnce" value="bool:true"/>
+        <Reference name="defaultInterpolator" value="interpolator:DISCRETE"/>
+        <Reference name="defaultDuration" value="int:0"/>
+        <Reference name="onTransitionFinished" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel1">
+        <Reference name="stateName" value="str:Init"/>
+        <Reference name="defaultInterpolator" value="interpolator:LINEAR"/>
+        <Reference name="defaultDuration" value="int:800"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel2">
+        <Reference name="stateName" value="str:Show"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel3">
+        <Reference name="stateName" value="str:Rotate"/>
+        <Reference name="defaultInterpolator" value="interpolator:LINEAR"/>
+        <Reference name="defaultDuration" value="int:1000"/>
+    </Instance>
+    <Instance classID="ReflectionEffectModel" instanceID="ReflectionEffectModel1">
+        <Reference name="instanceName" value="str:reflectionEffect"/>
+        <Reference name="fraction" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:0.0,24,inst:StateVariableModel1,16,inst:StateModel3,25,anim:1000,LINEAR,flt:0.75,"/>
+    </Instance>
+    <Instance classID="IndexButtonsTemplateModel" instanceID="IndexButtonsTemplateModel1">
+        <Reference name="templateName" value="str:Index Buttons"/>
+        <Reference name="object" value="inst:StateVariableModel1"/>
+        <Reference name="previousButton" value="inst:ButtonModel1"/>
+        <Reference name="nextButton" value="inst:ButtonModel2"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel1">
+        <Reference name="instanceName" value="str:indexPreviousButton"/>
+        <Reference name="disable" value="prop2:7,NOT_SET,4,null,31,str:bind currentState.isFirst(),4,null,4,null,"/>
+        <Reference name="layoutInfoHFill" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,bool:true,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,19,anim:,,str:Previous,4,null,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,56,animcode:,,function ():Void { currentState.previous(); },4,null,"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel2">
+        <Reference name="instanceName" value="str:indexNextButton"/>
+        <Reference name="disable" value="prop2:7,NOT_SET,4,null,30,str:bind currentState.isLast(),4,null,4,null,"/>
+        <Reference name="layoutInfoHFill" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,bool:true,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,str:Next,4,null,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,52,animcode:,,function ():Void { currentState.next(); },4,null,"/>
+    </Instance>
+    <Instance classID="SceneModel" instanceID="SceneModel1">
+        <Reference name="instanceName" value="str:scene"/>
+        <List name="content">
+            <Item value="inst:GraphicsModel1"/>
+            <Item value="inst:TileModel1"/>
+        </List>
+        <Reference name="width" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:320.0,4,null,"/>
+        <Reference name="height" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:240.0,4,null,"/>
+        <Reference name="generateSceneInstance" value="bool:true"/>
+        <Reference name="generateGetDesignSceneFunction" value="bool:true"/>
+        <Reference name="generateLayoutXYForRootLevelComponents" value="bool:true"/>
+    </Instance>
+    <Instance classID="GraphicsModel" instanceID="GraphicsModel1">
+        <Reference name="instanceName" value="str:graphics"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:59.0,24,inst:StateVariableModel1,16,inst:StateModel1,15,anim:,,flt:59.0,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:32.0,24,inst:StateVariableModel1,16,inst:StateModel1,15,anim:,,flt:32.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="effect" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,24,inst:StateVariableModel1,16,inst:StateModel3,37,anim:100,,inst:ReflectionEffectModel1,"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <List name="content">
+            <Item value="inst:GroupModel1"/>
+            <Item value="inst:GroupModel2"/>
+            <Item value="inst:LineShapeModel1"/>
+            <Item value="inst:GroupModel3"/>
+        </List>
+        <Reference name="url" value="prop2:7,NOT_SET,4,null,4,null,30,anim:,,str:{__DIR__}nblogo.fxz,4,null,"/>
+    </Instance>
+    <Instance classID="GroupModel" instanceID="GroupModel1">
+        <Reference name="instanceName" value="str:Logo"/>
+        <Reference name="visible" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="disable" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="opacity" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="id" value="prop2:3,SET,15,anim:,,str:Logo,4,null,4,null,4,null,"/>
+        <Reference name="cursor" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="translateX" value="prop2:10,AS_DEFAULT,4,null,4,null,17,anim:,,flt:-200.0,24,inst:StateVariableModel1,16,inst:StateModel2,25,anim:1400,EASEOUT,flt:0.0,16,inst:StateModel3,14,anim:,,flt:0.0,"/>
+        <Reference name="translateY" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel3,15,anim:,,flt:50.0,"/>
+        <Reference name="translateZ" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="rotate" value="prop2:10,AS_DEFAULT,4,null,4,null,17,anim:,,flt:-360.0,24,inst:StateVariableModel1,16,inst:StateModel2,25,anim:1400,EASEOUT,flt:0.0,16,inst:StateModel3,23,anim:0,DISCRETE,flt:0.0,"/>
+        <Reference name="rotationAxis" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="scaleX" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="scaleY" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="scaleZ" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="managed" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutX" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutY" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoHPos" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoVPos" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoHGrow" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoVGrow" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoMargin" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="style" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="styleClass" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onKeyPressed" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onKeyReleased" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onKeyTyped" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseClicked" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseDragged" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseEntered" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseExited" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseMoved" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMousePressed" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseReleased" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseWheelMoved" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="blocksMouse" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="pickOnBounds" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="cache" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="cacheHint" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="effect" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="focusTraversable" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="transforms" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="autoSizeChildren" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="blendMode" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <List name="content"/>
+    </Instance>
+    <Instance classID="GroupModel" instanceID="GroupModel2">
+        <Reference name="instanceName" value="str:Beans"/>
+        <Reference name="visible" value="prop2:10,AS_DEFAULT,4,null,4,null,17,anim:,,bool:false,24,inst:StateVariableModel1,16,inst:StateModel1,16,anim:,,bool:true,16,inst:StateModel2,16,anim:,,bool:true,16,inst:StateModel3,16,anim:,,bool:true,"/>
+        <Reference name="disable" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="opacity" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="id" value="prop2:3,SET,16,anim:,,str:Beans,4,null,4,null,4,null,"/>
+        <Reference name="cursor" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="translateX" value="prop2:10,AS_DEFAULT,4,null,4,null,16,anim:,,flt:200.0,24,inst:StateVariableModel1,16,inst:StateModel2,25,anim:1100,EASEOUT,flt:0.0,16,inst:StateModel3,14,anim:,,flt:0.0,"/>
+        <Reference name="translateY" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel3,15,anim:,,flt:50.0,"/>
+        <Reference name="translateZ" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="rotate" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel3,16,anim:,,flt:360.0,"/>
+        <Reference name="rotationAxis" value="prop2:10,AS_DEFAULT,4,null,4,null,47,animcode:,,javafx.scene.transform.Rotate.Y_AXIS,4,null,"/>
+        <Reference name="scaleX" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="scaleY" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="scaleZ" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="managed" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutX" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutY" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoHPos" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoVPos" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoHGrow" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoVGrow" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoMargin" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="style" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="styleClass" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onKeyPressed" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onKeyReleased" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onKeyTyped" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseClicked" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseDragged" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseEntered" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseExited" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseMoved" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMousePressed" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseReleased" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseWheelMoved" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="blocksMouse" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="pickOnBounds" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="cache" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="cacheHint" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="effect" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="focusTraversable" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="transforms" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="autoSizeChildren" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="blendMode" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <List name="content"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel1">
+        <Reference name="instanceName" value="str:Line"/>
+        <Reference name="visible" value="prop2:10,AS_DEFAULT,4,null,4,null,17,anim:,,bool:false,24,inst:StateVariableModel1,16,inst:StateModel2,20,anim:1500,,bool:true,16,inst:StateModel3,16,anim:,,bool:true,"/>
+        <Reference name="disable" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="opacity" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="id" value="prop2:3,SET,15,anim:,,str:Line,4,null,4,null,4,null,"/>
+        <Reference name="cursor" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="translateX" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="translateY" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="translateZ" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="rotate" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel3,15,anim:,,flt:90.0,"/>
+        <Reference name="rotationAxis" value="prop2:10,AS_DEFAULT,4,null,4,null,47,animcode:,,javafx.scene.transform.Rotate.Y_AXIS,4,null,"/>
+        <Reference name="scaleX" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="scaleY" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="scaleZ" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="managed" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutX" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutY" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoHPos" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoVPos" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoHGrow" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoVGrow" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoMargin" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="style" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="styleClass" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onKeyPressed" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onKeyReleased" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onKeyTyped" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseClicked" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseDragged" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseEntered" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseExited" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseMoved" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMousePressed" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseReleased" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseWheelMoved" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="blocksMouse" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="pickOnBounds" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="cache" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="cacheHint" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="effect" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="focusTraversable" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="transforms" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="fill" value="prop2:3,SET,11,anim:,,null,4,null,4,null,4,null,"/>
+        <Reference name="smooth" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="stroke" value="prop2:3,SET,28,anim:,,color:0xE, 0x1B, 0x55,4,null,4,null,4,null,"/>
+        <Reference name="strokeDashArray" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="strokeDashOffset" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="strokeLineCap" value="prop2:3,SET,25,anim:,,strokelinecap:BUTT,4,null,4,null,4,null,"/>
+        <Reference name="strokeLineJoin" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="strokeMiterLimit" value="prop2:3,SET,14,anim:,,flt:4.0,4,null,4,null,4,null,"/>
+        <Reference name="strokeWidth" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="startX" value="prop2:3,SET,16,anim:,,flt:55.79,4,null,4,null,4,null,"/>
+        <Reference name="startY" value="prop2:3,SET,16,anim:,,flt:45.55,4,null,4,null,4,null,"/>
+        <Reference name="endX" value="prop2:3,SET,17,anim:,,flt:210.87,4,null,4,null,4,null,"/>
+        <Reference name="endY" value="prop2:3,SET,16,anim:,,flt:45.55,4,null,4,null,4,null,"/>
+    </Instance>
+    <Instance classID="GroupModel" instanceID="GroupModel3">
+        <Reference name="instanceName" value="str:Net"/>
+        <Reference name="visible" value="prop2:10,AS_DEFAULT,4,null,4,null,17,anim:,,bool:false,24,inst:StateVariableModel1,16,inst:StateModel1,16,anim:,,bool:true,16,inst:StateModel2,16,anim:,,bool:true,16,inst:StateModel3,16,anim:,,bool:true,"/>
+        <Reference name="disable" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="opacity" value="prop2:10,AS_DEFAULT,4,null,4,null,14,anim:,,flt:0.0,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:800,LINEAR,flt:1.0,16,inst:StateModel3,14,anim:,,flt:1.0,"/>
+        <Reference name="id" value="prop2:3,SET,14,anim:,,str:Net,4,null,4,null,4,null,"/>
+        <Reference name="cursor" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="translateX" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="translateY" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel3,15,anim:,,flt:50.0,"/>
+        <Reference name="translateZ" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="rotate" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel3,17,anim:,,flt:-360.0,"/>
+        <Reference name="rotationAxis" value="prop2:10,AS_DEFAULT,4,null,4,null,47,animcode:,,javafx.scene.transform.Rotate.X_AXIS,4,null,"/>
+        <Reference name="scaleX" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="scaleY" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="scaleZ" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="managed" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutX" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutY" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoHPos" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoVPos" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoHGrow" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoVGrow" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="layoutInfoMargin" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="style" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="styleClass" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onKeyPressed" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onKeyReleased" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onKeyTyped" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseClicked" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseDragged" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseEntered" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseExited" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseMoved" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMousePressed" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseReleased" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="onMouseWheelMoved" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="blocksMouse" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="pickOnBounds" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="cache" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="cacheHint" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="effect" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="focusTraversable" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="transforms" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="autoSizeChildren" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <Reference name="blendMode" value="prop2:10,AS_DEFAULT,4,null,4,null,4,null,4,null,"/>
+        <List name="content"/>
+    </Instance>
+    <Instance classID="TileModel" instanceID="TileModel1">
+        <Reference name="instanceName" value="str:tile"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:180.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:211.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <List name="content">
+            <Item value="inst:ButtonModel1"/>
+            <Item value="inst:ButtonModel2"/>
+        </List>
+        <Reference name="columns" value="prop2:7,NOT_SET,4,null,4,null,12,anim:,,int:2,4,null,"/>
+        <Reference name="hgap" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:6.0,4,null,"/>
+        <Reference name="vgap" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:6.0,4,null,"/>
+    </Instance>
+</Model>

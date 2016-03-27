@@ -1,0 +1,3 @@
+javac AvailableCharSets.java
+java AvailableCharSets
+pause

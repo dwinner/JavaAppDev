@@ -1,0 +1,2 @@
+javac JTableDemo.java
+pause

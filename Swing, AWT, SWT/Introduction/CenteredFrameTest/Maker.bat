@@ -1,0 +1,3 @@
+javac CenteredFrameTest.java
+java CenteredFrameTest
+pause

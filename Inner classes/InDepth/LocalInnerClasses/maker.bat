@@ -1,0 +1,3 @@
+javac LocalInnerClass.java
+java LocalInnerClass
+pause

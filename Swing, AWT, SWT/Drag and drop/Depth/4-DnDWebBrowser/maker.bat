@@ -1,0 +1,3 @@
+javac DnDWebBrowser.java
+java DnDWebBrowser
+pause

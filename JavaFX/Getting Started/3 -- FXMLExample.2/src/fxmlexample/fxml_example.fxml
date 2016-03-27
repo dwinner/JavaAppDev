@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?language javascript?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml">
+    <fx:script> <!-- source="fxml_example.js" -->
+        function handleSubmitButtonAction()
+        {
+            buttonStatusText.setText("Calling the JavaScript");
+        }
+        function handlePasswordFieldAction(event)
+        {
+            buttonStatusText.text = "More JavaScript";
+        }
+    </fx:script>
+    <top>
+        <StackPane>
+            <children>
+                <ImageView>
+                    <image>
+                        <Image url="@fx_boxback.jpg" />
+                    </image>
+                </ImageView>
+                <Label text="%loginExample" style="-fx-font: NORMAL 20 Tahoma;"/>
+            </children>
+        </StackPane>
+    </top>
+    <center>
+        <GridPane alignment="top_center" hgap="8" vgap="8">
+            <styleClass>
+                <String fx:value="grid-pane"/>
+            </styleClass>
+            <children>
+                <Label text="%signIn"
+                       GridPane.columnIndex="0" GridPane.rowIndex="0">
+                           <styleClass>
+                               <String fx:value="label"/>
+                           </styleClass>
+                </Label>
+                    
+                <Label text="%userName"
+                       GridPane.columnIndex="0" GridPane.rowIndex="1"
+                       labelFor="$usernameField"/>
+                <TextField fx:id="usernameField" prefColumnCount="10"
+                           GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                    
+                <Label text="%password"
+                       GridPane.columnIndex="0" GridPane.rowIndex="2"
+                       labelFor="$passwordField"/>
+                <PasswordField fx:id="passwordField" prefColumnCount="10"
+                               GridPane.columnIndex="1" GridPane.rowIndex="2"
+                               onAction="handlePasswordFieldAction(event);"/>
+                    
+                <Button fx:id="submitButton" text="%submit"
+                        GridPane.columnIndex="1" GridPane.rowIndex="3"
+                        onAction="handleSubmitButtonAction(event);"/>
+                    
+                <Label fx:id="buttonStatusText"
+                       GridPane.columnIndex="1" GridPane.rowIndex="4"
+                       style="-fx-text-fill: #ff0000;"/>
+            </children>
+        </GridPane>
+    </center>
+</BorderPane>

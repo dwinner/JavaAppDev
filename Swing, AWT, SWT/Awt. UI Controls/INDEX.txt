@@ -1,0 +1,23 @@
+    Элементы управления AWT
+    
+CheckBoxes:             Демонстрирует флажки;
+
+CheckBoxGroup:          Демонстрирует группы флажков;
+
+Choices:                Демонстрирует Choice-списки;
+
+ListDemo:               Демонстрирует списки;
+
+MenuBar:                Иллюстрирует меню;
+
+ObjectButtonIdentify:   Распознавание объектов типа Button;
+
+PushButton:             Демонстрирует кнопки;
+
+ScrollBars:             Демонстрирует полосы прокрутки;
+
+TextArea:               Демонстрирует TextArea;
+
+TextField:              Демонстрирует текстовое поле;
+
+TextLabels:             Демонстрирует метки;

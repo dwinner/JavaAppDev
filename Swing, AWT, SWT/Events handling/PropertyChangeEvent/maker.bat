@@ -1,0 +1,3 @@
+javac EventSourceTest.java
+java EventSourceTest
+pause

@@ -1,0 +1,3 @@
+javac UsingTableHeader.java
+java UsingTableHeader
+pause

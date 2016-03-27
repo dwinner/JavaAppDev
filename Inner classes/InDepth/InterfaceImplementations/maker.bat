@@ -1,0 +1,3 @@
+javac MultiInterfaces.java
+java MultiInterfaces
+pause

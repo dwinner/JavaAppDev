@@ -1,0 +1,3 @@
+javac InvestmentTable.java
+java InvestmentTable
+pause

@@ -1,0 +1,3 @@
+javac EditorPaneTest.java
+java EditorPaneTest
+pause

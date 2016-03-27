@@ -1,0 +1,3 @@
+javac CommandButtons.java
+java CommandButtons
+pause

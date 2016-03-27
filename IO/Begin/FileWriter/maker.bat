@@ -1,0 +1,3 @@
+javac FileWriterDemo.java
+java FileWriterDemo
+pause

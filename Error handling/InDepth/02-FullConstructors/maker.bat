@@ -1,0 +1,3 @@
+javac FullConstructors.java
+java FullConstructors
+pause

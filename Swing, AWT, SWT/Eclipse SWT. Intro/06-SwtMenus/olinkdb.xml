@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE targetset SYSTEM "dcommon/dtds/targetdatabase.dtd" [
+<!ENTITY e10591 SYSTEM "appdev.112/e10591/target.db">
+<!ENTITY e10646 SYSTEM "appdev.112/e10646/target.db">
+<!ENTITY e10708 SYSTEM "appdev.112/e10708/target.db">
+<!ENTITY e10764 SYSTEM "appdev.112/e10764/target.db">
+<!ENTITY e10765 SYSTEM "appdev.112/e10765/target.db">
+<!ENTITY e10766 SYSTEM "appdev.112/e10766/target.db">
+<!ENTITY e10767 SYSTEM "appdev.112/e10767/target.db">
+<!ENTITY e10770 SYSTEM "appdev.112/e10770/target.db">
+<!ENTITY e10771 SYSTEM "appdev.112/e10771/target.db">
+<!ENTITY e10776 SYSTEM "appdev.112/e10776/target.db">
+<!ENTITY e10777 SYSTEM "appdev.112/e10777/target.db">
+<!ENTITY e10778 SYSTEM "appdev.112/e10778/target.db">
+<!ENTITY e10811 SYSTEM "appdev.112/e10811/target.db">
+<!ENTITY e10825 SYSTEM "appdev.112/e10825/target.db">
+<!ENTITY e10826 SYSTEM "appdev.112/e10826/target.db">
+<!ENTITY e10827 SYSTEM "appdev.112/e10827/target.db">
+<!ENTITY e10828 SYSTEM "appdev.112/e10828/target.db">
+<!ENTITY e10829 SYSTEM "appdev.112/e10829/target.db">
+<!ENTITY e10830 SYSTEM "appdev.112/e10830/target.db">
+<!ENTITY e11822 SYSTEM "appdev.112/e11822/target.db">
+<!ENTITY e11826 SYSTEM "appdev.112/e11826/target.db">
+<!ENTITY e11827 SYSTEM "appdev.112/e11827/target.db">
+<!ENTITY e11828 SYSTEM "appdev.112/e11828/target.db">
+<!ENTITY e11830 SYSTEM "appdev.112/e11830/target.db">
+<!ENTITY e11831 SYSTEM "appdev.112/e11831/target.db">
+<!ENTITY e11945 SYSTEM "appdev.112/e11945/target.db">
+<!ENTITY e11946 SYSTEM "appdev.112/e11946/target.db">
+<!ENTITY e11947 SYSTEM "appdev.112/e11947/target.db">
+<!ENTITY e12137 SYSTEM "appdev.112/e12137/target.db">
+<!ENTITY e12509 SYSTEM "appdev.112/e12509/target.db">
+<!ENTITY e12510 SYSTEM "appdev.112/e12510/target.db">
+<!ENTITY e12511 SYSTEM "appdev.112/e12511/target.db">
+<!ENTITY e12512 SYSTEM "appdev.112/e12512/target.db">
+<!ENTITY e14919 SYSTEM "appdev.112/e14919/target.db">
+<!ENTITY e16659 SYSTEM "appdev.112/e16659/target.db">
+<!ENTITY e16760 SYSTEM "appdev.112/e16760/target.db">
+<!ENTITY e17125 SYSTEM "appdev.112/e17125/target.db">
+<!ENTITY e17126 SYSTEM "appdev.112/e17126/target.db">
+<!ENTITY e18294 SYSTEM "appdev.112/e18294/target.db">
+<!ENTITY e10642 SYSTEM "backup.112/e10642/target.db">
+<!ENTITY e10643 SYSTEM "backup.112/e10643/target.db">
+<!ENTITY e12218 SYSTEM "datamine.112/e12218/target.db">
+<!ENTITY e16807 SYSTEM "datamine.112/e16807/target.db">
+<!ENTITY e16808 SYSTEM "datamine.112/e16808/target.db">
+<!ENTITY e12152 SYSTEM "doc.112/e12152/target.db">
+<!ENTITY e15883 SYSTEM "doc.112/e15883/target.db">
+<!ENTITY e15886 SYSTEM "doc.112/e15886/target.db">
+<!ENTITY e15887 SYSTEM "doc.112/e15887/target.db">
+<!ENTITY e15888 SYSTEM "doc.112/e15888/target.db">
+<!ENTITY e18025 SYSTEM "doc.112/e18025/target.db">
+<!ENTITY e18026 SYSTEM "doc.112/e18026/target.db">
+<!ENTITY e18027 SYSTEM "doc.112/e18027/target.db">
+<!ENTITY e18028 SYSTEM "doc.112/e18028/target.db">
+<!ENTITY e12255 SYSTEM "em.112/e12255/target.db">
+<!ENTITY e12013 SYSTEM "gateways.112/e12013/target.db">
+<!ENTITY e12014 SYSTEM "gateways.112/e12014/target.db">
+<!ENTITY e12061 SYSTEM "gateways.112/e12061/target.db">
+<!ENTITY e12066 SYSTEM "gateways.112/e12066/target.db">
+<!ENTITY e12067 SYSTEM "gateways.112/e12067/target.db">
+<!ENTITY e12068 SYSTEM "gateways.112/e12068/target.db">
+<!ENTITY e12069 SYSTEM "gateways.112/e12069/target.db">
+<!ENTITY e12070 SYSTEM "gateways.112/e12070/target.db">
+<!ENTITY e12071 SYSTEM "gateways.112/e12071/target.db">
+<!ENTITY e12072 SYSTEM "gateways.112/e12072/target.db">
+<!ENTITY e12073 SYSTEM "gateways.112/e12073/target.db">
+<!ENTITY e12074 SYSTEM "gateways.112/e12074/target.db">
+<!ENTITY e12075 SYSTEM "gateways.112/e12075/target.db">
+<!ENTITY e12076 SYSTEM "gateways.112/e12076/target.db">
+<!ENTITY e12077 SYSTEM "gateways.112/e12077/target.db">
+<!ENTITY e12078 SYSTEM "gateways.112/e12078/target.db">
+<!ENTITY e12079 SYSTEM "gateways.112/e12079/target.db">
+<!ENTITY e12417 SYSTEM "gateways.112/e12417/target.db">
+<!ENTITY e10866 SYSTEM "install.112/e10866/target.db">
+<!ENTITY e10867 SYSTEM "install.112/e10867/target.db">
+<!ENTITY e11028 SYSTEM "install.112/e11028/target.db">
+<!ENTITY e12196 SYSTEM "install.112/e12196/target.db">
+<!ENTITY e16763 SYSTEM "install.112/e16763/target.db">
+<!ENTITY e16765 SYSTEM "install.112/e16765/target.db">
+<!ENTITY e16766 SYSTEM "install.112/e16766/target.db">
+<!ENTITY e16767 SYSTEM "install.112/e16767/target.db">
+<!ENTITY e16768 SYSTEM "install.112/e16768/target.db">
+<!ENTITY e16769 SYSTEM "install.112/e16769/target.db">
+<!ENTITY e16773 SYSTEM "install.112/e16773/target.db">
+<!ENTITY e16774 SYSTEM "install.112/e16774/target.db">
+<!ENTITY e16781 SYSTEM "install.112/e16781/target.db">
+<!ENTITY e16783 SYSTEM "install.112/e16783/target.db">
+<!ENTITY e16784 SYSTEM "install.112/e16784/target.db">
+<!ENTITY e16785 SYSTEM "install.112/e16785/target.db">
+<!ENTITY e17162 SYSTEM "install.112/e17162/target.db">
+<!ENTITY e17163 SYSTEM "install.112/e17163/target.db">
+<!ENTITY e17210 SYSTEM "install.112/e17210/target.db">
+<!ENTITY e17211 SYSTEM "install.112/e17211/target.db">
+<!ENTITY e17212 SYSTEM "install.112/e17212/target.db">
+<!ENTITY e17213 SYSTEM "install.112/e17213/target.db">
+<!ENTITY e17214 SYSTEM "install.112/e17214/target.db">
+<!ENTITY e17753 SYSTEM "install.112/e17753/target.db">
+<!ENTITY e17755 SYSTEM "install.112/e17755/target.db">
+<!ENTITY e17757 SYSTEM "install.112/e17757/target.db">
+<!ENTITY e17759 SYSTEM "install.112/e17759/target.db">
+<!ENTITY e17761 SYSTEM "install.112/e17761/target.db">
+<!ENTITY e17861 SYSTEM "install.112/e17861/target.db">
+<!ENTITY e17880 SYSTEM "install.112/e17880/target.db">
+<!ENTITY e18029 SYSTEM "install.112/e18029/target.db">
+<!ENTITY e18069 SYSTEM "install.112/e18069/target.db">
+<!ENTITY e18169 SYSTEM "install.112/e18169/target.db">
+<!ENTITY e18192 SYSTEM "install.112/e18192/target.db">
+<!ENTITY e18193 SYSTEM "install.112/e18193/target.db">
+<!ENTITY e18194 SYSTEM "install.112/e18194/target.db">
+<!ENTITY e18245 SYSTEM "install.112/e18245/target.db">
+<!ENTITY e10587 SYSTEM "java.112/e10587/target.db">
+<!ENTITY e10588 SYSTEM "java.112/e10588/target.db">
+<!ENTITY e10590 SYSTEM "java.112/e10590/target.db">
+<!ENTITY e12265 SYSTEM "java.112/e12265/target.db">
+<!ENTITY e16548 SYSTEM "java.112/e16548/target.db">
+<!ENTITY e10594 SYSTEM "license.112/e10594/target.db">
+<!ENTITY e10744 SYSTEM "network.112/e10744/target.db">
+<!ENTITY e10745 SYSTEM "network.112/e10745/target.db">
+<!ENTITY e10746 SYSTEM "network.112/e10746/target.db">
+<!ENTITY e10835 SYSTEM "network.112/e10835/target.db">
+<!ENTITY e10836 SYSTEM "network.112/e10836/target.db">
+<!ENTITY e16543 SYSTEM "network.112/e16543/target.db">
+<!ENTITY e10795 SYSTEM "olap.112/e10795/target.db">
+<!ENTITY e17122 SYSTEM "olap.112/e17122/target.db">
+<!ENTITY e17123 SYSTEM "olap.112/e17123/target.db">
+<!ENTITY e17237 SYSTEM "olap.112/e17237/target.db">
+<!ENTITY e10581 SYSTEM "owb.112/e10581/target.db">
+<!ENTITY e10582 SYSTEM "owb.112/e10582/target.db">
+<!ENTITY e10584 SYSTEM "owb.112/e10584/target.db">
+<!ENTITY e10935 SYSTEM "owb.112/e10935/target.db">
+<!ENTITY e14406 SYSTEM "owb.112/e14406/target.db">
+<!ENTITY e17130 SYSTEM "owb.112/e17130/target.db">
+<!ENTITY e16794 SYSTEM "rac.112/e16794/target.db">
+<!ENTITY e16795 SYSTEM "rac.112/e16795/target.db">
+<!ENTITY e17264 SYSTEM "rac.112/e17264/target.db">
+<!ENTITY e17129 SYSTEM "readmes.112/e17129/target.db">
+<!ENTITY e10585 SYSTEM "relnotes.112/e10585/target.db">
+<!ENTITY e11944 SYSTEM "relnotes.112/e11944/target.db">
+<!ENTITY e16608 SYSTEM "relnotes.112/e16608/target.db">
+<!ENTITY e16777 SYSTEM "relnotes.112/e16777/target.db">
+<!ENTITY e16778 SYSTEM "relnotes.112/e16778/target.db">
+<!ENTITY e16779 SYSTEM "relnotes.112/e16779/target.db">
+<!ENTITY e16780 SYSTEM "relnotes.112/e16780/target.db">
+<!ENTITY e16782 SYSTEM "relnotes.112/e16782/target.db">
+<!ENTITY e10575 SYSTEM "server.112/e10575/target.db">
+<!ENTITY e10578 SYSTEM "server.112/e10578/target.db">
+<!ENTITY e10705 SYSTEM "server.112/e10705/target.db">
+<!ENTITY e10706 SYSTEM "server.112/e10706/target.db">
+<!ENTITY e10707 SYSTEM "server.112/e10707/target.db">
+<!ENTITY e10729 SYSTEM "server.112/e10729/target.db">
+<!ENTITY e10822 SYSTEM "server.112/e10822/target.db">
+<!ENTITY e10831 SYSTEM "server.112/e10831/target.db">
+<!ENTITY e10839 SYSTEM "server.112/e10839/target.db">
+<!ENTITY e10897 SYSTEM "server.112/e10897/target.db">
+<!ENTITY e11013 SYSTEM "server.112/e11013/target.db">
+<!ENTITY e11050 SYSTEM "server.112/e11050/target.db">
+<!ENTITY e12862 SYSTEM "server.112/e12862/target.db">
+<!ENTITY e16102 SYSTEM "server.112/e16102/target.db">
+<!ENTITY e16508 SYSTEM "server.112/e16508/target.db">
+<!ENTITY e16536 SYSTEM "server.112/e16536/target.db">
+<!ENTITY e16540 SYSTEM "server.112/e16540/target.db">
+<!ENTITY e16542 SYSTEM "server.112/e16542/target.db">
+<!ENTITY e16544 SYSTEM "server.112/e16544/target.db">
+<!ENTITY e16545 SYSTEM "server.112/e16545/target.db">
+<!ENTITY e16579 SYSTEM "server.112/e16579/target.db">
+<!ENTITY e16604 SYSTEM "server.112/e16604/target.db">
+<!ENTITY e16605 SYSTEM "server.112/e16605/target.db">
+<!ENTITY e16638 SYSTEM "server.112/e16638/target.db">
+<!ENTITY e17022 SYSTEM "server.112/e17022/target.db">
+<!ENTITY e17023 SYSTEM "server.112/e17023/target.db">
+<!ENTITY e17069 SYSTEM "server.112/e17069/target.db">
+<!ENTITY e17110 SYSTEM "server.112/e17110/target.db">
+<!ENTITY e17118 SYSTEM "server.112/e17118/target.db">
+<!ENTITY e17119 SYSTEM "server.112/e17119/target.db">
+<!ENTITY e17120 SYSTEM "server.112/e17120/target.db">
+<!ENTITY e17128 SYSTEM "server.112/e17128/target.db">
+<!ENTITY e17157 SYSTEM "server.112/e17157/target.db">
+<!ENTITY e17222 SYSTEM "server.112/e17222/target.db">
+<!ENTITY e17516 SYSTEM "server.112/e17516/target.db">
+<!ENTITY e17766 SYSTEM "server.112/e17766/target.db">
+<!ENTITY e16593 SYSTEM "text.112/e16593/target.db">
+<!ENTITY e16594 SYSTEM "text.112/e16594/target.db">
+<!ENTITY e13063 SYSTEM "timesten.112/e13063/target.db">
+<!ENTITY e13065 SYSTEM "timesten.112/e13065/target.db">
+<!ENTITY e13066 SYSTEM "timesten.112/e13066/target.db">
+<!ENTITY e13068 SYSTEM "timesten.112/e13068/target.db">
+<!ENTITY e13069 SYSTEM "timesten.112/e13069/target.db">
+<!ENTITY e13070 SYSTEM "timesten.112/e13070/target.db">
+<!ENTITY e13071 SYSTEM "timesten.112/e13071/target.db">
+<!ENTITY e13072 SYSTEM "timesten.112/e13072/target.db">
+<!ENTITY e13073 SYSTEM "timesten.112/e13073/target.db">
+<!ENTITY e13074 SYSTEM "timesten.112/e13074/target.db">
+<!ENTITY e13075 SYSTEM "timesten.112/e13075/target.db">
+<!ENTITY e13076 SYSTEM "timesten.112/e13076/target.db">
+<!ENTITY e13080 SYSTEM "timesten.112/e13080/target.db">
+<!ENTITY e13081 SYSTEM "timesten.112/e13081/target.db">
+<!ENTITY e13082 SYSTEM "timesten.112/e13082/target.db">
+<!ENTITY e14000 SYSTEM "timesten.112/e14000/target.db">
+<!ENTITY e14261 SYSTEM "timesten.112/e14261/target.db">
+<!ENTITY e17114 SYSTEM "timesten.112/e17114/target.db">
+<!ENTITY e10845 SYSTEM "win.112/e10845/target.db">
+<!ENTITY e17724 SYSTEM "win.112/e17724/target.db">
+<!ENTITY e17725 SYSTEM "win.112/e17725/target.db">
+<!ENTITY e17726 SYSTEM "win.112/e17726/target.db">
+<!ENTITY e17727 SYSTEM "win.112/e17727/target.db">
+<!ENTITY e18485 SYSTEM "win.112/e18485/target.db">
+<!ENTITY e18737 SYSTEM "win.112/e18737/target.db">
+<!ENTITY e18754 SYSTEM "win.112/e18754/target.db">
+]>
+<targetset>
+  <targetsetinfo>
+    Oracle® Database Online Documentation Library 11g Release 2 (11.2)
+  </targetsetinfo>
+  <sitemap>
+    <dir name=".">
+      <dir name="appdev.112">
+        <dir name="e10591">
+          <document targetdoc="COMDG" baseuri="toc.htm">&e10591;</document>
+        </dir>
+        <dir name="e10646">
+          <document targetdoc="LNOCI" baseuri="toc.htm">&e10646;</document>
+        </dir>
+        <dir name="e10708">
+          <!-- <document targetdoc="ADXDK" baseuri="toc.htm">&e10708;</document> -->
+        </dir>
+        <dir name="e10764">
+          <document targetdoc="LNCPP" baseuri="toc.htm">&e10764;</document>
+        </dir>
+        <dir name="e10765">
+          <document targetdoc="ADDCI" baseuri="toc.htm">&e10765;</document>
+        </dir>
+        <dir name="e10766">
+          <document targetdoc="TDDDG" baseuri="toc.htm">&e10766;</document>
+        </dir>
+        <dir name="e10767">
+          <document targetdoc="TDPNG" baseuri="toc.htm">&e10767;</document>
+        </dir>
+        <dir name="e10770">
+          <document targetdoc="CAXML" baseuri="toc.htm">&e10770;</document>
+        </dir>
+        <dir name="e10771">
+          <document targetdoc="CPXML" baseuri="toc.htm">&e10771;</document>
+        </dir>
+        <dir name="e10776">
+          <document targetdoc="AIVUG" baseuri="toc.htm">&e10776;</document>
+        </dir>
+        <dir name="e10777">
+          <document targetdoc="IMURG" baseuri="toc.htm">&e10777;</document>
+        </dir>
+        <dir name="e10778">
+          <document targetdoc="IMDCM" baseuri="toc.htm">&e10778;</document>
+        </dir>
+        <dir name="e10811">
+          <document targetdoc="TDPPH" baseuri="toc.htm">&e10811;</document>
+        </dir>
+        <dir name="e10825">
+          <document targetdoc="LNPCC" baseuri="toc.htm">&e10825;</document>
+        </dir>
+        <dir name="e10826">
+          <document targetdoc="LNPCB" baseuri="toc.htm">&e10826;</document>
+        </dir>
+        <dir name="e10827">
+          <document targetdoc="ZZMOD" baseuri="toc.htm">&e10827;</document>
+        </dir>
+        <dir name="e10828">
+          <document targetdoc="ZZFOR" baseuri="toc.htm">&e10828;</document>
+        </dir>
+        <dir name="e10829">
+          <document targetdoc="ZZPLI" baseuri="toc.htm">&e10829;</document>
+        </dir>
+        <dir name="e10830">
+          <document targetdoc="ZZPRE" baseuri="toc.htm">&e10830;</document>
+        </dir>
+        <dir name="e11822">
+          <document targetdoc="ADOBJ" baseuri="toc.htm">&e11822;</document>
+        </dir>
+        <dir name="e11826">
+          <document targetdoc="ADWSM" baseuri="toc.htm">&e11826;</document>
+        </dir>
+        <dir name="e11827">
+          <document targetdoc="GEORS" baseuri="toc.htm">&e11827;</document>
+        </dir>
+        <dir name="e11828">
+          <document targetdoc="RDFRM" baseuri="toc.htm">&e11828;</document>
+        </dir>
+        <dir name="e11830">
+          <document targetdoc="SPATL" baseuri="toc.htm">&e11830;</document>
+        </dir>
+        <dir name="e11831">
+          <document targetdoc="TOPOL" baseuri="toc.htm">&e11831;</document>
+        </dir>
+        <dir name="e11945">
+          <document targetdoc="HTMAD" baseuri="toc.htm">&e11945;</document>
+        </dir>
+        <dir name="e11946">
+          <document targetdoc="TDPAX" baseuri="toc.htm">&e11946;</document>
+        </dir>
+        <dir name="e11947">
+          <document targetdoc="HTMDB" baseuri="toc.htm">&e11947;</document>
+        </dir>
+        <dir name="e12137">
+          <document targetdoc="TDPJD" baseuri="toc.htm">&e12137;</document>
+        </dir>
+        <dir name="e12509">
+          <document targetdoc="AEMIG" baseuri="toc.htm">&e12509;</document>
+        </dir>
+        <dir name="e12510">
+          <document targetdoc="AEAPI" baseuri="toc.htm">&e12510;</document>
+        </dir>
+        <dir name="e12511">
+          <document targetdoc="AEUTL" baseuri="toc.htm">&e12511;</document>
+        </dir>
+        <dir name="e12512">
+          <document targetdoc="AEADM" baseuri="toc.htm">&e12512;</document>
+        </dir>
+        <dir name="e14919">
+          <document targetdoc="EXPRN" baseuri="toc.htm">&e14919;</document>
+        </dir>
+        <dir name="e16659">
+          <document targetdoc="ADXDB" baseuri="toc.htm">&e16659;</document>
+        </dir>
+        <dir name="e16760">
+          <document targetdoc="ARPLS" baseuri="toc.htm">&e16760;</document>
+        </dir>
+        <dir name="e17125">
+          <document targetdoc="ADFNS" baseuri="toc.htm">&e17125;</document>
+        </dir>
+        <dir name="e17126">
+          <document targetdoc="LNPLS" baseuri="toc.htm">&e17126;</document>
+        </dir>
+        <dir name="e18294">
+          <document targetdoc="ADLOB" baseuri="toc.htm">&e18294;</document>
+        </dir>
+      </dir>
+      <dir name="backup.112">
+        <dir name="e10642">
+          <document targetdoc="BRADV" baseuri="toc.htm">&e10642;</document>
+        </dir>
+        <dir name="e10643">
+          <document targetdoc="RCMRF" baseuri="toc.htm">&e10643;</document>
+        </dir>
+      </dir>
+      <dir name="datamine.112">
+        <dir name="e12218">
+          <document targetdoc="DMPRG" baseuri="toc.htm">&e12218;</document>
+        </dir>
+        <dir name="e16807">
+          <document targetdoc="DMADM" baseuri="toc.htm">&e16807;</document>
+        </dir>
+        <dir name="e16808">
+          <document targetdoc="DMCON" baseuri="toc.htm">&e16808;</document>
+        </dir>
+      </dir>
+      <dir name="doc.112">
+        <dir name="e12152">
+          <document targetdoc="RPTUG" baseuri="toc.htm">&e12152;</document>
+        </dir>
+        <dir name="e15883">
+          <document targetdoc="CDMOG" baseuri="toc.htm">&e15883;</document>
+        </dir>
+        <dir name="e15886">
+          <document targetdoc="CDMRF" baseuri="toc.htm">&e15886;</document>
+        </dir>
+        <dir name="e15887">
+          <document targetdoc="CDMIG" baseuri="toc.htm">&e15887;</document>
+        </dir>
+        <dir name="e15888">
+          <document targetdoc="CDMRN" baseuri="toc.htm">&e15888;</document>
+        </dir>
+        <dir name="e18025">
+          <document targetdoc="HDMIG" baseuri="toc.htm">&e18025;</document>
+        </dir>
+        <dir name="e18026">
+          <document targetdoc="HDMRF" baseuri="toc.htm">&e18026;</document>
+        </dir>
+        <dir name="e18027">
+          <document targetdoc="HDMOG" baseuri="toc.htm">&e18027;</document>
+        </dir>
+        <dir name="e18028">
+          <document targetdoc="HDMRN" baseuri="toc.htm">&e18028;</document>
+        </dir>
+      </dir>
+      <dir name="em.112">
+        <dir name="e12255">
+          <document targetdoc="OUICG" baseuri="toc.htm">&e12255;</document>
+        </dir>
+      </dir>
+      <dir name="gateways.112">
+        <dir name="e12013">
+          <document targetdoc="OTGIS" baseuri="toc.htm">&e12013;</document>
+        </dir>
+        <dir name="e12014">
+          <document targetdoc="DRDAG" baseuri="toc.htm">&e12014;</document>
+        </dir>
+        <dir name="e12061">
+          <document targetdoc="OTGIW" baseuri="toc.htm">&e12061;</document>
+        </dir>
+        <dir name="e12066">
+          <document targetdoc="TGINU" baseuri="toc.htm">&e12066;</document>
+        </dir>
+        <dir name="e12067">
+          <document targetdoc="TGSYU" baseuri="toc.htm">&e12067;</document>
+        </dir>
+        <dir name="e12068">
+          <document targetdoc="TGTEU" baseuri="toc.htm">&e12068;</document>
+        </dir>
+        <dir name="e12069">
+          <document targetdoc="GMSWN" baseuri="toc.htm">&e12069;</document>
+        </dir>
+        <dir name="e12070">
+          <document targetdoc="ODBCU" baseuri="toc.htm">&e12070;</document>
+        </dir>
+        <dir name="e12071">
+          <document targetdoc="APPUG" baseuri="toc.htm">&e12071;</document>
+        </dir>
+        <dir name="e12072">
+          <document targetdoc="IMSUG" baseuri="toc.htm">&e12072;</document>
+        </dir>
+        <dir name="e12073">
+          <document targetdoc="VSMUG" baseuri="toc.htm">&e12073;</document>
+        </dir>
+        <dir name="e12074">
+          <document targetdoc="ADAUG" baseuri="toc.htm">&e12074;</document>
+        </dir>
+        <dir name="e12075">
+          <document targetdoc="OCZOS" baseuri="toc.htm">&e12075;</document>
+        </dir>
+        <dir name="e12076">
+          <document targetdoc="IVACU" baseuri="toc.htm">&e12076;</document>
+        </dir>
+        <dir name="e12077">
+          <document targetdoc="IVACW" baseuri="toc.htm">&e12077;</document>
+        </dir>
+        <dir name="e12078">
+          <document targetdoc="APPCI" baseuri="toc.htm">&e12078;</document>
+        </dir>
+        <dir name="e12079">
+          <document targetdoc="APPCW" baseuri="toc.htm">&e12079;</document>
+        </dir>
+        <dir name="e12417">
+          <document targetdoc="WSMQG" baseuri="toc.htm">&e12417;</document>
+        </dir>
+      </dir>
+      <dir name="install.112">
+        <dir name="e10866">
+          <document targetdoc="HPDQI" baseuri="toc.htm">&e10866;</document>
+        </dir>
+        <dir name="e10867">
+          <document targetdoc="HPCQI" baseuri="toc.htm">&e10867;</document>
+        </dir>
+        <dir name="e11028">
+          <document targetdoc="AXCLI" baseuri="toc.htm">&e11028;</document>
+        </dir>
+        <dir name="e12196">
+          <document targetdoc="HTMIG" baseuri="toc.htm">&e12196;</document>
+        </dir>
+        <dir name="e16763">
+          <document targetdoc="LADBI" baseuri="toc.htm">&e16763;</document>
+        </dir>
+        <dir name="e16765">
+          <document targetdoc="LACLI" baseuri="toc.htm">&e16765;</document>
+        </dir>
+        <dir name="e16766">
+          <document targetdoc="LADQI" baseuri="toc.htm">&e16766;</document>
+        </dir>
+        <dir name="e16767">
+          <document targetdoc="LACQI" baseuri="toc.htm">&e16767;</document>
+        </dir>
+        <dir name="e16768">
+          <document targetdoc="LTDQI" baseuri="toc.htm">&e16768;</document>
+        </dir>
+        <dir name="e16769">
+          <document targetdoc="LTCQI" baseuri="toc.htm">&e16769;</document>
+        </dir>
+        <dir name="e16773">
+          <document targetdoc="NTDBI" baseuri="toc.htm">&e16773;</document>
+        </dir>
+        <dir name="e16774">
+          <document targetdoc="NTCLI" baseuri="toc.htm">&e16774;</document>
+        </dir>
+        <dir name="e16781">
+          <document targetdoc="NTDQI" baseuri="toc.htm">&e16781;</document>
+        </dir>
+        <dir name="e16783">
+          <document targetdoc="NXDQI" baseuri="toc.htm">&e16783;</document>
+        </dir>
+        <dir name="e16784">
+          <document targetdoc="NXCQI" baseuri="toc.htm">&e16784;</document>
+        </dir>
+        <dir name="e16785">
+          <document targetdoc="NTCQI" baseuri="toc.htm">&e16785;</document>
+        </dir>
+        <dir name="e17162">
+          <document targetdoc="AXDBI" baseuri="toc.htm">&e17162;</document>
+        </dir>
+        <dir name="e17163">
+          <document targetdoc="SSDBI" baseuri="toc.htm">&e17163;</document>
+        </dir>
+        <dir name="e17210">
+          <document targetdoc="CWAIX" baseuri="toc.htm">&e17210;</document>
+        </dir>
+        <dir name="e17211">
+          <document targetdoc="CWHPX" baseuri="toc.htm">&e17211;</document>
+        </dir>
+        <dir name="e17212">
+          <document targetdoc="CWLIN" baseuri="toc.htm">&e17212;</document>
+        </dir>
+        <dir name="e17213">
+          <document targetdoc="CWSOL" baseuri="toc.htm">&e17213;</document>
+        </dir>
+        <dir name="e17214">
+          <document targetdoc="RILIN" baseuri="toc.htm">&e17214;</document>
+        </dir>
+        <dir name="e17753">
+          <document targetdoc="SSCLI" baseuri="toc.htm">&e17753;</document>
+        </dir>
+        <dir name="e17755">
+          <document targetdoc="SSDQI" baseuri="toc.htm">&e17755;</document>
+        </dir>
+        <dir name="e17757">
+          <document targetdoc="SSCQI" baseuri="toc.htm">&e17757;</document>
+        </dir>
+        <dir name="e17759">
+          <document targetdoc="SXDQI" baseuri="toc.htm">&e17759;</document>
+        </dir>
+        <dir name="e17761">
+          <document targetdoc="SXCQI" baseuri="toc.htm">&e17761;</document>
+        </dir>
+        <dir name="e17861">
+          <document targetdoc="EXMPL" baseuri="toc.htm">&e17861;</document>
+        </dir>
+        <dir name="e17880">
+          <document targetdoc="HPDBI" baseuri="toc.htm">&e17880;</document>
+        </dir>
+        <dir name="e18029">
+          <document targetdoc="CWWIN" baseuri="toc.htm">&e18029;</document>
+        </dir>
+        <dir name="e18069">
+          <document targetdoc="RIWIN" baseuri="toc.htm">&e18069;</document>
+        </dir>
+        <dir name="e18169">
+          <document targetdoc="AXDQI" baseuri="toc.htm">&e18169;</document>
+        </dir>
+        <dir name="e18192">
+          <document targetdoc="AXCQI" baseuri="toc.htm">&e18192;</document>
+        </dir>
+        <dir name="e18193">
+          <document targetdoc="HICQI" baseuri="toc.htm">&e18193;</document>
+        </dir>
+        <dir name="e18194">
+          <document targetdoc="HPCLI" baseuri="toc.htm">&e18194;</document>
+        </dir>
+        <dir name="e18245">
+          <document targetdoc="HIDQI" baseuri="toc.htm">&e18245;</document>
+        </dir>
+      </dir>
+      <dir name="java.112">
+        <dir name="e10587">
+          <document targetdoc="JJPUB" baseuri="toc.htm">&e10587;</document>
+        </dir>
+        <dir name="e10588">
+          <document targetdoc="JJDEV" baseuri="toc.htm">&e10588;</document>
+        </dir>
+        <dir name="e10590">
+          <document targetdoc="JSQLJ" baseuri="toc.htm">&e10590;</document>
+        </dir>
+        <dir name="e12265">
+          <document targetdoc="JJUCP" baseuri="toc.htm">&e12265;</document>
+        </dir>
+        <dir name="e16548">
+          <document targetdoc="JJDBC" baseuri="toc.htm">&e16548;</document>
+        </dir>
+      </dir>
+      <dir name="license.112">
+        <dir name="e10594">
+          <document targetdoc="DBLIC" baseuri="toc.htm">&e10594;</document>
+        </dir>
+      </dir>
+      <dir name="network.112">
+        <dir name="e10744">
+          <document targetdoc="DBIMI" baseuri="toc.htm">&e10744;</document>
+        </dir>
+        <dir name="e10745">
+          <document targetdoc="OLSAG" baseuri="toc.htm">&e10745;</document>
+        </dir>
+        <dir name="e10746">
+          <document targetdoc="ASOAG" baseuri="toc.htm">&e10746;</document>
+        </dir>
+        <dir name="e10835">
+          <document targetdoc="NETRF" baseuri="toc.htm">&e10835;</document>
+        </dir>
+        <dir name="e10836">
+          <document targetdoc="NETAG" baseuri="toc.htm">&e10836;</document>
+        </dir>
+        <dir name="e16543">
+          <document targetdoc="DBSEG" baseuri="toc.htm">&e16543;</document>
+        </dir>
+      </dir>
+      <dir name="olap.112">
+        <dir name="e10795">
+          <document targetdoc="OLAAP" baseuri="toc.htm">&e10795;</document>
+        </dir>
+        <dir name="e17122">
+          <document targetdoc="OLADM" baseuri="toc.htm">&e17122;</document>
+        </dir>
+        <dir name="e17123">
+          <document targetdoc="OLAUG" baseuri="toc.htm">&e17123;</document>
+        </dir>
+        <dir name="e17237">
+          <document targetdoc="OLAWP" baseuri="toc.htm">&e17237;</document>
+        </dir>
+      </dir>
+      <dir name="owb.112">
+        <dir name="e10581">
+          <document targetdoc="WBCON" baseuri="toc.htm">&e10581;</document>
+        </dir>
+        <dir name="e10582">
+          <document targetdoc="WBDOD" baseuri="toc.htm">&e10582;</document>
+        </dir>
+        <dir name="e10584">
+          <document targetdoc="WBSCR" baseuri="toc.htm">&e10584;</document>
+        </dir>
+        <dir name="e10935">
+          <document targetdoc="WBETL" baseuri="toc.htm">&e10935;</document>
+        </dir>
+        <dir name="e14406">
+          <document targetdoc="WBREF" baseuri="toc.htm">&e14406;</document>
+        </dir>
+        <dir name="e17130">
+          <document targetdoc="WBINS" baseuri="toc.htm">&e17130;</document>
+        </dir>
+      </dir>
+      <dir name="rac.112">
+        <dir name="e16794">
+          <document targetdoc="CWADD" baseuri="toc.htm">&e16794;</document>
+        </dir>
+        <dir name="e16795">
+          <document targetdoc="RACAD" baseuri="toc.htm">&e16795;</document>
+        </dir>
+        <dir name="e17264">
+          <document targetdoc="TDPRC" baseuri="toc.htm">&e17264;</document>
+        </dir>
+      </dir>
+      <dir name="readmes.112">
+        <dir name="e17129">
+          <document targetdoc="READM" baseuri="toc.htm">&e17129;</document>
+        </dir>
+      </dir>
+      <dir name="relnotes.112">
+        <dir name="e10585">
+          <document targetdoc="WBREL" baseuri="toc.htm">&e10585;</document>
+        </dir>
+        <dir name="e11944">
+          <document targetdoc="HTMRN" baseuri="toc.htm">&e11944;</document>
+        </dir>
+        <dir name="e16608">
+          <document targetdoc="SQPRN" baseuri="toc.htm">&e16608;</document>
+        </dir>
+        <dir name="e16777">
+          <document targetdoc="NTDBN" baseuri="toc.htm">&e16777;</document>
+        </dir>
+        <dir name="e16778">
+          <document targetdoc="LADBN" baseuri="toc.htm">&e16778;</document>
+        </dir>
+        <dir name="e16779">
+          <document targetdoc="SSDBN" baseuri="toc.htm">&e16779;</document>
+        </dir>
+        <dir name="e16780">
+          <document targetdoc="AXDBN" baseuri="toc.htm">&e16780;</document>
+        </dir>
+        <dir name="e16782">
+          <document targetdoc="HPDBN" baseuri="toc.htm">&e16782;</document>
+        </dir>
+      </dir>
+      <dir name="server.112">
+        <dir name="e10575">
+          <document targetdoc="TDPSG" baseuri="toc.htm">&e10575;</document>
+        </dir>
+        <dir name="e10578">
+          <document targetdoc="TDPDW" baseuri="toc.htm">&e10578;</document>
+        </dir>
+        <dir name="e10705">
+          <document targetdoc="STREP" baseuri="toc.htm">&e10705;</document>
+        </dir>
+        <dir name="e10706">
+          <document targetdoc="REPLN" baseuri="toc.htm">&e10706;</document>
+        </dir>
+        <dir name="e10707">
+          <document targetdoc="REPMA" baseuri="toc.htm">&e10707;</document>
+        </dir>
+        <dir name="e10729">
+          <document targetdoc="NLSPG" baseuri="toc.htm">&e10729;</document>
+        </dir>
+        <dir name="e10822">
+          <document targetdoc="TDPPT" baseuri="toc.htm">&e10822;</document>
+        </dir>
+        <dir name="e10831">
+          <document targetdoc="COMSC" baseuri="toc.htm">&e10831;</document>
+        </dir>
+        <dir name="e10839">
+          <document targetdoc="UNXAR" baseuri="toc.htm">&e10839;</document>
+        </dir>
+        <dir name="e10897">
+          <document targetdoc="ADMQS" baseuri="toc.htm">&e10897;</document>
+        </dir>
+        <dir name="e11013">
+          <document targetdoc="ADQUE" baseuri="toc.htm">&e11013;</document>
+        </dir>
+        <dir name="e11050">
+          <document targetdoc="HETER" baseuri="toc.htm">&e11050;</document>
+        </dir>
+        <dir name="e12862">
+          <document targetdoc="STREX" baseuri="toc.htm">&e12862;</document>
+        </dir>
+        <dir name="e16102">
+          <document targetdoc="OSTMG" baseuri="toc.htm">&e16102;</document>
+        </dir>
+        <dir name="e16508">
+          <document targetdoc="CNCPT" baseuri="toc.htm">&e16508;</document>
+        </dir>
+        <dir name="e16536">
+          <document targetdoc="SUTIL" baseuri="toc.htm">&e16536;</document>
+        </dir>
+        <dir name="e16540">
+          <document targetdoc="RATUG" baseuri="toc.htm">&e16540;</document>
+        </dir>
+        <dir name="e16542">
+          <document targetdoc="APQOS" baseuri="toc.htm">&e16542;</document>
+        </dir>
+        <dir name="e16544">
+          <document targetdoc="DVADM" baseuri="toc.htm">&e16544;</document>
+        </dir>
+        <dir name="e16545">
+          <document targetdoc="XSTRM" baseuri="toc.htm">&e16545;</document>
+        </dir>
+        <dir name="e16579">
+          <document targetdoc="DWHSG" baseuri="toc.htm">&e16579;</document>
+        </dir>
+        <dir name="e16604">
+          <document targetdoc="SQPUG" baseuri="toc.htm">&e16604;</document>
+        </dir>
+        <dir name="e16605">
+          <document targetdoc="SQPQR" baseuri="toc.htm">&e16605;</document>
+        </dir>
+        <dir name="e16638">
+          <document targetdoc="PFGRF" baseuri="toc.htm">&e16638;</document>
+        </dir>
+        <dir name="e17022">
+          <document targetdoc="SBYDB" baseuri="toc.htm">&e17022;</document>
+        </dir>
+        <dir name="e17023">
+          <document targetdoc="DGBKR" baseuri="toc.htm">&e17023;</document>
+        </dir>
+        <dir name="e17069">
+          <document targetdoc="STRMS" baseuri="toc.htm">&e17069;</document>
+        </dir>
+        <dir name="e17110">
+          <document targetdoc="REFRN" baseuri="toc.htm">&e17110;</document>
+        </dir>
+        <dir name="e17118">
+          <document targetdoc="SQLRF" baseuri="toc.htm">&e17118;</document>
+        </dir>
+        <dir name="e17119">
+          <document targetdoc="SQLQR" baseuri="toc.htm">&e17119;</document>
+        </dir>
+        <dir name="e17120">
+          <document targetdoc="ADMIN" baseuri="toc.htm">&e17120;</document>
+        </dir>
+        <dir name="e17128">
+          <document targetdoc="NEWFT" baseuri="toc.htm">&e17128;</document>
+        </dir>
+        <dir name="e17157">
+          <document targetdoc="HAOVW" baseuri="toc.htm">&e17157;</document>
+        </dir>
+        <dir name="e17222">
+          <document targetdoc="UPGRD" baseuri="toc.htm">&e17222;</document>
+        </dir>
+        <dir name="e17516">
+          <document targetdoc="TDPII" baseuri="toc.htm">&e17516;</document>
+        </dir>
+        <dir name="e17766">
+          <document targetdoc="ERRMG" baseuri="toc.htm">&e17766;</document>
+        </dir>
+      </dir>
+      <dir name="text.112">
+        <dir name="e16593">
+          <document targetdoc="CCREF" baseuri="toc.htm">&e16593;</document>
+        </dir>
+        <dir name="e16594">
+          <document targetdoc="CCAPP" baseuri="toc.htm">&e16594;</document>
+        </dir>
+      </dir>
+      <dir name="timesten.112">
+        <dir name="e13063">
+          <document targetdoc="TTINS" baseuri="toc.htm">&e13063;</document>
+        </dir>
+        <dir name="e13065">
+          <document targetdoc="TTOPR" baseuri="toc.htm">&e13065;</document>
+        </dir>
+        <dir name="e13066">
+          <document targetdoc="TTCDV" baseuri="toc.htm">&e13066;</document>
+        </dir>
+        <dir name="e13068">
+          <document targetdoc="TTJDV" baseuri="toc.htm">&e13068;</document>
+        </dir>
+        <dir name="e13069">
+          <document targetdoc="TTREF" baseuri="toc.htm">&e13069;</document>
+        </dir>
+        <dir name="e13070">
+          <document targetdoc="TTSQL" baseuri="toc.htm">&e13070;</document>
+        </dir>
+        <dir name="e13071">
+          <document targetdoc="TTERR" baseuri="toc.htm">&e13071;</document>
+        </dir>
+        <dir name="e13072">
+          <document targetdoc="TTREP" baseuri="toc.htm">&e13072;</document>
+        </dir>
+        <dir name="e13073">
+          <document targetdoc="TTCAC" baseuri="toc.htm">&e13073;</document>
+        </dir>
+        <dir name="e13074">
+          <document targetdoc="TTCLS" baseuri="toc.htm">&e13074;</document>
+        </dir>
+        <dir name="e13075">
+          <document targetdoc="TTTRB" baseuri="toc.htm">&e13075;</document>
+        </dir>
+        <dir name="e13076">
+          <document targetdoc="TTPLS" baseuri="toc.htm">&e13076;</document>
+        </dir>
+        <dir name="e13080">
+          <document targetdoc="TTREL" baseuri="toc.htm">&e13080;</document>
+        </dir>
+        <dir name="e13081">
+          <document targetdoc="OEMTT" baseuri="toc.htm">&e13081;</document>
+        </dir>
+        <dir name="e13082">
+          <document targetdoc="OEMTR" baseuri="toc.htm">&e13082;</document>
+        </dir>
+        <dir name="e14000">
+          <document targetdoc="TTPLP" baseuri="toc.htm">&e14000;</document>
+        </dir>
+        <dir name="e14261">
+          <document targetdoc="TTCIN" baseuri="toc.htm">&e14261;</document>
+        </dir>
+        <dir name="e17114">
+          <document targetdoc="TTSYS" baseuri="toc.htm">&e17114;</document>
+        </dir>
+      </dir>
+      <dir name="win.112">
+        <dir name="e10845">
+          <document targetdoc="NTQRF" baseuri="toc.htm">&e10845;</document>
+        </dir>
+        <dir name="e17724">
+          <document targetdoc="CLRNT" baseuri="toc.htm">&e17724;</document>
+        </dir>
+        <dir name="e17725">
+          <document targetdoc="NTMTS" baseuri="toc.htm">&e17725;</document>
+        </dir>
+        <dir name="e17726">
+          <document targetdoc="OLEDB" baseuri="toc.htm">&e17726;</document>
+        </dir>
+        <dir name="e17727">
+          <document targetdoc="OOFOL" baseuri="toc.htm">&e17727;</document>
+        </dir>
+        <dir name="e18485">
+          <document targetdoc="TTODP" baseuri="toc.htm">&e18485;</document>
+        </dir>
+        <dir name="e18737">
+          <document targetdoc="ASPNT" baseuri="toc.htm">&e18737;</document>
+        </dir>
+        <dir name="e18754">
+          <document targetdoc="ODPNT" baseuri="toc.htm">&e18754;</document>
+        </dir>
+      </dir>
+    </dir>
+  </sitemap>
+</targetset>

@@ -1,0 +1,3 @@
+javac AlgorithmsDemo.java
+java AlgorithmsDemo
+pause

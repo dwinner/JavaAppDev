@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="UIControlCSSTest2.jnlp">
+  <information>
+    <title>UIControlCSSTest2</title>
+    <vendor>oracle_pr1</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources os="Windows">
+    <jfx:javafx-runtime version="2.0+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="UIControlCSSTest2.jar" size="23930" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="UIControlCSSTest2" />
+  <jfx:javafx-desc  width="800" height="600" main-class="uicontrolcsstest2.UIControlCSSTest2"  name="UIControlCSSTest2" />
+  <update check="background"/>
+</jnlp>

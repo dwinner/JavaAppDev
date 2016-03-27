@@ -1,0 +1,3 @@
+javac CheckBoxRendererTest.java
+java CheckBoxRendererTest
+pause

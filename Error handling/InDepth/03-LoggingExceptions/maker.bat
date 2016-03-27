@@ -1,0 +1,3 @@
+javac LoggingExceptions.java
+java LoggingExceptions
+pause

@@ -1,0 +1,2 @@
+javac ColorDemo.java
+pause

@@ -1,0 +1,15 @@
+    Аудио-потоки в Java.
+    
+AudioClipIFace:         Проигрывание MIDI-последовательности через классы Апплета;
+
+AudioFileInfo:          Получение META-информации о mp3-файле;
+
+AudioFilePlay:          Проигрывание аудио-файла формата WAV;
+
+BufferedAudioStreams:   Буферизация аудио-потока;
+
+CreateMIDISequence:     Создание MIDI-последовательностей;
+
+PlayMidiSequence:       Проигрывание MIDI-последовательностей;
+
+SimpleMP3Play:          Простое проигрывание mp3-файла;

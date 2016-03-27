@@ -1,0 +1,3 @@
+javac UsingTableColumnModel.java
+java UsingTableColumnModel
+pause

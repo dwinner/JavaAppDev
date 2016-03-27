@@ -1,0 +1,3 @@
+javac HeadersAndCorners.java
+java HeadersAndCorners
+pause

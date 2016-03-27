@@ -1,0 +1,4 @@
+javac LockingMappedFiles.java
+cls
+java LockingMappedFiles
+pause

@@ -1,0 +1,3 @@
+javac BeanInfoAnnotationProcessor.java
+javac -XprintRounds -processor BeanInfoAnnotationProcessor com/horstmann/corejava/ChartBean.java
+pause

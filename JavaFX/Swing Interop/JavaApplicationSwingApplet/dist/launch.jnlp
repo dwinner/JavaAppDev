@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp xmlns:jfx="http://javafx.com"  href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>JavaApplicationSwingApplet</title>
+        <vendor>тимур</vendor>
+        <homepage href=""/>
+        <description>JavaApplicationSwingApplet</description>
+        <description kind="short">JavaApplicationSwingApplet</description>
+        
+        
+    <offline-allowed/>
+</information>
+    <update check="background"/>
+    <resources os="Windows" arch="x86">
+        <jfx:javafx-runtime version="2.0+"    
+                href="http://download.oracle.com/otn-pub/java/
+                    javafx/javafx-windows-i586__Vlatest.exe"/>
+    </resources>
+    <resources os="Windows" arch="x64">
+        <jfx:javafx-runtime version="2.0+"                  
+                href="http://download.oracle.com/otn-pub/java/
+                    javafx/javafx-windows-x64__Vlatest.exe"/>
+    </resources>  
+
+    <resources>
+        <j2se version="1.6+"/>
+        <jar href="JavaApplicationSwingApplet.jar" main="true"/>
+        
+        
+    <jar href="lib/jfxrt.jar"/>
+</resources>
+    <applet-desc height="600" main-class="main.JAppletWithJavaFX" name="JavaApplicationSwingApplet" width="600">
+        
+    </applet-desc>
+</jnlp>

@@ -1,0 +1,3 @@
+javac ClassBrowserTest.java
+java ClassBrowserTest
+pause

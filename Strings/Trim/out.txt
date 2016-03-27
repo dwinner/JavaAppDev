@@ -1,0 +1,192 @@
+Classfile /d:/HiTech/Java/Strings/Trim/UseTrim.class
+  Last modified 03.01.2012; size 1192 bytes
+  MD5 checksum e63e9245cea94f51aa791adb16d56738
+  Compiled from "UseTrim.java"
+public class UseTrim
+  SourceFile: "UseTrim.java"
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #24.#38        //  java/lang/Object."<init>":()V
+   #2 = Class              #39            //  java/io/BufferedReader
+   #3 = Class              #40            //  java/io/InputStreamReader
+   #4 = Fieldref           #41.#42        //  java/lang/System.in:Ljava/io/InputStream;
+   #5 = Methodref          #3.#43         //  java/io/InputStreamReader."<init>":(Ljava/io/InputStream;)V
+   #6 = Methodref          #2.#44         //  java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+   #7 = Fieldref           #41.#45        //  java/lang/System.out:Ljava/io/PrintStream;
+   #8 = String             #46            //  Enter 'stop' to quit.
+   #9 = Methodref          #47.#48        //  java/io/PrintStream.println:(Ljava/lang/String;)V
+  #10 = String             #49            //  Enter State: 
+  #11 = Methodref          #2.#50         //  java/io/BufferedReader.readLine:()Ljava/lang/String;
+  #12 = Methodref          #51.#52        //  java/lang/String.trim:()Ljava/lang/String;
+  #13 = String             #53            //  Illinois
+  #14 = Methodref          #51.#54        //  java/lang/String.equals:(Ljava/lang/Object;)Z
+  #15 = String             #55            //  Capital is Springfield.
+  #16 = String             #56            //  Missouri
+  #17 = String             #57            //  Capital is Jefferson City.
+  #18 = String             #58            //  California
+  #19 = String             #59            //  Capital is Sacramento.
+  #20 = String             #60            //  Washington
+  #21 = String             #61            //  Capital is Olympia.
+  #22 = String             #62            //  stop
+  #23 = Class              #63            //  UseTrim
+  #24 = Class              #64            //  java/lang/Object
+  #25 = Utf8               <init>
+  #26 = Utf8               ()V
+  #27 = Utf8               Code
+  #28 = Utf8               LineNumberTable
+  #29 = Utf8               main
+  #30 = Utf8               ([Ljava/lang/String;)V
+  #31 = Utf8               StackMapTable
+  #32 = Class              #39            //  java/io/BufferedReader
+  #33 = Class              #65            //  java/lang/String
+  #34 = Utf8               Exceptions
+  #35 = Class              #66            //  java/io/IOException
+  #36 = Utf8               SourceFile
+  #37 = Utf8               UseTrim.java
+  #38 = NameAndType        #25:#26        //  "<init>":()V
+  #39 = Utf8               java/io/BufferedReader
+  #40 = Utf8               java/io/InputStreamReader
+  #41 = Class              #67            //  java/lang/System
+  #42 = NameAndType        #68:#69        //  in:Ljava/io/InputStream;
+  #43 = NameAndType        #25:#70        //  "<init>":(Ljava/io/InputStream;)V
+  #44 = NameAndType        #25:#71        //  "<init>":(Ljava/io/Reader;)V
+  #45 = NameAndType        #72:#73        //  out:Ljava/io/PrintStream;
+  #46 = Utf8               Enter 'stop' to quit.
+  #47 = Class              #74            //  java/io/PrintStream
+  #48 = NameAndType        #75:#76        //  println:(Ljava/lang/String;)V
+  #49 = Utf8               Enter State: 
+  #50 = NameAndType        #77:#78        //  readLine:()Ljava/lang/String;
+  #51 = Class              #65            //  java/lang/String
+  #52 = NameAndType        #79:#78        //  trim:()Ljava/lang/String;
+  #53 = Utf8               Illinois
+  #54 = NameAndType        #80:#81        //  equals:(Ljava/lang/Object;)Z
+  #55 = Utf8               Capital is Springfield.
+  #56 = Utf8               Missouri
+  #57 = Utf8               Capital is Jefferson City.
+  #58 = Utf8               California
+  #59 = Utf8               Capital is Sacramento.
+  #60 = Utf8               Washington
+  #61 = Utf8               Capital is Olympia.
+  #62 = Utf8               stop
+  #63 = Utf8               UseTrim
+  #64 = Utf8               java/lang/Object
+  #65 = Utf8               java/lang/String
+  #66 = Utf8               java/io/IOException
+  #67 = Utf8               java/lang/System
+  #68 = Utf8               in
+  #69 = Utf8               Ljava/io/InputStream;
+  #70 = Utf8               (Ljava/io/InputStream;)V
+  #71 = Utf8               (Ljava/io/Reader;)V
+  #72 = Utf8               out
+  #73 = Utf8               Ljava/io/PrintStream;
+  #74 = Utf8               java/io/PrintStream
+  #75 = Utf8               println
+  #76 = Utf8               (Ljava/lang/String;)V
+  #77 = Utf8               readLine
+  #78 = Utf8               ()Ljava/lang/String;
+  #79 = Utf8               trim
+  #80 = Utf8               equals
+  #81 = Utf8               (Ljava/lang/Object;)Z
+{
+  public UseTrim();
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0       
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return        
+      LineNumberTable:
+        line 4: 0
+
+  public static void main(java.lang.String[]) throws java.io.IOException;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=3, args_size=1
+         0: new           #2                  // class java/io/BufferedReader
+         3: dup           
+         4: new           #3                  // class java/io/InputStreamReader
+         7: dup           
+         8: getstatic     #4                  // Field java/lang/System.in:Ljava/io/InputStream;
+        11: invokespecial #5                  // Method java/io/InputStreamReader."<init>":(Ljava/io/InputStream;)V
+        14: invokespecial #6                  // Method java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+        17: astore_1      
+        18: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        21: ldc           #8                  // String Enter 'stop' to quit.
+        23: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        26: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        29: ldc           #10                 // String Enter State: 
+        31: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        34: aload_1       
+        35: invokevirtual #11                 // Method java/io/BufferedReader.readLine:()Ljava/lang/String;
+        38: astore_2      
+        39: aload_2       
+        40: invokevirtual #12                 // Method java/lang/String.trim:()Ljava/lang/String;
+        43: astore_2      
+        44: aload_2       
+        45: ldc           #13                 // String Illinois
+        47: invokevirtual #14                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        50: ifeq          64
+        53: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        56: ldc           #15                 // String Capital is Springfield.
+        58: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        61: goto          121
+        64: aload_2       
+        65: ldc           #16                 // String Missouri
+        67: invokevirtual #14                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        70: ifeq          84
+        73: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        76: ldc           #17                 // String Capital is Jefferson City.
+        78: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        81: goto          121
+        84: aload_2       
+        85: ldc           #18                 // String California
+        87: invokevirtual #14                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        90: ifeq          104
+        93: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        96: ldc           #19                 // String Capital is Sacramento.
+        98: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       101: goto          121
+       104: aload_2       
+       105: ldc           #20                 // String Washington
+       107: invokevirtual #14                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+       110: ifeq          121
+       113: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       116: ldc           #21                 // String Capital is Olympia.
+       118: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       121: aload_2       
+       122: ldc           #22                 // String stop
+       124: invokevirtual #14                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+       127: ifeq          34
+       130: return        
+      LineNumberTable:
+        line 9: 0
+        line 12: 18
+        line 13: 26
+        line 16: 34
+        line 17: 39
+        line 18: 44
+        line 20: 53
+        line 22: 64
+        line 24: 73
+        line 26: 84
+        line 28: 93
+        line 30: 104
+        line 32: 113
+        line 36: 121
+        line 37: 130
+      StackMapTable: number_of_entries = 5
+           frame_type = 252 /* append */
+             offset_delta = 34
+        locals = [ class java/io/BufferedReader ]
+           frame_type = 252 /* append */
+             offset_delta = 29
+        locals = [ class java/lang/String ]
+           frame_type = 19 /* same */
+           frame_type = 19 /* same */
+           frame_type = 16 /* same */
+
+    Exceptions:
+      throws java.io.IOException
+}

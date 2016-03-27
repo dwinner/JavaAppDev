@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/SendMe/DesignPatterns/CommandTest/src/command/Location.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/CommandTest/src/command/LocationImpl.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/CommandTest/src/command/LocationEditor.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/CommandTest/src/command/Command.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/CommandTest/src/command/UndoableCommand.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/CommandTest/src/command/Contact.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/CommandTest/src/command/ContactImpl.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/CommandTest/src/command/Appointment.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/CommandTest/src/command/ChangeLocationCommand.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/CommandTest/src/command/CommandGui.java</file>
+    </open-files>
+</project-private>

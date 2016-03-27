@@ -1,0 +1,3 @@
+javac ExceptionMethods.java
+java ExceptionMethods
+pause

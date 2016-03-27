@@ -1,0 +1,3 @@
+javac DialogWindows.java
+java DialogWindows
+pause

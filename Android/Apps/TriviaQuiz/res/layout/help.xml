@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkgrnd"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ImageView_Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/quizicon" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="fill_horizontal|center"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="@string/help"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/screen_title_size" >
+        </TextView>
+
+        <ImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ImageView_Header2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/quizicon" >
+        </ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TextView_HelpText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:autoLink="all"
+        android:bufferType="spannable"
+        android:drawablePadding="5px"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="25px"
+        android:isScrollContainer="true"
+        android:linksClickable="true"
+        android:padding="@dimen/help_text_padding"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        android:textColor="@color/title_color"
+        android:textColorLink="@color/logo_color"
+        android:textSize="@dimen/help_text_size"
+        android:textStyle="italic" >
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,3 @@
+javac MultipleReturns.java
+java MultipleReturns
+pause

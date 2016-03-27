@@ -1,0 +1,3 @@
+javac MsgDialogDemo.java
+java MsgDialogDemo
+pause

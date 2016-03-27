@@ -1,0 +1,2 @@
+javac Ellipses.java
+pause

@@ -1,0 +1,3 @@
+javac CircularArrayQueueTest.java
+java CircularArrayQueueTest
+pause

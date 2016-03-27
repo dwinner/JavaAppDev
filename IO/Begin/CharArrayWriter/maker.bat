@@ -1,0 +1,3 @@
+javac CharArrayWriterDemo.java
+java CharArrayWriterDemo
+pause

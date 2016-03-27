@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/StartMenuItemId"
+            android:icon="@android:drawable/ic_media_play"
+            android:title="@string/menu_item_start"/>
+    <item
+            android:id="@+id/SettingsMenuItemId"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="@string/menu_item_settings"/>
+    <item
+            android:id="@+id/AboutMenuItemId"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="@string/menu_item_about"/>
+
+</menu>

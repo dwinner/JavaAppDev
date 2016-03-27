@@ -1,0 +1,3 @@
+javac CustomListSelection.java
+java CustomListSelection
+pause

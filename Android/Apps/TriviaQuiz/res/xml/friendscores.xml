@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scores>
+
+    <score
+        rank="101"
+        score="12345"
+        username="BAG" />
+    <score
+        rank="201"
+        score="12344"
+        username="BET" />
+    <score
+        rank="3222"
+        score="12339"
+        username="SIM" />
+    <score
+        rank="44444"
+        score="12335"
+        username="TUG" />
+    <score
+        rank="555555"
+        score="12245"
+        username="RUG" />
+    <score
+        rank="6666666"
+        score="12222"
+        username="YUK" />
+    <score
+        rank="77777777"
+        score="11667"
+        username="YAK" />
+    <score
+        rank="888888888"
+        score="11345"
+        username="WAH" />
+    <score
+        rank="9999999999"
+        score="11234"
+        username="FOG" />
+    <score
+        rank="100000000000"
+        score="10000"
+        username="LUG" />
+
+</scores>

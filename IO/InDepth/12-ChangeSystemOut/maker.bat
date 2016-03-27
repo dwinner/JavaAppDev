@@ -1,0 +1,3 @@
+javac ChangeSystemOut.java
+java ChangeSystemOut
+pause

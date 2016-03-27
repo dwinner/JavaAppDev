@@ -1,0 +1,3 @@
+javac SliderDefaultModel.java
+java SliderDefaultModel
+pause

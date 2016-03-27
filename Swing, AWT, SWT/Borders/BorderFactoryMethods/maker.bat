@@ -1,0 +1,2 @@
+javac UsingBorderFactory.java
+java UsingBorderFactory

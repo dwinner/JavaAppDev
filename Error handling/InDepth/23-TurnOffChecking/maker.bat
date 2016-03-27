@@ -1,0 +1,3 @@
+javac TurnOffChecking.java
+java TurnOffChecking
+pause

@@ -1,0 +1,3 @@
+javac EventTracerTest.java
+java EventTracerTest
+pause

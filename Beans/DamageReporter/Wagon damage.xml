@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_02" class="java.beans.XMLDecoder">
+ <object class="damagereporter.DamageReport">
+  <void property="carType">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>damagereporter.DamageReport$CarType</class>
+    <string>WAGON</string>
+   </object>
+  </void>
+  <void property="rentalRecord">
+   <string>Wagon damage</string>
+  </void>
+  <void method="click">
+   <object class="java.awt.geom.Point2D$Double">
+    <double>153.0</double>
+    <double>66.0</double>
+   </object>
+  </void>
+  <void method="click">
+   <object class="java.awt.geom.Point2D$Double">
+    <double>103.0</double>
+    <double>90.0</double>
+   </object>
+  </void>
+ </object>
+</java>

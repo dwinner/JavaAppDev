@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model modelID="fxc" modelVersion="69" rootInstance="DesignModel1" version="1">
+    <Instance classID="DesignModel" instanceID="DesignModel1">
+        <List name="stateVariables">
+            <Item value="inst:StateVariableModel1"/>
+        </List>
+        <List name="resources">
+            <Item value="inst:ImageModel1"/>
+            <Item value="inst:FontModel1"/>
+            <Item value="inst:ListCellFactoryModel1"/>
+        </List>
+        <List name="dataSources">
+            <Item value="inst:HTTPDataSourceModel1"/>
+        </List>
+        <List name="templates"/>
+        <List name="customClasses"/>
+        <Reference name="scene" value="inst:SceneModel1"/>
+        <Reference name="designWidth" value="flt:240.0"/>
+        <Reference name="designHeight" value="flt:320.0"/>
+        <Reference name="designProfile" value="profile:MOBILE"/>
+        <Reference name="synchronizeDeviceAndSceneSizes" value="bool:true"/>
+    </Instance>
+    <Instance classID="StateVariableModel" instanceID="StateVariableModel1">
+        <Reference name="instanceName" value="str:currentState"/>
+        <List name="states">
+            <Item value="inst:StateModel1"/>
+            <Item value="inst:StateModel2"/>
+        </List>
+        <Reference name="startState" value="inst:StateModel1"/>
+        <Reference name="stateChangeType" value="statechange:PAUSE_AND_PLAY_FROM_START"/>
+        <Reference name="doNotAnimateOnce" value="bool:true"/>
+        <Reference name="defaultInterpolator" value="interpolator:DISCRETE"/>
+        <Reference name="defaultDuration" value="int:0"/>
+        <Reference name="onTransitionFinished" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel1">
+        <Reference name="stateName" value="str:Search"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel2">
+        <Reference name="stateName" value="str:List"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="ImageModel" instanceID="ImageModel1">
+        <Reference name="instanceName" value="str:image"/>
+        <Reference name="url" value="prop2:7,NOT_SET,4,null,4,null,52,anim:0,DISCRETE,str:{__DIR__}resources/favicon16.png,4,null,"/>
+    </Instance>
+    <Instance classID="FontModel" instanceID="FontModel1">
+        <Reference name="instanceName" value="str:font"/>
+        <Reference name="size" value="prop2:7,NOT_SET,4,null,4,null,24,anim:0,DISCRETE,flt:16.0,4,null,"/>
+    </Instance>
+    <Instance classID="ListCellFactoryModel" instanceID="ListCellFactoryModel1">
+        <Reference name="instanceName" value="str:listCellFactory"/>
+        <Reference name="listCell" value="inst:ListCellModel1"/>
+    </Instance>
+    <Instance classID="ListCellModel" instanceID="ListCellModel1">
+        <Reference name="instanceName" value="str:listCell"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="node" value="inst:LabelModel1"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel1">
+        <Reference name="instanceName" value="str:listCellLabel"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,27,str:bind not listCell.empty,4,null,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,77,str:bind (listCell.item as org.netbeans.javafx.datasrc.Record).getString(&quot;d&quot;),4,null,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="HTTPDataSourceModel" instanceID="HTTPDataSourceModel1">
+        <List name="dataSources"/>
+        <Reference name="instanceName" value="str:httpDataSource"/>
+        <Reference name="autoRefresh" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel2,26,anim:0,DISCRETE,bool:false,"/>
+        <Reference name="metaData" value="null"/>
+        <Reference name="url" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,str:,4,null,"/>
+        <Reference name="parser" value="prop2:7,NOT_SET,4,null,4,null,20,anim:,,dsparser:JSON,4,null,"/>
+    </Instance>
+    <Instance classID="SceneModel" instanceID="SceneModel1">
+        <Reference name="instanceName" value="str:scene"/>
+        <List name="content">
+            <Item value="inst:ImageViewModel1"/>
+            <Item value="inst:LabelModel2"/>
+            <Item value="inst:VBoxModel1"/>
+            <Item value="inst:VBoxModel2"/>
+        </List>
+        <Reference name="width" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:240.0,4,null,"/>
+        <Reference name="height" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:320.0,4,null,"/>
+        <Reference name="generateSceneInstance" value="bool:true"/>
+        <Reference name="generateGetDesignSceneFunction" value="bool:true"/>
+        <Reference name="generateLayoutXYForRootLevelComponents" value="bool:true"/>
+    </Instance>
+    <Instance classID="ImageViewModel" instanceID="ImageViewModel1">
+        <Reference name="instanceName" value="str:imageView"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,23,anim:0,DISCRETE,flt:6.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,23,anim:0,DISCRETE,flt:6.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="image" value="prop2:7,NOT_SET,4,null,4,null,32,anim:0,DISCRETE,inst:ImageModel1,4,null,"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel2">
+        <Reference name="instanceName" value="str:label"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,24,anim:0,DISCRETE,flt:28.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,23,anim:0,DISCRETE,flt:6.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,37,anim:0,DISCRETE,str:Delicious Browser,4,null,"/>
+        <Reference name="font" value="prop2:7,NOT_SET,4,null,4,null,31,anim:0,DISCRETE,inst:FontModel1,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="VBoxModel" instanceID="VBoxModel1">
+        <Reference name="instanceName" value="str:vbox"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel1,25,anim:800,EASEBOTH,flt:0.0,16,inst:StateModel2,27,anim:800,EASEBOTH,flt:-96.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel1,25,anim:800,EASEBOTH,flt:0.0,16,inst:StateModel2,27,anim:800,EASEBOTH,flt:200.0,"/>
+        <Reference name="scaleX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel1,25,anim:800,EASEBOTH,flt:1.0,16,inst:StateModel2,25,anim:800,EASEBOTH,flt:0.1,"/>
+        <Reference name="scaleY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel1,25,anim:800,EASEBOTH,flt:1.0,16,inst:StateModel2,25,anim:800,EASEBOTH,flt:0.1,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,23,anim:0,DISCRETE,flt:6.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,24,anim:0,DISCRETE,flt:40.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:228.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <List name="content">
+            <Item value="inst:LabelModel3"/>
+            <Item value="inst:TextBoxModel1"/>
+            <Item value="inst:LabelModel4"/>
+            <Item value="inst:TextBoxModel2"/>
+            <Item value="inst:ButtonModel1"/>
+        </List>
+        <Reference name="spacing" value="prop2:7,NOT_SET,4,null,4,null,23,anim:0,DISCRETE,flt:6.0,4,null,"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel3">
+        <Reference name="instanceName" value="str:userTitle"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,24,anim:0,DISCRETE,str:User,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="TextBoxModel" instanceID="TextBoxModel1">
+        <Reference name="instanceName" value="str:user"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,bool:true,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:228.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,27,anim:,,str:showButtonAction,4,null,"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel4">
+        <Reference name="instanceName" value="str:tagTitle"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,47,anim:0,DISCRETE,str:Tags (comma separated list),4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="TextBoxModel" instanceID="TextBoxModel2">
+        <Reference name="instanceName" value="str:tag"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:228.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,27,anim:,,str:showButtonAction,4,null,"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel1">
+        <Reference name="instanceName" value="str:showButton"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,bool:true,4,null,"/>
+        <Reference name="layoutInfoHPos" value="prop2:7,NOT_SET,4,null,4,null,26,anim:0,DISCRETE,hpos:RIGHT,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,24,anim:0,DISCRETE,str:Show,4,null,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,27,anim:,,str:showButtonAction,4,null,"/>
+    </Instance>
+    <Instance classID="VBoxModel" instanceID="VBoxModel2">
+        <Reference name="instanceName" value="str:vbox2"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,bool:true,4,null,"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:100.0,24,inst:StateVariableModel1,16,inst:StateModel1,27,anim:800,EASEBOTH,flt:100.0,16,inst:StateModel2,25,anim:800,EASEBOTH,flt:0.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:140.0,24,inst:StateVariableModel1,16,inst:StateModel1,27,anim:800,EASEBOTH,flt:140.0,16,inst:StateModel2,25,anim:800,EASEBOTH,flt:0.0,"/>
+        <Reference name="scaleX" value="prop2:7,NOT_SET,4,null,4,null,23,anim:0,DISCRETE,flt:0.1,24,inst:StateVariableModel1,16,inst:StateModel1,25,anim:800,EASEBOTH,flt:0.1,16,inst:StateModel2,25,anim:800,EASEBOTH,flt:1.0,"/>
+        <Reference name="scaleY" value="prop2:7,NOT_SET,4,null,4,null,23,anim:0,DISCRETE,flt:0.1,24,inst:StateVariableModel1,16,inst:StateModel1,25,anim:800,EASEBOTH,flt:0.1,16,inst:StateModel2,25,anim:800,EASEBOTH,flt:1.0,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,23,anim:0,DISCRETE,flt:6.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,24,anim:0,DISCRETE,flt:40.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <List name="content">
+            <Item value="inst:ListViewModel1"/>
+            <Item value="inst:HyperlinkModel1"/>
+            <Item value="inst:HBoxModel1"/>
+        </List>
+        <Reference name="spacing" value="prop2:7,NOT_SET,4,null,4,null,23,anim:0,DISCRETE,flt:6.0,4,null,"/>
+    </Instance>
+    <Instance classID="ListViewModel" instanceID="ListViewModel1">
+        <Reference name="instanceName" value="str:listView"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,bool:true,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:228.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:180.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="items" value="prop2:7,NOT_SET,4,null,44,str:bind httpDataSource.getRecordSet().all(),4,null,4,null,"/>
+        <Reference name="cellFactory" value="prop2:7,NOT_SET,4,null,4,null,33,anim:,,inst:ListCellFactoryModel1,4,null,"/>
+    </Instance>
+    <Instance classID="HyperlinkModel" instanceID="HyperlinkModel1">
+        <Reference name="instanceName" value="str:hyperlink"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,bool:true,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel2,16,anim:,,flt:228.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,158,str:bind if (listView.selectedItem !=null) (listView.selectedItem as org.netbeans.javafx.datasrc.Record).getString(&quot;u&quot;) else &quot;&lt;Click on items to see the URL&gt;&quot;,4,null,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="HBoxModel" instanceID="HBoxModel1">
+        <Reference name="instanceName" value="str:hbox"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,bool:true,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <List name="content">
+            <Item value="inst:ButtonModel2"/>
+            <Item value="inst:ProgressIndicatorModel1"/>
+        </List>
+        <Reference name="spacing" value="prop2:7,NOT_SET,4,null,4,null,23,anim:0,DISCRETE,flt:6.0,4,null,"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel2">
+        <Reference name="instanceName" value="str:backButton"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,bool:true,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,str:Back,4,null,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,27,anim:,,str:backButtonAction,4,null,"/>
+    </Instance>
+    <Instance classID="ProgressIndicatorModel" instanceID="ProgressIndicatorModel1">
+        <Reference name="instanceName" value="str:progressIndicator"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,36,str:bind httpDataSource.fetchingData,4,null,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:30.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:30.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+    </Instance>
+</Model>

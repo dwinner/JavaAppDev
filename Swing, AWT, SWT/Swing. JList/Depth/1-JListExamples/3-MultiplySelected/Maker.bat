@@ -1,0 +1,3 @@
+javac MultiRangeList.java
+java MultiRangeList
+pause

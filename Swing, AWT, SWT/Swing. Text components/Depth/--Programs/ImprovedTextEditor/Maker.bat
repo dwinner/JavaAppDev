@@ -1,0 +1,3 @@
+javac SimpleTextEditor.java
+java SimpleTextEditor
+pause

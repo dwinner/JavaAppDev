@@ -1,0 +1,3 @@
+javac TreeEventDemo.java
+java TreeEventDemo
+pause

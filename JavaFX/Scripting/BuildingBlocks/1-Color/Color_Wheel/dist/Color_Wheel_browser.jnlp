@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/D%3A/web/Java.IDE/JavaFX/BuildingBlocks/1-Color/Color_Wheel/dist/" href="Color_Wheel_browser.jnlp">
+    <information>
+        <title>Color_Wheel</title>
+        <vendor>${application.vendor}</vendor>
+        <homepage href="http://localhost:8082/servlet/org.netbeans.modules.javafx.project.JnlpDownloadServlet/D%3A/web/Java.IDE/JavaFX/BuildingBlocks/1-Color/Color_Wheel/dist/"/>
+        <description>Color_Wheel</description>
+        <icon kind="splash" href="http://dl.javafx.com/1.3/splash.png"/>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="Color_Wheel.jar" main="true" size="10227"/>
+    </resources>
+    <applet-desc name="Color_Wheel" main-class="com.sun.javafx.runtime.adapter.Applet" progress-class="com.javafx.progressbar.ProgressManager" width="200" height="200">
+        <param name="MainJavaFXScript" value="color.ColorWheel"/>
+    </applet-desc>
+    <update check="always"/>
+</jnlp>

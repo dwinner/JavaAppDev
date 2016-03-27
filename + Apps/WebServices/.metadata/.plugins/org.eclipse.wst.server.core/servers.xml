@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="1" deployment_targets="osbtest_cluster_01," hostname="lptest11.aztpa.ru" id="Oracle WebLogic Server 11gR1 PatchSet 4 at [lptest11.aztpa.ru]" name="Oracle WebLogic Server 11gR1 PatchSet 4 at [lptest11.aztpa.ru]" runtime-id="Oracle WebLogic Server 11gR1 PatchSet 4" server-type="com.bea.weblogic1035.server" server-type-id="com.bea.weblogic1035.server" start-timeout="480" stop-timeout="240" timestamp="22" weblogic_domain_path="" weblogic_host_name="lptest11.aztpa.ru" weblogic_is_remote="true" weblogic_password="8bdf5b8697751d62cc0f9b8627504046" weblogic_port="10101" weblogic_use_bootprop="false" weblogic_use_config_xml="false" weblogic_username="Vinevtsev.D">
+    <list key="modules"/>
+  </server>
+</servers>

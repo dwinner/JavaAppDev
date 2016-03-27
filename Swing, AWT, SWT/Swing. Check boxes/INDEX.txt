@@ -1,0 +1,9 @@
+    Компоненты флажков опций.
+    
+CheckBoxDemo:       Демонстрация работы с флажками опций;
+
+CheckBoxes:         Использование флажков JCheckBox;
+
+CheckBoxesStates:   События компонентов JCheckBox;
+
+CheckBoxTest:       Тест использования компонента JCheckBox;

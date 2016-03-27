@@ -1,0 +1,3 @@
+javac DataExchangeTest.java
+java DataExchangeTest
+pause

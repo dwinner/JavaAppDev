@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="LinkingRemoteContent.jnlp">
+  <information>
+    <title>LinkingRemoteContent</title>
+    <vendor>JavaFx</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.0+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Dhttp.proxyHost=aztpadsl.aztpa.ru -Dhttp.proxyPort=8080 "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="LinkingRemoteContent.jar" size="10653619" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="LinkingRemoteContent" >
+    <param name="requiredFXVersion" value="2.0+"/>
+  </applet>
+  <jfx:javafx-desc  width="800" height="600" main-class="linkingremotecontent.LinkingRemoteContent"  name="LinkingRemoteContent" />
+  <update check="background"/>
+</jnlp>

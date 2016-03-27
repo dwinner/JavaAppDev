@@ -1,0 +1,3 @@
+javac PreProcessMouse.java
+java PreProcessMouse
+pause

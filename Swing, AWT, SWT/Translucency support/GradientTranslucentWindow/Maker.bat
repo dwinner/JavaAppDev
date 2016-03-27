@@ -1,0 +1,3 @@
+javac GradientTranslucentWindow.java
+java GradientTranslucentWindow
+pause

@@ -1,0 +1,3 @@
+javac SizedFrameTest.java
+java SizedFrameTest
+pause

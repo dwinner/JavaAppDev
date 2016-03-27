@@ -1,0 +1,3 @@
+javac ProgressBarTest.java
+java ProgressBarTest
+pause

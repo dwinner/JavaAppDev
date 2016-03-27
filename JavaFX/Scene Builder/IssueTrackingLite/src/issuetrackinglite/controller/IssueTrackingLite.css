@@ -1,0 +1,14 @@
+.myClass
+{
+
+    font-family: fantasy;
+    font-style: inherit;
+    font-weight: bolder;
+    font-variant: normal;
+    color: #009999;
+    background-color: white;
+    background-repeat: no-repeat;
+    text-align: justify;
+    direction: inherit;
+    line-height: normal;
+}

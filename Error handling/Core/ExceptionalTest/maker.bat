@@ -1,0 +1,3 @@
+javac ExceptionalTest.java
+java ExceptionalTest
+pause

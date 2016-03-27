@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgrnd"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView_FavPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_button_favoriteplace"
+        android:textSize="@dimen/help_text_size"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/EditText_FavPlaceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:inputType="text"
+            android:maxLines="1"
+            android:text="@string/settings_favplace_currentlocation"
+            android:width="@dimen/fav_place_textbox_size" />
+
+        <Button
+            android:id="@+id/Button_MapIt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/EditText_FavPlaceName"
+            android:text="@string/settings_button_favplace_map" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TextView_FavPlaceCoords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_favplace_coords"
+        android:textSize="@dimen/help_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView_FavPlaceCoords_Info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/help_text_size"
+        android:textStyle="bold" />
+
+</LinearLayout>

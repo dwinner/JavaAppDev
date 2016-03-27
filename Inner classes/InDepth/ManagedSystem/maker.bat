@@ -1,0 +1,3 @@
+javac GreenhouseController.java
+java GreenhouseController
+pause

@@ -1,0 +1,27 @@
+    Диалоговые компоненты Swing.
+    
+ButtonsOptionDialog:    Использование метода showOptionDialog() для создания диалогового окна;
+ColorChooserDemo:       Пример использования класса JColorChooser;
+ColorChooserSimple:     Выбор цвета с помощью JColorChooser;
+ColorChooserTest:       Варианты выбора цвета;
+CompareFilesProgram:    Программа сравнения файлов;
+ConfirmDialog:          Диалог подтверждения от пользователя;
+ConfirmDialogs          Стандартные окна подтверждения;
+CustomFileView:         Внешний вид файлов в компоненте JFileChooser;
+DataExchangeTest:       Обмен данными в диалоговых окнах;
+DialogTest:             Тест диалоговых окон;
+DialogWindows:          Модальные и немодальные диалоговые окна в Swing;
+FileChooserDemo:        Демонстрация возможностей выбора файлов;
+FileChooserDialog:      Пример, демонстрирующий использование класса JFileChooser;
+FileChooserTestNEW:     Тест выборов файлов, предпросмотр, фильтрация;
+FileChooserTestOLD:     Тест выборов файлов, предпросмотр, фильтрация (старая версия);
+FileFilterUsing:        Использование фильтра файлов;
+FilteringFiles:         Фильтры файлов в компоненте JFileChooser;
+InputDialogDemo:        Простое диалоговое окно для ввода строки текста;
+InputDialogs:           Стандартные диалоговые окна JOptionPane для ввода данных;
+JDialogDemo:            Пример создания простого диалогового окна с помощью класса JDialog;
+MessageDialogs:         Методы JOptionPane для вывода сообщений;
+OptionDialogTest:       Детали и характеристики диалоговых окон;
+OptionPane:             Пример использования компонента JOptionPane;
+PreviewingFiles:        Предварительный просмотр файлов в компоненте JFileChooser;
+SimpleFileChooser:      Создание простых диалоговых окно открытия и сохранения файлов;

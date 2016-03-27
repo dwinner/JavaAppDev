@@ -1,0 +1,3 @@
+javac FocusPolicyTest.java
+java FocusPolicyTest
+pause

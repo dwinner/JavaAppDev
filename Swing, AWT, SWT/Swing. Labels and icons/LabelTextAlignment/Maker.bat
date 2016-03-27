@@ -1,0 +1,3 @@
+javac AlignLabelDemo.java
+java AlignLabelDemo
+pause

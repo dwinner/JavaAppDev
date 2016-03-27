@@ -1,0 +1,30 @@
+1: //: BasicFileOutput.java
+2: import java.io.*;
+3: 
+4: public class BasicFileOutput
+5: {
+6:     static String file = "BasicFileOutput.out";
+7:   
+8:     public static void main(String[] args)
+9:         throws IOException
+10:     {
+11:         BufferedReader in = new BufferedReader(
+12:             new StringReader(
+13:                 BufferedInputFile.read("BasicFileOutput.java")
+14:             )
+15:         );
+16:         PrintWriter out = new PrintWriter(
+17:             new BufferedWriter(
+18:                 new FileWriter(file)
+19:             )
+20:         );
+21:         int lineCount = 1;
+22:         String s;
+23:         while ((s = in.readLine()) != null )
+24:             out.println(lineCount++ + ": " + s);
+25:         out.close();
+26:         // Вывод содержимого файла:
+27:         System.out.println(BufferedInputFile.read(file));
+28:     }
+29: }
+30: /* (Execute to see output) *///:~

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model modelID="fxc" modelVersion="69" rootInstance="DesignModel1" version="1">
+    <Instance classID="DesignModel" instanceID="DesignModel1">
+        <List name="stateVariables">
+            <Item value="inst:StateVariableModel1"/>
+            <Item value="inst:StateVariableModel2"/>
+            <Item value="inst:StateVariableModel3"/>
+        </List>
+        <List name="resources">
+            <Item value="inst:FontModel1"/>
+            <Item value="inst:ColorModel1"/>
+            <Item value="inst:ColorModel2"/>
+            <Item value="inst:ColorModel3"/>
+            <Item value="inst:ImageModel1"/>
+        </List>
+        <List name="dataSources"/>
+        <List name="templates"/>
+        <List name="customClasses"/>
+        <Reference name="scene" value="inst:SceneModel1"/>
+        <Reference name="designWidth" value="flt:480.0"/>
+        <Reference name="designHeight" value="flt:320.0"/>
+        <Reference name="designProfile" value="profile:DESKTOP"/>
+        <Reference name="synchronizeDeviceAndSceneSizes" value="bool:false"/>
+    </Instance>
+    <Instance classID="StateVariableModel" instanceID="StateVariableModel1">
+        <Reference name="instanceName" value="str:colorState"/>
+        <List name="states">
+            <Item value="inst:StateModel1"/>
+            <Item value="inst:StateModel2"/>
+            <Item value="inst:StateModel3"/>
+        </List>
+        <Reference name="startState" value="inst:StateModel1"/>
+        <Reference name="stateChangeType" value="statechange:PAUSE_AND_PLAY_FROM_START"/>
+        <Reference name="doNotAnimateOnce" value="bool:true"/>
+        <Reference name="defaultInterpolator" value="interpolator:DISCRETE"/>
+        <Reference name="defaultDuration" value="int:0"/>
+        <Reference name="onTransitionFinished" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel1">
+        <Reference name="stateName" value="str:Red Color"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel2">
+        <Reference name="stateName" value="str:Green Color"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel3">
+        <Reference name="stateName" value="str:Blue Color"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateVariableModel" instanceID="StateVariableModel2">
+        <Reference name="instanceName" value="str:rotationState"/>
+        <List name="states">
+            <Item value="inst:StateModel4"/>
+            <Item value="inst:StateModel5"/>
+            <Item value="inst:StateModel6"/>
+            <Item value="inst:StateModel7"/>
+        </List>
+        <Reference name="startState" value="inst:StateModel4"/>
+        <Reference name="stateChangeType" value="statechange:PAUSE_AND_PLAY_FROM_START"/>
+        <Reference name="doNotAnimateOnce" value="bool:true"/>
+        <Reference name="defaultInterpolator" value="interpolator:LINEAR"/>
+        <Reference name="defaultDuration" value="int:500"/>
+        <Reference name="onTransitionFinished" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel4">
+        <Reference name="stateName" value="str:0"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel5">
+        <Reference name="stateName" value="str:90"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel6">
+        <Reference name="stateName" value="str:180"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel7">
+        <Reference name="stateName" value="str:270"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateVariableModel" instanceID="StateVariableModel3">
+        <Reference name="instanceName" value="str:cubeState"/>
+        <List name="states">
+            <Item value="inst:StateModel8"/>
+            <Item value="inst:StateModel9"/>
+        </List>
+        <Reference name="startState" value="inst:StateModel8"/>
+        <Reference name="stateChangeType" value="statechange:PAUSE_AND_PLAY_FROM_START"/>
+        <Reference name="doNotAnimateOnce" value="bool:true"/>
+        <Reference name="defaultInterpolator" value="interpolator:EASEOUT"/>
+        <Reference name="defaultDuration" value="int:300"/>
+        <Reference name="onTransitionFinished" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel8">
+        <Reference name="stateName" value="str:Cube"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="int:1200"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel9">
+        <Reference name="stateName" value="str:Exploded"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="FontModel" instanceID="FontModel1">
+        <Reference name="instanceName" value="str:font"/>
+        <Reference name="size" value="prop2:7,NOT_SET,4,null,4,null,24,anim:0,DISCRETE,flt:20.0,4,null,"/>
+    </Instance>
+    <Instance classID="ColorModel" instanceID="ColorModel1">
+        <Reference name="instanceName" value="str:redColor"/>
+        <Reference name="red" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:1.0,4,null,"/>
+    </Instance>
+    <Instance classID="ColorModel" instanceID="ColorModel2">
+        <Reference name="instanceName" value="str:greenColor"/>
+        <Reference name="green" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:1.0,4,null,"/>
+    </Instance>
+    <Instance classID="ColorModel" instanceID="ColorModel3">
+        <Reference name="instanceName" value="str:blueColor"/>
+        <Reference name="blue" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:1.0,4,null,"/>
+    </Instance>
+    <Instance classID="ImageModel" instanceID="ImageModel1">
+        <Reference name="instanceName" value="str:image"/>
+        <Reference name="url" value="prop2:7,NOT_SET,4,null,4,null,37,anim:,,str:{__DIR__}netbeans_logo.png,4,null,"/>
+    </Instance>
+    <Instance classID="SceneModel" instanceID="SceneModel1">
+        <Reference name="instanceName" value="str:scene"/>
+        <List name="content">
+            <Item value="inst:TileModel1"/>
+            <Item value="inst:VBoxModel1"/>
+        </List>
+        <Reference name="width" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:320.0,4,null,"/>
+        <Reference name="height" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:320.0,4,null,"/>
+        <Reference name="generateSceneInstance" value="bool:true"/>
+        <Reference name="generateGetDesignSceneFunction" value="bool:true"/>
+        <Reference name="generateLayoutXYForRootLevelComponents" value="bool:true"/>
+    </Instance>
+    <Instance classID="TileModel" instanceID="TileModel1">
+        <Reference name="instanceName" value="str:tile"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:10.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:320.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <List name="content">
+            <Item value="inst:ButtonModel1"/>
+            <Item value="inst:ButtonModel2"/>
+            <Item value="inst:ButtonModel3"/>
+        </List>
+        <Reference name="columns" value="prop2:7,NOT_SET,4,null,4,null,12,anim:,,int:3,4,null,"/>
+        <Reference name="hgap" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:6.0,4,null,"/>
+        <Reference name="vgap" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:6.0,4,null,"/>
+        <Reference name="hpos" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,hpos:CENTER,4,null,"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel1">
+        <Reference name="instanceName" value="str:changeColorButton"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,32,anim:0,DISCRETE,str:Change Color,4,null,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,43,anim:0,DISCRETE,str:changeColorButtonAction,4,null,"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel2">
+        <Reference name="instanceName" value="str:rotateButton"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,26,anim:0,DISCRETE,str:Rotate,4,null,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,38,anim:0,DISCRETE,str:rotateButtonAction,4,null,"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel3">
+        <Reference name="instanceName" value="str:trashButton"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:165.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:0.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,str:Explode,24,inst:StateVariableModel3,16,inst:StateModel8,19,anim:0,,str:Explode,16,inst:StateModel9,20,anim:0,,str:Fix Cube,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,28,anim:,,str:trashButtonAction,24,inst:StateVariableModel3,16,inst:StateModel8,29,anim:0,,str:trashButtonAction,16,inst:StateModel9,29,anim:0,,str:trashButtonAction,"/>
+    </Instance>
+    <Instance classID="VBoxModel" instanceID="VBoxModel1">
+        <Reference name="instanceName" value="str:vbox"/>
+        <Reference name="rotate" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel2,16,inst:StateModel5,15,anim:,,flt:90.0,16,inst:StateModel6,16,anim:,,flt:180.0,16,inst:StateModel7,16,anim:,,flt:270.0,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:71.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:54.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <List name="content">
+            <Item value="inst:PanelModel1"/>
+            <Item value="inst:ImageViewModel1"/>
+        </List>
+        <Reference name="spacing" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:6.0,4,null,"/>
+    </Instance>
+    <Instance classID="PanelModel" instanceID="PanelModel1">
+        <Reference name="instanceName" value="str:panel"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <List name="content">
+            <Item value="inst:CircleShapeModel1"/>
+            <Item value="inst:LineShapeModel1"/>
+            <Item value="inst:CircleShapeModel2"/>
+            <Item value="inst:LineShapeModel2"/>
+            <Item value="inst:CircleShapeModel3"/>
+            <Item value="inst:LineShapeModel3"/>
+            <Item value="inst:CircleShapeModel4"/>
+            <Item value="inst:LineShapeModel4"/>
+            <Item value="inst:LineShapeModel5"/>
+            <Item value="inst:LineShapeModel6"/>
+            <Item value="inst:LineShapeModel7"/>
+            <Item value="inst:LineShapeModel8"/>
+            <Item value="inst:LineShapeModel9"/>
+            <Item value="inst:CircleShapeModel5"/>
+            <Item value="inst:LineShapeModel10"/>
+            <Item value="inst:CircleShapeModel6"/>
+            <Item value="inst:LineShapeModel11"/>
+            <Item value="inst:CircleShapeModel7"/>
+            <Item value="inst:LineShapeModel12"/>
+            <Item value="inst:CircleShapeModel8"/>
+        </List>
+    </Instance>
+    <Instance classID="CircleShapeModel" instanceID="CircleShapeModel1">
+        <Reference name="instanceName" value="str:circle"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-200.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,15,anim:,,flt:10.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="fill" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:1.0,4,null,"/>
+        <Reference name="centerX" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:3.0,4,null,"/>
+        <Reference name="centerY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:40.0,4,null,"/>
+        <Reference name="radius" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:3.0,4,null,"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel1">
+        <Reference name="instanceName" value="str:line"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-230.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-230.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:4.0,4,null,"/>
+        <Reference name="startX" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:9.0,4,null,"/>
+        <Reference name="startY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:34.0,4,null,"/>
+        <Reference name="endX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:61.0,4,null,"/>
+        <Reference name="endY" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:6.0,4,null,"/>
+    </Instance>
+    <Instance classID="CircleShapeModel" instanceID="CircleShapeModel2">
+        <Reference name="instanceName" value="str:circle2"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:-10.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-200.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="fill" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="centerX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:67.0,4,null,"/>
+        <Reference name="centerY" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:3.0,4,null,"/>
+        <Reference name="radius" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:3.0,4,null,"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel2">
+        <Reference name="instanceName" value="str:line2"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,15,anim:,,flt:10.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-230.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:5.0,4,null,"/>
+        <Reference name="startX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:75.0,4,null,"/>
+        <Reference name="startY" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:3.0,4,null,"/>
+        <Reference name="endX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:159.0,4,null,"/>
+        <Reference name="endY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:18.0,4,null,"/>
+    </Instance>
+    <Instance classID="CircleShapeModel" instanceID="CircleShapeModel3">
+        <Reference name="instanceName" value="str:circle3"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:180.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-180.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="fill" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="centerX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:169.0,4,null,"/>
+        <Reference name="centerY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:21.0,4,null,"/>
+        <Reference name="radius" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:3.5,4,null,"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel3">
+        <Reference name="instanceName" value="str:line3"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-250.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,15,anim:,,flt:10.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:5.0,4,null,"/>
+        <Reference name="startX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:11.0,4,null,"/>
+        <Reference name="startY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:42.0,4,null,"/>
+        <Reference name="endX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:88.0,4,null,"/>
+        <Reference name="endY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:66.0,4,null,"/>
+    </Instance>
+    <Instance classID="CircleShapeModel" instanceID="CircleShapeModel4">
+        <Reference name="instanceName" value="str:circle4"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:250.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="fill" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="centerX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:96.0,4,null,"/>
+        <Reference name="centerY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:69.0,4,null,"/>
+        <Reference name="radius" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:4.0,4,null,"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel4">
+        <Reference name="instanceName" value="str:line4"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:250.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,15,anim:,,flt:10.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:5.0,4,null,"/>
+        <Reference name="startX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:103.0,4,null,"/>
+        <Reference name="startY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:65.0,4,null,"/>
+        <Reference name="endX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:162.0,4,null,"/>
+        <Reference name="endY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:26.0,4,null,"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel5">
+        <Reference name="instanceName" value="str:line5"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-230.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-150.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:4.0,4,null,"/>
+        <Reference name="startX" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:5.0,4,null,"/>
+        <Reference name="startY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:49.0,4,null,"/>
+        <Reference name="endX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:13.0,4,null,"/>
+        <Reference name="endY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:125.0,4,null,"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel6">
+        <Reference name="instanceName" value="str:line6"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:-50.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-220.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:4.0,4,null,"/>
+        <Reference name="startX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:68.0,4,null,"/>
+        <Reference name="startY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:11.0,4,null,"/>
+        <Reference name="endX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:73.0,4,null,"/>
+        <Reference name="endY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:78.0,4,null,"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel7">
+        <Reference name="instanceName" value="str:line7"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:250.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-120.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:5.0,4,null,"/>
+        <Reference name="startX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:169.0,4,null,"/>
+        <Reference name="startY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:29.0,4,null,"/>
+        <Reference name="endX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:167.0,4,null,"/>
+        <Reference name="endY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:119.0,4,null,"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel8">
+        <Reference name="instanceName" value="str:line8"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,15,anim:,,flt:50.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:250.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:6.0,4,null,"/>
+        <Reference name="startX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:96.0,4,null,"/>
+        <Reference name="startY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:77.0,4,null,"/>
+        <Reference name="endX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:102.0,4,null,"/>
+        <Reference name="endY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:165.0,4,null,"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel9">
+        <Reference name="instanceName" value="str:line9"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-230.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,15,anim:,,flt:50.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:4.0,4,null,"/>
+        <Reference name="startX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:21.0,4,null,"/>
+        <Reference name="startY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:128.0,4,null,"/>
+        <Reference name="endX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:69.0,4,null,"/>
+        <Reference name="endY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:92.0,4,null,"/>
+    </Instance>
+    <Instance classID="CircleShapeModel" instanceID="CircleShapeModel5">
+        <Reference name="instanceName" value="str:circle5"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-200.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:100.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="fill" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="centerX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:16.0,4,null,"/>
+        <Reference name="centerY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:134.0,4,null,"/>
+        <Reference name="radius" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:3.0,4,null,"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel10">
+        <Reference name="instanceName" value="str:line10"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:300.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,15,anim:,,flt:50.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:5.0,4,null,"/>
+        <Reference name="startX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:83.0,4,null,"/>
+        <Reference name="startY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:88.0,4,null,"/>
+        <Reference name="endX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:159.0,4,null,"/>
+        <Reference name="endY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:122.0,4,null,"/>
+    </Instance>
+    <Instance classID="CircleShapeModel" instanceID="CircleShapeModel6">
+        <Reference name="instanceName" value="str:circle6"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,15,anim:,,flt:30.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-200.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="fill" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="centerX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:75.0,4,null,"/>
+        <Reference name="centerY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:86.0,4,null,"/>
+        <Reference name="radius" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:3.0,4,null,"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel11">
+        <Reference name="instanceName" value="str:line11"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:200.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:200.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:5.0,4,null,"/>
+        <Reference name="startX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:112.0,4,null,"/>
+        <Reference name="startY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:173.0,4,null,"/>
+        <Reference name="endX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:160.0,4,null,"/>
+        <Reference name="endY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:134.0,4,null,"/>
+    </Instance>
+    <Instance classID="CircleShapeModel" instanceID="CircleShapeModel7">
+        <Reference name="instanceName" value="str:circle7"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:250.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:150.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="fill" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="centerX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:167.0,4,null,"/>
+        <Reference name="centerY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:127.0,4,null,"/>
+        <Reference name="radius" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:3.5,4,null,"/>
+    </Instance>
+    <Instance classID="LineShapeModel" instanceID="LineShapeModel12">
+        <Reference name="instanceName" value="str:line12"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,17,anim:,,flt:-120.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:250.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="stroke" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="strokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:5.0,4,null,"/>
+        <Reference name="startX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:23.0,4,null,"/>
+        <Reference name="startY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:137.0,4,null,"/>
+        <Reference name="endX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:95.0,4,null,"/>
+        <Reference name="endY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:174.0,4,null,"/>
+    </Instance>
+    <Instance classID="CircleShapeModel" instanceID="CircleShapeModel8">
+        <Reference name="instanceName" value="str:circle8"/>
+        <Reference name="translateX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:-40.0,"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel3,16,inst:StateModel9,16,anim:,,flt:250.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="fill" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ColorModel1,24,inst:StateVariableModel1,16,inst:StateModel2,23,anim:,,inst:ColorModel2,16,inst:StateModel3,23,anim:,,inst:ColorModel3,"/>
+        <Reference name="centerX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:104.0,4,null,"/>
+        <Reference name="centerY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:178.0,4,null,"/>
+        <Reference name="radius" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:4.5,4,null,"/>
+    </Instance>
+    <Instance classID="ImageViewModel" instanceID="ImageViewModel1">
+        <Reference name="instanceName" value="str:imageView"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="image" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,inst:ImageModel1,4,null,"/>
+    </Instance>
+</Model>

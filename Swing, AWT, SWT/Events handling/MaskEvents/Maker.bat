@@ -1,0 +1,3 @@
+javac MaskingEvents.java
+java MaskingEvents
+pause

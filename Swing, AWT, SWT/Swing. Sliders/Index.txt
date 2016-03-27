@@ -1,0 +1,10 @@
+    Слайдеры.
+    
+AudioPlayerUI:              PLaF-Интерфейс аудиоплейера;
+DefaultBoundedRangeModel:   Использование в ползунках стандартной модели;
+SimpleSliders:              Простые ползунки;
+SliderAdditionalFeatures:   Дополнительные возможности ползунков;
+SliderAndScrollBarRel:      Взаимодействие компонентов JScrollBar и JSlider;
+SliderDemo:                 Пример, демонстрирующий работу с объектами JSlider;
+SliderEvents:               События ползунков;
+SliderTest:                 Демонстрация возможностей Слайдера;

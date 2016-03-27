@@ -1,0 +1,3 @@
+javac ToolTipsTuning.java
+java ToolTipsTuning
+pause

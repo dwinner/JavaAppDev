@@ -1,0 +1,3 @@
+javac TableDefaultEditing.java
+java TableDefaultEditing
+pause

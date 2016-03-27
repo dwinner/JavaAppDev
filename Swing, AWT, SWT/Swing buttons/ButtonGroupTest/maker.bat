@@ -1,0 +1,3 @@
+javac ButtonGroupTest.java
+java ButtonGroupTest
+pause

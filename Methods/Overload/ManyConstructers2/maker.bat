@@ -1,0 +1,3 @@
+javac OverloadCons2.java
+java OverloadCons2
+pause

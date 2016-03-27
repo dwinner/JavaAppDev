@@ -1,0 +1,3 @@
+javac DBTableModelTest.java
+java DBTableModelTest
+pause

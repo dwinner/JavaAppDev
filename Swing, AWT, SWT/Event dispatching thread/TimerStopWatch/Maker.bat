@@ -1,0 +1,3 @@
+javac TimerStopWatch.java
+java TimerStopWatch
+pause

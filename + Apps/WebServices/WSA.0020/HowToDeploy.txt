@@ -1,0 +1,8 @@
+1) Откройте файл 
+./A_VFP_MFG_MasterOperations_v01_WS/src/ru/aztpa/a/vfp/mfg/masteroperations/v01/WSMasterOperationWrapper.java
+
+2) Измените строку 39
+private final static String DEFAULT_CONTEXT_NAME = "OTIZ_DBF", поставив заместо
+строкового литерала OTIZ_DBF имя нужного JNDI-контекста;
+
+3) Пересоздайте web-архив для сервиса, если он уже был создан;

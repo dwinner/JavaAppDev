@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/InterpreterTest.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/Context.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/Expression.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/ConstantExpression.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/VariableExpression.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/ComparisonExpression.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/CompoundExpression.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/AndExpression.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/OrExpression.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/EqualsExpression.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/ContainsExpression.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/Contact.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/ContactImpl.java</file>
+        <file>file:/C:/SendMe/DesignPatterns/InterpreterTest/src/interpretertest/ContactList.java</file>
+    </open-files>
+</project-private>

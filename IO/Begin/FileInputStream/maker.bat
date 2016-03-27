@@ -1,0 +1,3 @@
+javac FileInputStreamDemo.java
+java FileInputStreamDemo
+pause

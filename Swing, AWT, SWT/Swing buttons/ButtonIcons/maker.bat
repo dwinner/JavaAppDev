@@ -1,0 +1,2 @@
+javac JButtonDemo.java
+java JButtonDemo

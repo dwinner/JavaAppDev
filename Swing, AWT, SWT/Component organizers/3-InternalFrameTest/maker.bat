@@ -1,0 +1,3 @@
+javac InternalFrameTest.java
+java InternalFrameTest
+pause

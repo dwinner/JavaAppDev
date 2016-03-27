@@ -1,0 +1,3 @@
+javac ListSelectionModes.java
+java ListSelectionModes
+pause

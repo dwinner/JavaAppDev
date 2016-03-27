@@ -1,0 +1,3 @@
+javac EmployeeSortTest.java
+java EmployeeSortTest
+pause

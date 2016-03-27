@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:shadowColor="@color/menu_glow"
+    android:shadowDx="3"
+    android:shadowDy="3"
+    android:shadowRadius="5"
+    android:text="test string"
+    android:textColor="@color/menu_color"
+    android:textSize="@dimen/menu_item_size" />

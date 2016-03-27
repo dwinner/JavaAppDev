@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<questions>
+
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q1.png"
+        number="1"
+        text="Have you ever been on an African safari?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q2.png"
+        number="2"
+        text="Have you ever climbed a mountain?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q3.png"
+        number="3"
+        text="Have you ever milked a cow?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q4.png"
+        number="4"
+        text="Have you ever been to China?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q5.png"
+        number="5"
+        text="Have you ever been to a Hawaiian luau?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q6.png"
+        number="6"
+        text="Have you ever been to London, England?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q7.png"
+        number="7"
+        text="Have you ever eaten a bug?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q8.png"
+        number="8"
+        text="Have you ever been to Death Valley?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q9.png"
+        number="9"
+        text="Have you ever gone fishing?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q10.png"
+        number="10"
+        text="Have you ever crossed the Golden Gate Bridge?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q11.png"
+        number="11"
+        text="Have you ever been to a haunted house?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q12.png"
+        number="12"
+        text="Have you ever seen the Grand Canyon?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q13.png"
+        number="13"
+        text="Have you been in a hot air balloon?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q14.png"
+        number="14"
+        text="Have you ever eaten a hot chili pepper?" />
+    <question
+        imageUrl="http://www.perlgurl.org/Android/BeenThereDoneThat/Questions/q15.png"
+        number="15"
+        text="Have you ever lept before you looked?" />
+
+</questions>

@@ -1,0 +1,2 @@
+javac Arcs.java
+pause

@@ -1,0 +1,3 @@
+javac IntBufferDemo.java
+java IntBufferDemo
+pause

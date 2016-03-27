@@ -1,0 +1,3 @@
+javac ListModelDemo.java
+java ListModelDemo
+pause

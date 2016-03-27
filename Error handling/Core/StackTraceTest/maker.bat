@@ -1,0 +1,3 @@
+javac StackTraceTest.java
+java StackTraceTest
+pause

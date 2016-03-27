@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="1-DesiredSizes.jnlp">
+  <information>
+    <title>1-DesiredSizes</title>
+    <vendor>oracle_pr1</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources os="Windows">
+    <jfx:javafx-runtime version="2.0+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="1-DesiredSizes.jar" size="14698" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="1-DesiredSizes" />
+  <jfx:javafx-desc  width="800" height="600" main-class="pkg1.desiredsizes.DesiredSizes"  name="1-DesiredSizes" />
+  <update check="background"/>
+</jnlp>

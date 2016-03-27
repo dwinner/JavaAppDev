@@ -1,0 +1,21 @@
+    Поток управления программой
+    
+Bisection:              Нахождение корней уравнения в процедурном стиле
+Break:                  Использование break для выхода из цикла
+BreakAndLabels:         Break с метками
+CommaOp:                Использование операции Запятая
+Continue:               Оператор continue
+ContinueWithLabel:      Оператор continue с меткой
+Do_While:               Использование do-while
+FindPrime:              Проверка на принадлежность к категории простых чисел
+ForEmptyParts:          Пустые части цикла for
+ForSample:              Демонстрирует for-цикл
+If_Else_If:             Операторы if-else-if
+NestedLoops:            Вложенные циклы
+PascalTriangle:         Треугольник паскаля
+ReturnOp:               Оператор return
+Switch_Missing_Break:   switch с пропущенными операторами break
+SwitchSample:           Пример с оператором switch
+SwitchYear:             Улучшенная версия программы с временами года
+While:                  Цикл while
+While_Missing_Body:     Тело цикла может быть пустым

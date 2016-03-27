@@ -1,0 +1,25 @@
+package ru.aztpa.a.vfp.mfg.wiptransfers.v01;
+
+/**
+ * ¬спомогательный класс дл€ обработки строк.
+ *
+ * @author jdeveloper@aztpa.ru
+ * @version 1.0.0 17-07-2012
+ */
+public class StringUtilities
+{
+   /**
+    * ѕроверка строки на пустое значение.
+    *
+    * @param toCheckString —трока дл€ проверки
+    * @return true, если строка пуста€, false в противном случае
+    */
+   public static boolean isNullOrEmpty(String toCheckString)
+   {
+      return toCheckString == null || toCheckString.trim().isEmpty() ? true : false;
+   }
+
+   private StringUtilities()
+   {
+   }
+}

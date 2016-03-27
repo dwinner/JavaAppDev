@@ -1,0 +1,3 @@
+javac CardLayoutDemo.java
+java CardLayoutDemo
+pause

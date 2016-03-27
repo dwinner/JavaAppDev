@@ -1,0 +1,3 @@
+javac LinkedListTest.java
+java LinkedListTest
+pause

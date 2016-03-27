@@ -1,0 +1,3 @@
+javac ArrayListTest.java
+java ArrayListTest
+pause

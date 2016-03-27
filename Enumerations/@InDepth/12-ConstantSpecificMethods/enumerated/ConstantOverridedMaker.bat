@@ -1,0 +1,3 @@
+javac OverrideConstantSpecific.java
+java OverrideConstantSpecific
+pause

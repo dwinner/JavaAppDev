@@ -1,0 +1,3 @@
+javac DropTargetTest.java
+java DropTargetTest
+pause

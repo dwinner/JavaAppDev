@@ -1,0 +1,12 @@
+.evenColumns
+{
+   font-style: italic;
+   background: #00FA9A;
+}
+
+.oddColumns
+{
+   padding-left: 1em;
+   background: #87CEEB;
+   border-radius: 4px;
+}

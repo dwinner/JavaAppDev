@@ -1,0 +1,3 @@
+javac BufferedInputStreamDemo.java
+java BufferedInputStreamDemo
+pause

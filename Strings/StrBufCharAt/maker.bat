@@ -1,0 +1,3 @@
+javac setCharAtDemo.java
+java setCharAtDemo
+pause

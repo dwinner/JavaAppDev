@@ -1,0 +1,8 @@
+    Устаревший способ обработки событий.
+    
+ButtonExtends:          Расширение класса Button;
+CheckboxExtends:        Расширение класса CheckBox;
+CheckboxGroupExtends:   Расширение класса CheckboxGroup;
+ChoiceExtends:          Расширение класса Choice;
+ListExtends:            Расширение класса List;
+ScrollbarExtends:       Расширение класса Scrollbar;

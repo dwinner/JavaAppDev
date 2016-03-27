@@ -1,0 +1,3 @@
+javac PreferencesDemo.java
+java PreferencesDemo
+pause

@@ -1,0 +1,16 @@
+    Менеджеры расположения в Swing.
+    
+BorderLayout:           Менеджер размещения BorderLayout и вставки;
+BoxLayout:              Размещение боксами;
+ButtonPanel:            Создание панели кнопок;
+CardLayout:             Демонстрирует CardLayout;
+CircleLayoutTest:       Размещение по кругу;
+FlowLayoutManager:      Поточное размещение;
+GridBagLayout:          Пример использования класса GridBagLayout;
+GridBagLayoutTest:      Упрощение работы с сеточным расположением;
+GridLayoutManager:      Варианты табличного расположения;
+GroupLayoutTest:        Групповое размещение компонентов;
+LoginDialogTest:        Этапы создания UI на примере диалогового окна входа в систему;
+MattisseUITest:         Построение UI на основе Mattisse;
+SpringLayoutTest:       Пружинное размещение компонентов;
+VerticalLayoutCustom:   Расположение вертикальным рядом;

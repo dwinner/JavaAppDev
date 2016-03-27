@@ -1,0 +1,3 @@
+javac TabbedPaneWithPanels.java
+java TabbedPaneWithPanels
+pause

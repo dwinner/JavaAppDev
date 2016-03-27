@@ -1,0 +1,41 @@
+    Строки в Java.
+    
+ChainOfAppend:      Цепочки вызовов append;
+
+CharArray:          Подмножестао символьного массива;
+
+CompareTo:          Пузырьковая сортировка строк;
+
+Concat:             Конкатенация строк;
+
+EqualsNotEquals:    equals() в сравнении с ==;
+
+GetChars:           Извлечение символов строки в массив символов;
+
+IndexOf:            Демонстрирует indexOf() и lastIndexOf();
+
+MakeStrings:        Построение одного String-объекта из другого;
+
+SBDelete:           Демонстрирует delete() и deleteCharAt();
+
+SBInsert:           Демонстрирует insert();
+
+SBReplace:          Демонстрирует replace();
+
+StrBufCharAt:       Демонстрирует charAt() и setCharAt();
+
+StringBuffer:       StringBuffer length() в сравнении c capacity;
+
+StringEquals:       Демонстрирует equals() и equalsIgnoreCase();
+
+StringIntern:       Разделение строковых литералов в памяти;
+
+StringReplace:      Замена подстроки;
+
+StringSorting:      Сортировка строк;
+
+toString:           Переопределение toString() для Box-классов;
+
+Trim:               Использование trim() для обработки команд;
+
+UpperCase:          Демонстрирует toUpperCase() и toLowerCase();

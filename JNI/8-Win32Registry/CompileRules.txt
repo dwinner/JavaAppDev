@@ -1,0 +1,1 @@
+cl -I c:/jdk/include -I c:/jdk/include/win32 -LD Win32RegKey.c advapi32.lib -FeWin32RegKey.dll

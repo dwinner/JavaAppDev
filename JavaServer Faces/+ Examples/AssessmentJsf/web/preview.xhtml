@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+   <h:head>
+      <h:outputStylesheet library="css" name="styles.css"/>
+      <title>#{messages.previewTitle}</title>
+   </h:head>
+   <h:body>
+      <center>
+         <h:dataTable value="#{dateBean.tuples}" var="tuple" style="width: 300px;"
+                      styleClass="perEmployee"
+                      headerClass="perEmployeeHeader"
+                      rowClasses="oddColumn,evenColumn">
+
+            <f:facet name="caption">#{messages.tableCaption}</f:facet>
+
+            <h:column>
+               <f:facet name="header">#{messages.employeeColumn}</f:facet>
+               #{tuple.first}
+               <f:facet name="footer">
+                  <button id="pdf" title="#{messages.downloadAsPdf}"
+                          onclick="document.location='http://localhost:8080/AssessmentTomcat/PdfServlet';">
+                     #{messages.pdfButtonText}
+                  </button>
+               </f:facet>
+            </h:column>
+
+            <h:column>
+               <f:facet name="header">#{messages.capacityColumn}</f:facet>
+               #{tuple.second}
+               <f:facet name="footer">
+                  <button id="csv" title="#{messages.downloadAsCsv}"
+                          onclick="document.location='http://localhost:8080/AssessmentTomcat/CsvServlet';">
+                     #{messages.csvButtonText}
+                  </button>
+               </f:facet>
+            </h:column>
+
+         </h:dataTable>
+
+         <h3>
+            <a href="index.xhtml">#{messages.goBackText}</a>
+         </h3>
+
+      </center>
+   </h:body>
+</html>

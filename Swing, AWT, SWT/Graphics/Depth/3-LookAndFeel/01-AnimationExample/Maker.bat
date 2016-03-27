@@ -1,0 +1,3 @@
+javac AnimationExample.java
+java AnimationExample
+pause

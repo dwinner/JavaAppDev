@@ -1,0 +1,8 @@
+1) Откройте файл 
+./A_OAA_MFG_LegacyData_v01_WS/src/ru/aztpa/a/oaa/mfg/legacydata/v01/CallerMediator.java
+
+2) Измените строку 16
+public static final String DEFAULT_NAMING_CONTEXT = "OAADataSource", поставив заместо
+строкового литерала OAADataSource имя нужного JNDI-контекста;
+
+3) Пересоздайте web-архив для сервиса, если он уже был создан;

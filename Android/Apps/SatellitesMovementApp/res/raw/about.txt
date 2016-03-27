@@ -1,0 +1,31 @@
+This is just a test application for Android platform, which demonstrates
+some details for the development of mobile platform.
+In this example, I have also tried to demonstrate
+how quickly you can adapt itself to the development of
+relatively simple applications for Android platform,
+If you are already an experienced Java and/or, may be, C#/.NET.
+List some of the issues that could affect in this little project:
+
+- Development of UI-widgets using declarative syntax of XML;
+- Development of UI-widgets programmatically;
+- Create your own layout managers;
+- The use of frame animation;
+- The use of layout animation;
+- The use of view animation;
+- Persistence of the application;
+- Some simple principles of elementary geometry;
+
+If you are used to create custom
+interface fourth generation using declarative
+syntax in JavaFX 2.0/WPF, then this approach will seem
+familiar. Actually it allows us to use the well-familiar MVC, but implicitly.
+Generations under a UI I mean:
+1st Generation: Creating a UI programmatically in the procedural style, for example, using Win32 API;
+2nd Generation: Creating UI programmatically in OOP style for example, using MFC;
+3rd Generation: Creating a UI programmatically or by to appropriate tools IDE, using high-
+   libraries, for example, Windows Forms, Swing, SWT;
+4th Generation: Creating UI declaratively using libraries are able to generate UI XML-based markup
+   For example, WPF, JavaFX 2.0;
+   
+Email: dwinner@inbox.ru
+Copyright 2012, Vinevcev D.I.

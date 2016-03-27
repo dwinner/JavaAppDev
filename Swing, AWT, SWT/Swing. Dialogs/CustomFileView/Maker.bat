@@ -1,0 +1,3 @@
+javac CustomFileView.java
+java CustomFileView
+pause

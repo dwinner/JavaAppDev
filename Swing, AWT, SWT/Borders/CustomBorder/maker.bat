@@ -1,0 +1,2 @@
+javac BezierBorder.java
+java BezierBorder

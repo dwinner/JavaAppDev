@@ -1,0 +1,3 @@
+javac CompoundInterest.java
+java CompoundInterest
+pause

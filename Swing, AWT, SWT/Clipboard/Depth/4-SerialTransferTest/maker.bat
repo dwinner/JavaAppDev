@@ -1,0 +1,3 @@
+javac SerialTransferTest.java
+java SerialTransferTest
+pause

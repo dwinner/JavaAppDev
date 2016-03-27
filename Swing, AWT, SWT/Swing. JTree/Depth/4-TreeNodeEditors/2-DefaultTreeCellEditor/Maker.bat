@@ -1,0 +1,3 @@
+javac TreeDefaultEditing.java
+java TreeDefaultEditing
+pause

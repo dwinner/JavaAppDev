@@ -1,0 +1,3 @@
+javac FieldValidator.java
+java FieldValidator
+pause

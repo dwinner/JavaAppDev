@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/black">
+
+    <TableLayout
+            android:id="@+id/TableLayoutId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:stretchColumns="*">
+
+        <TableRow
+                android:id="@+id/TableRow_1Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="@dimen/version_spacing">
+
+            <ImageView
+                    android:id="@+id/ImageViewTopLeftId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:contentDescription="@string/satellite_images_desc"
+                    android:src="@drawable/satellite_first"/>
+
+            <ImageView
+                    android:id="@+id/ImageViewTopRightId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:contentDescription="@string/satellite_images_desc"
+                    android:src="@drawable/satellite_second"/>
+        </TableRow>
+
+        <TableRow
+                android:id="@+id/TableRow_2Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="@dimen/version_spacing">
+
+            <ImageView
+                    android:id="@+id/ImageViewBottomLeftId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:contentDescription="@string/satellite_images_desc"
+                    android:src="@drawable/satellite_third"/>
+
+            <ImageView
+                    android:id="@+id/ImageViewBottomRightId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:contentDescription="@string/satellite_images_desc"
+                    android:src="@drawable/satellite_fourth"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/splashBottomTitleTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/splash_bottom_title"
+                android:textColor="@color/splash_title_color"
+                android:textSize="@dimen/splash_title_size"/>
+
+        <TextView
+                android:id="@+id/splashVersionTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/version_background"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/version_spacing"
+                android:text="@string/app_version_info"
+                android:textColor="@color/version_color"
+                android:textSize="@dimen/version_size"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/splashTopTitleTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:text="@string/splash_top_title"
+            android:textColor="@color/splash_title_color"
+            android:textSize="@dimen/splash_title_size"/>
+
+</RelativeLayout>

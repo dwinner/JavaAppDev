@@ -1,0 +1,3 @@
+javac ListSelection.java
+java ListSelection
+pause

@@ -1,0 +1,3 @@
+javac FileFilterDemo.java
+java FileFilterDemo
+pause

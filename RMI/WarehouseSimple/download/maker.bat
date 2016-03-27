@@ -1,0 +1,2 @@
+javac NanoHTTPD.java
+pause

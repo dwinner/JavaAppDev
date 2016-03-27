@@ -1,0 +1,3 @@
+javac SimpleSliders.java
+java SimpleSliders
+pause

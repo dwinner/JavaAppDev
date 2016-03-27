@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/background"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/FirstRelativeLayoutId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/MenuHeaderImageViewFirstId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/satellite_images_desc"
+                android:src="@drawable/satellite_first"/>
+
+        <TextView
+                android:id="@+id/MenuTitleTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:text="@string/main_menu_title"
+                android:textColor="@color/menu_title_color"
+                android:textSize="@dimen/menu_title_size"/>
+
+        <ImageView
+                android:id="@+id/MenuHeaderImageViewSecondId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/satellite_images_desc"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/SecondRelativeLayoutId"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ImageView
+                android:id="@+id/MenuBottomImageViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@string/earth_image_desc"
+                android:scaleType="fitEnd"
+                android:src="@drawable/half"/>
+
+        <ListView
+                android:id="@+id/MenuListViewId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:divider="@drawable/divider"
+                android:listSelector="@drawable/textured">
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

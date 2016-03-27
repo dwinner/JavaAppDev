@@ -1,0 +1,3 @@
+javac ConfirmDialogDemo.java
+java ConfirmDialogDemo
+pause

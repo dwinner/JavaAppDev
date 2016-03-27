@@ -1,0 +1,23 @@
+    Каркас коллекций.
+    
+ArrayListToArray:       Преобразование списков и массивов;
+ArraysUtils:            Arrays-инструментарий;
+CircularArrayQueueTest: Расширение каркаса коллекций;
+CollectionsUtil:        Алгоритмы коллекций;
+Comparator:             Пример использования заказного компаратора;
+ComparatorAndSorting:   Использование компаратора для сортировки;
+CustomWorld:            Использование списка свойств;
+Hashtable:              Класс Hashtable;
+HashtableIterator:      Использование итераторов с классом Hashtable;
+IteratorTest:           Итераторы;
+LinkedListTest:         Операции со связными списками;
+MapTest:                Использование карт;
+PriorityQueueTest:      Применение очереди с приоритетами;
+SetTest:                Интерфейс Set и его использование;
+ShuffleTest:            Алгоритмы случайного тасования и сортировки;            
+Sieve:                  Решето "Эратосфена";
+Stack:                  Класс Stack;
+StackDirectory:         Использование стеков;
+TreeMapTest:            Древовидная карта;
+TreeSetTest:            Сортировка набора элементов;
+Vector:                 Класс Vector;

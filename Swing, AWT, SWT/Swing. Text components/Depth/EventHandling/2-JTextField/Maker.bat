@@ -1,0 +1,3 @@
+javac UsingTextFields.java
+java UsingTextFields
+pause

@@ -1,0 +1,7 @@
+    Декораторы в Swing.
+    
+AnimatingBusyIndicator: Анимированный всплывающий индикатор;
+BlurLayerUI:            Эффекты полупрозрачности для окон;
+SpotlightLayerUI:       Подсветка сегментов окна;
+ValidatingTextFields:   Декорированная проверка текстовых полей;
+WallpaperLayerUI:       Градиентная заливка для окон;

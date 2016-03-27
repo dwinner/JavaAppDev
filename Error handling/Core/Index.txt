@@ -1,0 +1,17 @@
+    Концепции обработки исключений.
+    
+BuggyButtonTest1:   Демонстрирование отладчика в IDE NetBeans;
+
+ConsoleWindowTest:  Консоль отслеживания событий;
+
+EventTracerTest:    Трассировка событий AWT;
+
+ExceptionalTest:    "Ручное" профилирование кода;
+
+ExceptTest:         Автоматический перехват неконтролируемых исключений;
+
+LoggingImageViewer: Регистрация событий программы;
+
+RobotTest:          Класс Robot, автоматическая процедура тестирования;
+
+StackTraceTest:     Трассировка стека;      

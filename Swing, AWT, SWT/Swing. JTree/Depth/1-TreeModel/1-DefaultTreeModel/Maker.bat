@@ -1,0 +1,3 @@
+javac UsingDefaultTreeModel.java
+java UsingDefaultTreeModel
+pause

@@ -1,0 +1,3 @@
+javac ShadeExample32.java
+java ShadeExample32
+pause

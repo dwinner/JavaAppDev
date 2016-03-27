@@ -1,0 +1,3 @@
+javac InheritingExceptions.java
+java InheritingExceptions
+pause

@@ -1,0 +1,3 @@
+javac JTabbedPaneDemo.java
+java JTabbedPaneDemo
+pause

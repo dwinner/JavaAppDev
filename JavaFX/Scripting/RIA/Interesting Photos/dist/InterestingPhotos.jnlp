@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="file:/D:/web/Java.IDE/JavaFX/RIA/Interesting%20Photos/dist/" href="InterestingPhotos.jnlp">
+    <information>
+        <title>InterestingPhotos</title>
+        <vendor>JavaFX Samples Team</vendor>
+        <homepage href=""/>
+        <description>InterestingPhotos</description>
+        <icon kind="splash" href="http://dl.javafx.com/1.3/splash.png"/>
+        <offline-allowed/>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="InterestingPhotos.jar" main="true" size="207228"/>
+    </resources>
+    <application-desc main-class="com.sun.javafx.runtime.main.Main" progress-class="com.javafx.progressbar.ProgressManager">
+        <argument>MainJavaFXScript=interesting.Main</argument>
+    </application-desc>
+    <update check="always"/>
+</jnlp>

@@ -1,0 +1,3 @@
+javac CombiningToolbars.java
+java CombiningToolbars
+pause

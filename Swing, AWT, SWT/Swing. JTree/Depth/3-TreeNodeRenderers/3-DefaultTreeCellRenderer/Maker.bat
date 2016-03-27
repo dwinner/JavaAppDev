@@ -1,0 +1,3 @@
+javac TreeDefaultRendering.java
+java TreeDefaultRendering
+pause

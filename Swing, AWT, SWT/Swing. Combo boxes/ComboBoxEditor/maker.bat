@@ -1,0 +1,2 @@
+javac HTMLComboEditorTest.java
+java HTMLComboEditorTest

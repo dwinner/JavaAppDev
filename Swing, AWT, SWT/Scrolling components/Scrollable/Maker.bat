@@ -1,0 +1,3 @@
+javac ScrollingControl.java
+java ScrollingControl
+pause

@@ -1,0 +1,3 @@
+javac RenderQualityTest.java
+java RenderQualityTest
+pause

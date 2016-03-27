@@ -1,0 +1,3 @@
+javac InputDialogDemo.java
+java InputDialogDemo
+pause

@@ -1,0 +1,3 @@
+javac MainException.java
+java MainException
+pause

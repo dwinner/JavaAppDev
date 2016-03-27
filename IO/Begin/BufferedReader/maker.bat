@@ -1,0 +1,3 @@
+javac BufferedReaderDemo.java
+java BufferedReaderDemo
+pause

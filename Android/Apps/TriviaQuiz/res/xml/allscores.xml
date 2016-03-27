@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scores>
+
+    <score
+        rank="1"
+        score="12345"
+        username="LED" />
+    <score
+        rank="2"
+        score="12344"
+        username="SAC" />
+    <score
+        rank="3"
+        score="12339"
+        username="NAD" />
+    <score
+        rank="4"
+        score="12335"
+        username="ASH" />
+    <score
+        rank="5"
+        score="12245"
+        username="KPM" />
+    <score
+        rank="6"
+        score="12222"
+        username="SDB" />
+    <score
+        rank="7"
+        score="11667"
+        username="LOL" />
+    <score
+        rank="8"
+        score="11345"
+        username="AFK" />
+    <score
+        rank="9"
+        score="11234"
+        username="BRB" />
+    <score
+        rank="10"
+        score="10000"
+        username="BUG" />
+    <score
+        rank="11"
+        score="1234"
+        username="LED" />
+    <score
+        rank="12"
+        score="123"
+        username="SAC" />
+    <score
+        rank="31"
+        score="122"
+        username="NAD" />
+    <score
+        rank="41"
+        score="121"
+        username="ASH" />
+    <score
+        rank="51"
+        score="21"
+        username="KPM" />
+    <score
+        rank="61"
+        score="12"
+        username="SDB" />
+    <score
+        rank="71"
+        score="11"
+        username="LOL" />
+    <score
+        rank="81"
+        score="5"
+        username="AFK" />
+    <score
+        rank="91"
+        score="3"
+        username="BRB" />
+    <score
+        rank="101"
+        score="1"
+        username="BUG" />
+
+</scores>

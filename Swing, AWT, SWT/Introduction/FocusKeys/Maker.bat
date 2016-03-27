@@ -1,0 +1,3 @@
+javac FocusKeysTest.java
+java FocusKeysTest
+pause

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="WebViewSample.jnlp">
+  <information>
+    <title>WebViewSample</title>
+    <vendor>Denis</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <icon href="file:/D:/HiTech/Java/FX%20And%20RIA/07-HTMLContent/WebViewSample/src/internet-bag39s.png" />
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.0+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="WebViewSample.jar" size="35593" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="WebViewSample" >
+    <param name="requiredFXVersion" value="2.0+"/>
+  </applet>
+  <jfx:javafx-desc  width="800" height="600" main-class="webviewsample.WebViewSample"  name="WebViewSample" />
+  <update check="always"/>
+</jnlp>

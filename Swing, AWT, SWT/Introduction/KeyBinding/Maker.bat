@@ -1,0 +1,3 @@
+javac KeyBindingTest.java
+java KeyBindingTest
+pause

@@ -1,0 +1,24 @@
+/* 
+    Document   : DownloadButtonStyle1
+    Created on : 01.06.2012, 15:58:58
+    Author     : oracle_pr1
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root
+{
+   display: block;
+}
+
+.button
+{
+   -fx-text-fill: #e4f3fc;
+   -fx-font: bold 20pt "Tahoma";
+   -fx-color: #2d4b8e;
+}
+
+.button:hover
+{
+   -fx-color: #395bae;
+}

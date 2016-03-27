@@ -1,0 +1,21 @@
+/* 
+    Document   : mediaplayer
+    Created on : 12.06.2012, 20:38:15
+    Author     : Denis
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root
+{
+    display: block;
+}
+
+#mediaControl
+{
+    -fx-background-color: #bfc2c7;
+}
+#mediaViewPane
+{
+    -fx-background-color: black;;
+}

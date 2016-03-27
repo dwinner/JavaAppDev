@@ -1,0 +1,3 @@
+javac CellRendererDemo.java
+java CellRendererDemo
+pause

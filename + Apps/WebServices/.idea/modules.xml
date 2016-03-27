@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WSA.0026/A_AK_ENG_BOM_v01_WS/A_AK_ENG_BOM_v01_WS.iml" filepath="$PROJECT_DIR$/WSA.0026/A_AK_ENG_BOM_v01_WS/A_AK_ENG_BOM_v01_WS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSA.0027/A_OAA_ENG_BOM_v01/A_OAA_ENG_BOM_v01.iml" filepath="$PROJECT_DIR$/WSA.0027/A_OAA_ENG_BOM_v01/A_OAA_ENG_BOM_v01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/@BackUp/WSA.0022-HardController/A_OAA_MFG_LegacyData_v01_WS/A_OAA_MFG_LegacyData_v01_WS.iml" filepath="$PROJECT_DIR$/@BackUp/WSA.0022-HardController/A_OAA_MFG_LegacyData_v01_WS/A_OAA_MFG_LegacyData_v01_WS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSA.0022/A_OAA_MFG_LegacyData_v01_WS/A_OAA_MFG_LegacyData_v01_WS1.iml" filepath="$PROJECT_DIR$/WSA.0022/A_OAA_MFG_LegacyData_v01_WS/A_OAA_MFG_LegacyData_v01_WS1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSA.0025/A_OAA_MFG_Plan_v01_WS/A_OAA_MFG_Plan_v01_WS.iml" filepath="$PROJECT_DIR$/WSA.0025/A_OAA_MFG_Plan_v01_WS/A_OAA_MFG_Plan_v01_WS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSA.0019/A_OAA_MFG_ShiftJob_v03_WS/A_OAA_MFG_ShiftJob_v03_WS.iml" filepath="$PROJECT_DIR$/WSA.0019/A_OAA_MFG_ShiftJob_v03_WS/A_OAA_MFG_ShiftJob_v03_WS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSA.0030/A_OAA_MFG_Shop_v01/A_OAA_MFG_Shop_v01.iml" filepath="$PROJECT_DIR$/WSA.0030/A_OAA_MFG_Shop_v01/A_OAA_MFG_Shop_v01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSA.0029/A_OAA_MFG_WipPlan_v01_WS/A_OAA_MFG_WipPlan_v01_WS.iml" filepath="$PROJECT_DIR$/WSA.0029/A_OAA_MFG_WipPlan_v01_WS/A_OAA_MFG_WipPlan_v01_WS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSA.0031/A_OAA_MFG_WipTransfers_v01_WS/A_OAA_MFG_WipTransfers_v01_WS.iml" filepath="$PROJECT_DIR$/WSA.0031/A_OAA_MFG_WipTransfers_v01_WS/A_OAA_MFG_WipTransfers_v01_WS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSA.0021/A_TP_MFG_Process_v01_WS/A_TP_MFG_Process_v01_WS.iml" filepath="$PROJECT_DIR$/WSA.0021/A_TP_MFG_Process_v01_WS/A_TP_MFG_Process_v01_WS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSA.0020/A_VFP_MFG_MasterOperations_v01_WS/A_VFP_MFG_MasterOperations_v01_WS.iml" filepath="$PROJECT_DIR$/WSA.0020/A_VFP_MFG_MasterOperations_v01_WS/A_VFP_MFG_MasterOperations_v01_WS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WSA.0028/A_VFP_MFG_WipTransfers_v01_WS/A_VFP_MFG_WipTransfers_v01_WS.iml" filepath="$PROJECT_DIR$/WSA.0028/A_VFP_MFG_WipTransfers_v01_WS/A_VFP_MFG_WipTransfers_v01_WS.iml" />
+    </modules>
+  </component>
+</project>
+

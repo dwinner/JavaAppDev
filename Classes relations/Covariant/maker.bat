@@ -1,0 +1,3 @@
+javac CovariantReturn.java
+java CovariantReturn
+pause

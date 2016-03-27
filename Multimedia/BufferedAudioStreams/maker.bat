@@ -1,0 +1,3 @@
+javac PlayAudioLine.java
+java PlayAudioLine
+pause

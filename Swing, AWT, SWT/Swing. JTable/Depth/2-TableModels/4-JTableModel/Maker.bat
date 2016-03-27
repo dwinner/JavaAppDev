@@ -1,0 +1,3 @@
+javac PhilosophersJTable.java
+java PhilosophersJTable
+pause

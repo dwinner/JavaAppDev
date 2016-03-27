@@ -1,0 +1,3 @@
+javac ObjectAnalyzerTest.java
+java ObjectAnalyzerTest
+pause

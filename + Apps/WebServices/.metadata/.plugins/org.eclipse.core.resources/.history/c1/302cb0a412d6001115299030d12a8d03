@@ -1,0 +1,18 @@
+package ru.aztpa.a.vfp.mfg.wiptransfers.v01;
+
+/**
+ *
+ * @author oracle_pr1
+ */
+class WrongConfigurationException extends Exception
+{
+   WrongConfigurationException(String department_code_must_be)
+   {
+      super(department_code_must_be);
+   }
+
+   WrongConfigurationException()
+   {
+      super();
+   }
+}

@@ -1,0 +1,3 @@
+javac DynamicFields.java
+java DynamicFields
+pause

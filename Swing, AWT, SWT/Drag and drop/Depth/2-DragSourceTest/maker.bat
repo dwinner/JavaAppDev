@@ -1,0 +1,3 @@
+javac DragSourceTest.java
+java DragSourceTest
+pause

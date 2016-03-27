@@ -1,0 +1,3 @@
+javac MethodPointerTest.java
+java MethodPointerTest
+pause

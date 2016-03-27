@@ -1,0 +1,3 @@
+javac StringBufferDemo.java
+java StringBufferDemo
+pause

@@ -1,0 +1,3 @@
+javac ProgressMonitorInputStreamTest.java
+java ProgressMonitorInputStreamTest
+pause

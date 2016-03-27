@@ -1,0 +1,3 @@
+javac SystemTrayTest.java
+java SystemTrayTest
+pause

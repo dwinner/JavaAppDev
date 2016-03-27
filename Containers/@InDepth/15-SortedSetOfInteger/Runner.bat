@@ -1,0 +1,3 @@
+javac SortedSetOfInteger.java
+java SortedSetOfInteger
+pause

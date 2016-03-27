@@ -1,0 +1,3 @@
+javac CharArrayReaderDemo.java
+java CharArrayReaderDemo
+pause

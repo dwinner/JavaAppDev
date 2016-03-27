@@ -1,0 +1,11 @@
+    Контейнеры верхнего уровня в AWT
+    
+CreatingAWTWindow:  Простое приложение AWT;
+
+DialogWindow:       Диалоговое окно AWT;
+
+FileDialog:         Файловое диалоговое окно;
+
+FrameHandlers:      Обработка событий в окнах;
+
+FrameWindow:        Дочерний фрейм AWT;

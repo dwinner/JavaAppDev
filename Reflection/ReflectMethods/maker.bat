@@ -1,0 +1,3 @@
+javac ReflectionDemo1.java
+java ReflectionDemo1
+pause

@@ -1,0 +1,23 @@
+root
+{ 
+    display: block;
+}
+
+.browser
+{
+    -fx-background-color: #666970;
+}
+
+.browser-toolbar .hyperlink, .browser-toolbar .button, .browser-toolbar
+{
+    -fx-text-fill: white;
+}
+
+.browser-toolbar
+{    
+    -fx-base: #505359;
+    -fx-background: #505359;
+    -fx-shadow-highlight-color: transparent;
+    -fx-spacing: 5px;
+    -fx-padding: 4px;
+}

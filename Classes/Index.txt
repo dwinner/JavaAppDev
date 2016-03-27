@@ -1,0 +1,19 @@
+    Объекты и классы.
+    
+BisectionSolution:  Объектное вычисление корней уравнения;
+
+CalendarTest:       Класс Календаря;
+
+ComplexClass:       Проектирование класса Complex;
+
+ConstructorTest:    Конструирование объектов;
+
+EmployeeTest:       Класс Employee;
+
+PackageTest:        Использование пакетов;
+
+ParamTest:          Передача параметров;
+
+StackUserClass:     Класс стека;
+
+StaticTest:         Статические методы;

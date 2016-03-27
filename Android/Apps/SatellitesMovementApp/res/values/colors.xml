@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="splash_title_color">#FFFF0F</color>
+    <color name="version_background">#1A1A48</color>
+    <color name="version_color">#F0F0F0</color>
+    <color name="menu_title_color">#FFFF0F</color>
+    <color name="menu_item_glow">#F00</color>
+    <color name="settings_title_color">#FF0000</color>
+
+</resources>

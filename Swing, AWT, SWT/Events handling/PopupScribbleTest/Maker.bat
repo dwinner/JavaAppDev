@@ -1,0 +1,3 @@
+javac PopupMenuScribble.java
+java PopupMenuScribble
+pause

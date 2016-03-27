@@ -1,0 +1,3 @@
+javac ArrayListToArray.java
+java ArrayListToArray
+pause

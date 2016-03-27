@@ -1,0 +1,3 @@
+javac PhilosophersJList.java
+java PhilosophersJList
+pause

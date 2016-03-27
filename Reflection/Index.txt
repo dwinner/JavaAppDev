@@ -1,0 +1,19 @@
+    Механизмы отражения.
+    
+ArrayGrowTest:      Рост массива через отражение;
+
+MethodPointerTest:  Суррогатный указатель на метод;
+
+ObjectAnalyzerTest: Анализатор объектов;
+
+OnlyPublic:         Показ только открытых методов;
+
+PackageReflect:     Пакетное отражение;
+
+ProxyTest:          Прокси-объекты;
+
+ReflectionTest:     Детальное отражение;
+
+ReflectMethods:     Отражение библиотечных классов;
+
+SimpleReflect:      Информация времени выполнения;

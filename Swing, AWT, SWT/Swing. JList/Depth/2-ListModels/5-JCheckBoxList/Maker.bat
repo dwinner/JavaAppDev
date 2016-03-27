@@ -1,0 +1,3 @@
+javac CheckBoxListTest.java
+java CheckBoxListTest
+pause

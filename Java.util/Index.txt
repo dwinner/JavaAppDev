@@ -1,0 +1,23 @@
+    Сервисные классы Java.
+    
+BitSet:             Битовые множества в Java;
+
+CalendarClass:      Календарь;
+
+Currency:           Простейшие принципы локализации;
+
+DateClass:          Методы класса Date;
+
+FormatterClass:     Форматирование строк;
+
+GregorianCalendar:  Грегорианский календарь;
+
+ObserverUsing:      Встраивание шаблонов проектирования Observer;
+
+RandomClass:        Генераторы случайных значений;
+
+ScannerUsing:       Сканирование потоков;
+
+StringTokenizer:    Анализаторы строк;
+
+TimerTask:          Задание для таймера;
