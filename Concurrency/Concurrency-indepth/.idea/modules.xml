@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/InDepth.iml" filepath="$PROJECT_DIR$/InDepth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Concurrency-indepth.iml" filepath="$PROJECT_DIR$/Concurrency-indepth.iml" />
     </modules>
   </component>
 </project>
