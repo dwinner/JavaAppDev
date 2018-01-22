@@ -1,3 +1,0 @@
-#Tue Mar 13 14:25:04 GST 2012
-eclipse.preferences.version=1
-monitors=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<monitors>\r\n<monitor auto-start\="false" local-port\="6888" remote-host\="lptest11.aztpa.ru" remote-port\="10102" timeout\="0" type-id\="HTTP"/>\r\n</monitors>\r\n

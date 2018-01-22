@@ -1,3 +1,0 @@
-javac ArrayIsNotIterable.java
-java ArrayIsNotIterable
-pause

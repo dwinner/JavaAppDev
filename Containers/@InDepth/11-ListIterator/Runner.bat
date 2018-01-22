@@ -1,3 +1,0 @@
-javac ListIteration.java
-java ListIteration
-pause

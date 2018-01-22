@@ -1,8 +1,0 @@
-1) Откройте файл 
-./A_OAA_MFG_ShiftJob_v03_WS/src/ru/aztpa/a/oaa/mfg/shiftjob/v03/CalledWrapper.java;
-
-2) Измените строку 21
-private final static String DEFAULT_CONTEXT_NAME = "OAADataSource", поставив заместо
-строкового литерала OAADataSource имя нужного JNDI-контекста;
-
-3) Пересоздайте web-архив для сервиса, если он уже был создан;

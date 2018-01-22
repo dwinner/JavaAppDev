@@ -1,1 +1,0 @@
-D\:/Work/Java.WebServices/Programs/WSA.0025/A_OAA_MFG_Plan_v01_WS/build/jws/weboutput = A_OAA_MFG_Plan_v01_WS.war

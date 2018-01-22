@@ -1,3 +1,0 @@
-#Fri Feb 24 15:37:32 GST 2012
-eclipse.preferences.version=1
-org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1330066690444" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1330066690444" javadocURL\="http\://java.sun.com/javase/6/docs/api/" name\="jdk160_24" path\="C\:\\Oracle\\Middleware\\jdk160_24"/>\r\n<vm id\="Oracle WebLogic Server 11gR1 PatchSet 4 JRE" name\="Oracle WebLogic Server 11gR1 PatchSet 4 JRE" path\="C\:\\Oracle\\Middleware\\jdk160_24"/>\r\n</vmType>\r\n</vmSettings>\r\n

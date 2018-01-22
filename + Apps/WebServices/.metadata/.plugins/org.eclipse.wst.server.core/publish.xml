@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<publish-info>
-  <server id="Oracle WebLogic Server 11gR1 PatchSet 4 at localhost [base_domain]" path="publish1.dat"/>
-  <server id="Oracle WebLogic Server 11gR1 PatchSet 4 at [lptest11.aztpa.ru]" path="publish0.dat"/>
-</publish-info>

@@ -1,8 +1,0 @@
-1) Открываете архив A_OAA_ENG_BOM_v01_WS.war любым архиватором, который
-поддерживает редактирование файлов в архиве, например, WinRar'ом;
-
-2) Ищите в архиве файл
-A_OAA_ENG_BOM_v01_WS.war/WEB-INF/classes/ru/aztpa/a/oaa/eng/bom/v01/dbconn/dbconfig.properties;
-    
-3) Открываете найденный файл dbconfig.properties для редактирования
-и вставляете свое значение имени контекста;

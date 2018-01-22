@@ -1,3 +1,0 @@
-javac InterfaceVsIterator.java
-java InterfaceVsIterator
-pause

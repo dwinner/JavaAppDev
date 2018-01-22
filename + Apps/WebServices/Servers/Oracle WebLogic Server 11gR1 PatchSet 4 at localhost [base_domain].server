@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<server auto-publish-setting="1" deployment_targets="wladminserver," hostname="localhost" id="Oracle WebLogic Server 11gR1 PatchSet 4 at localhost [base_domain]" name="Oracle WebLogic Server 11gR1 PatchSet 4 at localhost [base_domain]" runtime-id="Oracle WebLogic Server 11gR1 PatchSet 4" server-type="com.bea.weblogic1035.server" server-type-id="com.bea.weblogic1035.server" start-timeout="480" start_with_debug="true" stop-timeout="240" timestamp="13" weblogic_domain_path="C:\Oracle\Middleware\user_projects\domains\base_domain" weblogic_host_name="localhost" weblogic_is_remote="false" weblogic_port="7001" weblogic_use_bootprop="true" weblogic_use_config_xml="true">
-  <list key="modules" value0="A_OAA_MFG_Plan_v01_WS::org.eclipse.jst.jee.server:A_OAA_MFG_Plan_v01_WS::jst.web::2.5" value1="A_OAA_ENG_BOM_v01_WS::org.eclipse.jst.jee.server:A_OAA_ENG_BOM_v01_WS::jst.web::2.5"/>
-</server>

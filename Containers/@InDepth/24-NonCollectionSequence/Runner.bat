@@ -1,3 +1,0 @@
-javac NonCollectionSequence.java
-java NonCollectionSequence
-pause

@@ -1,3 +1,0 @@
-javac CollectionSequence.java
-java CollectionSequence
-pause

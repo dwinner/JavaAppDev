@@ -1,3 +1,0 @@
-javac MultiIterableClass.java
-java MultiIterableClass
-pause
