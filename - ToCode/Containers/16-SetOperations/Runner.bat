@@ -1,0 +1,3 @@
+javac SetOperations.java
+java SetOperations
+pause

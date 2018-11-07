@@ -1,0 +1,3 @@
+javac AdapterMethodIdiom.java
+java AdapterMethodIdiom
+pause

@@ -1,0 +1,3 @@
+javac EnvironmentVariables.java
+java EnvironmentVariables
+pause
