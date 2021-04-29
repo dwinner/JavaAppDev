@@ -10,3 +10,9 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/Networking/Advanced/MulticastSnifferSample/nbproject/private/
+/Networking/Advanced/MulticastSnifferSample/build/
+/Networking/Advanced/MulticastSnifferSample/dist/
+/Networking/Advanced/MulticastSenderSample/nbproject/private/
+/Networking/Advanced/MulticastSenderSample/build/
+/Networking/Advanced/MulticastSenderSample/dist/
