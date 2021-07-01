@@ -5,3 +5,6 @@
    ipconfig /all
 
 2. Tune to start ping on all-routers.mcast.net;
+
+3. If #2 doesn't work, try the following https://windowsreport.com/firewall-blocking-multicast/
+   to change Automatic Metric for desired network adapter;
