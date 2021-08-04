@@ -18,10 +18,14 @@
       for Link-local IPv6 Address, than this step is passed;
       
 3. Enabling multicast for your router:
-
+   
+   If you are going to test not just only on loopback address, but, i.e., on the local subnet:
+   
    a) In cmd.exe, try to ping predefined DNS for multicasting: ping all-routers.mcast.net
    b) If you see "request timed out" and you received "0" bytes, then
       multicasting is disabled for your router; try the folowing link for solution:
       https://windowsreport.com/firewall-blocking-multicast/
    c) If you are able to uncheck the Automatic Metric and set it to 0, than
       ping all-routers.mcast.net should work fine;
+======================================================================================================
+
