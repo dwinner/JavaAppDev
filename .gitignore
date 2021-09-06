@@ -22,3 +22,7 @@ hs_err_pid*
 /metaprogramming/antrl4/01-install/HelloAntlr4/dist/
 /metaprogramming/antrl4/02-starter/ArrayInitTest/nbproject/private/
 /metaprogramming/antrl4/02-starter/ArrayInitTest/build/
+.idea/
+/metaprogramming/antrl4/02-starter/ArrayInitTranslator/nbproject/private/
+/metaprogramming/antrl4/02-starter/ArrayInitTranslator/dist/
+/metaprogramming/antrl4/02-starter/ArrayInitTranslator/build/
