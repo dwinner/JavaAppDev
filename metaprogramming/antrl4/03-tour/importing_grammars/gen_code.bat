@@ -1,12 +1,5 @@
-antlr4 Example.g4
-pause
-javac *.java
-pause
-grun Example init -token
-@rem input there
-pause
-grun Example init -tree
-@rem input there
-pause
-grun Example init -gui
-@rem input there
+@rem automatically pulls in CommonLexerRules.g4
+antlr4 LibExpr.g4 
+javac LibExpr*.java
+grun LibExpr prog -tree
+@rem 3+4
