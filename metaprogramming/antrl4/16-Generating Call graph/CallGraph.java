@@ -1,11 +1,3 @@
-/***
- * Excerpted from "The Definitive ANTLR 4 Reference",
- * published by The Pragmatic Bookshelf.
- * Copyrights apply to this code. It may not be used to create training material, 
- * courses, books, articles, and the like. Contact us if you are in doubt.
- * We make no guarantees that this code is fit for any purpose. 
- * Visit http://www.pragmaticprogrammer.com/titles/tpantlr2 for more book information.
-***/
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.misc.MultiMap;
 import org.antlr.v4.runtime.misc.OrderedHashSet;
@@ -18,29 +10,26 @@ import java.io.InputStream;
 import java.util.Set;
 
 public class CallGraph {
-    /** A graph model of the output. Tracks call from one function to
-     *  another by mapping function to list of called functions. E.g.,
-     *  f -> [g, h]
-     *  Can dump DOT two ways (StringBuilder and ST). Sample output:
-         digraph G {
-           ... setup ...
-           f -> g;
-           g -> f;
-           g -> h;
-           h -> h;
-         }
+    /**
+     * A graph model of the output. Tracks call from one function to another by
+     * mapping function to list of called functions. E.g., f -> [g, h] Can dump DOT
+     * two ways (StringBuilder and ST). Sample output: digraph G { ... setup ... f
+     * -> g; g -> f; g -> h; h -> h; }
      */
     static class Graph {
         // I'm using org.antlr.v4.runtime.misc: OrderedHashSet, MultiMap
         Set<String> nodes = new OrderedHashSet<String>(); // list of functions
-        MultiMap<String, String> edges =                  // caller->callee
-            new MultiMap<String, String>();
+
+        MultiMap<String, String> edges = new MultiMap<String, String>(); // caller->callee
+
         public void edge(String source, String target) {
             edges.map(source, target);
         }
+
         public String toString() {
-            return "edges: "+edges.toString()+", functions: "+ nodes;
+            return "edges: " + edges.toString() + ", functions: " + nodes;
         }
+
         public String toDOT() {
             StringBuilder buf = new StringBuilder();
             buf.append("digraph G {\n");
@@ -53,6 +42,7 @@ public class CallGraph {
                 buf.append(node);
                 buf.append("; ");
             }
+
             buf.append("\n");
             for (String src : edges.keySet()) {
                 for (String trg : edges.get(src)) {
@@ -63,32 +53,27 @@ public class CallGraph {
                     buf.append(";\n");
                 }
             }
+
             buf.append("}\n");
+
             return buf.toString();
         }
 
-        /** Fill StringTemplate:
-             digraph G {
-               rankdir=LR;
-               <edgePairs:{edge| <edge.a> -> <edge.b>;}; separator="\n">
-               <childless:{f | <f>;}; separator="\n">
-             }
-
-		    Just as an example. Much cleaner than buf.append method
+        /**
+         * Fill StringTemplate: digraph G { rankdir=LR; <edgePairs:{edge| <edge.a> ->
+         * <edge.b>;}; separator="\n"> <childless:{f | <f>;}; separator="\n"> }
+         * 
+         * Just as an example. Much cleaner than buf.append method
          */
         public ST toST() {
-            ST st = new ST(
-                "digraph G {\n" +
-                "  ranksep=.25; \n" +
-                "  edge [arrowsize=.5]\n" +
-                "  node [shape=circle, fontname=\"ArialNarrow\",\n" +
-                "        fontsize=12, fixedsize=true, height=.45];\n" +
-                "  <funcs:{f | <f>; }>\n" +
-                "  <edgePairs:{edge| <edge.a> -> <edge.b>;}; separator=\"\\n\">\n" +
-                "}\n"
-            );
+            ST st = new ST("digraph G {\n" + "  ranksep=.25; \n" + "  edge [arrowsize=.5]\n"
+                    + "  node [shape=circle, fontname=\"ArialNarrow\",\n"
+                    + "        fontsize=12, fixedsize=true, height=.45];\n" + "  <funcs:{f | <f>; }>\n"
+                    + "  <edgePairs:{edge| <edge.a> -> <edge.b>;}; separator=\"\\n\">\n" + "}\n");
+
             st.add("edgePairs", edges.getPairs());
             st.add("funcs", nodes);
+
             return st;
         }
     }
@@ -111,11 +96,15 @@ public class CallGraph {
 
     public static void main(String[] args) throws Exception {
         String inputFile = null;
-        if ( args.length>0 ) inputFile = args[0];
+        if (args.length > 0) {
+            inputFile = args[0];
+        }
+
         InputStream is = System.in;
-        if ( inputFile!=null ) {
+        if (inputFile != null) {
             is = new FileInputStream(inputFile);
         }
+
         ANTLRInputStream input = new ANTLRInputStream(is);
         CymbolLexer lexer = new CymbolLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
@@ -123,7 +112,7 @@ public class CallGraph {
         parser.setBuildParseTree(true);
         ParseTree tree = parser.file();
         // show tree in text form
-//        System.out.println(tree.toStringTree(parser));
+        // System.out.println(tree.toStringTree(parser));
 
         ParseTreeWalker walker = new ParseTreeWalker();
         FunctionListener collector = new FunctionListener();
@@ -132,6 +121,6 @@ public class CallGraph {
         System.out.println(collector.graph.toDOT());
 
         // Here's another example that uses StringTemplate to generate output
-//        System.out.println(collector.graph.toST().render());
+        // System.out.println(collector.graph.toST().render());
     }
 }
