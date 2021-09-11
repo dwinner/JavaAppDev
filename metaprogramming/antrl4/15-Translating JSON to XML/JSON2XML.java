@@ -1,17 +1,3 @@
-/***
- * Excerpted from "The Definitive ANTLR 4 Reference",
- * published by The Pragmatic Bookshelf.
- * Copyrights apply to this code. It may not be used to create training material, 
- * courses, books, articles, and the like. Contact us if you are in doubt.
- * We make no guarantees that this code is fit for any purpose. 
- * Visit http://www.pragmaticprogrammer.com/titles/tpantlr2 for more book information.
-***/
-import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.tree.*;
-
-import java.io.FileInputStream;
-import java.io.InputStream;
-
 /*
 {
     "description" : "An imaginary server config file",
@@ -36,11 +22,23 @@ to
 <aliases></aliases>
  */
 
+import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.tree.*;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+
 public class JSON2XML {
     public static class XMLEmitter extends JSONBaseListener {
         ParseTreeProperty<String> xml = new ParseTreeProperty<String>();
-        String getXML(ParseTree ctx) { return xml.get(ctx); }
-        void setXML(ParseTree ctx, String s) { xml.put(ctx, s); }
+
+        String getXML(ParseTree ctx) {
+            return xml.get(ctx);
+        }
+
+        void setXML(ParseTree ctx, String s) {
+            xml.put(ctx, s);
+        }
 
         public void exitJson(JSONParser.JsonContext ctx) {
             setXML(ctx, getXML(ctx.getChild(0)));
@@ -52,8 +50,10 @@ public class JSON2XML {
             for (JSONParser.PairContext pctx : ctx.pair()) {
                 buf.append(getXML(pctx));
             }
+
             setXML(ctx, buf.toString());
         }
+
         public void exitEmptyObject(JSONParser.EmptyObjectContext ctx) {
             setXML(ctx, "");
         }
@@ -67,6 +67,7 @@ public class JSON2XML {
                 buf.append("</element>");
                 buf.append("\n");
             }
+
             setXML(ctx, buf.toString());
         }
 
@@ -99,16 +100,21 @@ public class JSON2XML {
         }
 
         public static String stripQuotes(String s) {
-            if ( s==null || s.charAt(0)!='"' ) return s;
+            if (s == null || s.charAt(0) != '"')
+                return s;
+
             return s.substring(1, s.length() - 1);
         }
     }
 
     public static void main(String[] args) throws Exception {
         String inputFile = null;
-        if ( args.length>0 ) inputFile = args[0];
+        if (args.length > 0) {
+            inputFile = args[0];
+        }
+
         InputStream is = System.in;
-        if ( inputFile!=null ) {
+        if (inputFile != null) {
             is = new FileInputStream(inputFile);
         }
         ANTLRInputStream input = new ANTLRInputStream(is);
@@ -118,7 +124,7 @@ public class JSON2XML {
         parser.setBuildParseTree(true);
         ParseTree tree = parser.json();
         // show tree in text form
-//        System.out.println(tree.toStringTree(parser));
+        // System.out.println(tree.toStringTree(parser));
 
         ParseTreeWalker walker = new ParseTreeWalker();
         XMLEmitter converter = new XMLEmitter();
