@@ -1,11 +1,3 @@
-/***
- * Excerpted from "The Definitive ANTLR 4 Reference",
- * published by The Pragmatic Bookshelf.
- * Copyrights apply to this code. It may not be used to create training material, 
- * courses, books, articles, and the like. Contact us if you are in doubt.
- * We make no guarantees that this code is fit for any purpose. 
- * Visit http://www.pragmaticprogrammer.com/titles/tpantlr2 for more book information.
-***/
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
@@ -18,10 +10,13 @@ import java.util.*;
 public class LoadCSV {
     public static class Loader extends CSVBaseListener {
         public static final String EMPTY = "";
+
         /** Load a list of row maps that map field name to value */
-        List<Map<String,String>> rows = new ArrayList<Map<String, String>>();
+        List<Map<String, String>> rows = new ArrayList<Map<String, String>>();
+
         /** List of column names */
         List<String> header;
+
         /** Build up a list of fields in current row */
         List<String> currentRowFieldValues;
 
@@ -37,7 +32,10 @@ public class LoadCSV {
         public void exitRow(CSVParser.RowContext ctx) {
             // If this is the header row, do nothing
             // if ( ctx.parent instanceof CSVParser.HdrContext ) return; OR:
-            if ( ctx.getParent().getRuleIndex() == CSVParser.RULE_hdr ) return;
+            if (ctx.getParent().getRuleIndex() == CSVParser.RULE_hdr) {
+                return;
+            }
+
             // It's a data row
             Map<String, String> m = new LinkedHashMap<String, String>();
             int i = 0;
@@ -45,6 +43,7 @@ public class LoadCSV {
                 m.put(header.get(i), v);
                 i++;
             }
+
             rows.add(m);
         }
 
@@ -63,9 +62,15 @@ public class LoadCSV {
 
     public static void main(String[] args) throws Exception {
         String inputFile = null;
-        if ( args.length>0 ) inputFile = args[0];
+        if (args.length > 0) {
+            inputFile = args[0];
+        }
+
         InputStream is = System.in;
-        if ( inputFile!=null ) is = new FileInputStream(inputFile);
+        if (inputFile != null) {
+            is = new FileInputStream(inputFile);
+        }
+
         CSVLexer lexer = new CSVLexer(new ANTLRInputStream(is));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         CSVParser parser = new CSVParser(tokens);
