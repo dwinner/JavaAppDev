@@ -1,0 +1,73 @@
+    Описание тех. задания.
+    
+Суть этого сервиса - заполнение двух таблиц XXODI.XXTU_OPERATIONS и XXODI.XXTU_STEPS
+данными, которые передаются сервису в параметрах при его вызове.
+Таблицы на экземпляре TOPAZ созданы. JNDI = OAADataSource.
+В таблицах сейчас содержатся данные по двум технологическим процессам - номера 49 и 4305.
+ 
+Сервис WSA.0022 за один вызов будет получать данные на один процесс.
+Сначала нужно удалить из таблиц существующие данные по указанному процессу
+ 
+DELETE FROM xxodi.xxtu_operations
+WHERE process_id = 123
+ 
+DELETE FROM xxodi.xxtu_steps
+WHERE process_id = 123
+ 
+Затем нужно вставить полученные из параметров значения по операциям технологического процесса...
+ 
+INSERT INTO xxodi.xxtu_operations
+(
+    PROCESS_ID,
+    OPERATION_ID,
+    OPERATION_NUM,
+    DEPARTMENT,
+    SITE,
+    OPERATION_NAME,
+    OPERATION_TYPE,
+    OPERATION_SUBTYPE,
+    NORM_TIME,
+    EQUIP_CODE,
+    EQUIP_MODEL,
+    EQUIP_NAME,
+    LAST_UPDATE_DATE
+)
+VALUES
+(
+    123,
+    1,
+    '005',
+    '090',
+    NULL,
+    'КОНТРОЛЬНАЯ. Требования техники безопасности по ИТБ 07.91.95',
+    NULL,
+    '020000',
+    0,
+    NULL,
+    NULL,
+    NULL,
+    SYSDATE
+)
+
+... и по переходам технологического процесса...
+ 
+INSERT INTO xxodi.xxtu_steps
+(
+    PROCESS_ID,
+    OPERATION_ID,
+    STEP_NUM,
+    STEP_NAME,
+    WORK_TYPE_CODE,
+    NORM_TIME,
+    LAST_UPDATE_DATE
+)
+VALUES
+(
+    123,
+    1,
+    1,
+    'Проверить наличие маркировки и сертификата соответствия на металлопрокат',
+    '0',
+    0, 
+    SYSDATE
+)

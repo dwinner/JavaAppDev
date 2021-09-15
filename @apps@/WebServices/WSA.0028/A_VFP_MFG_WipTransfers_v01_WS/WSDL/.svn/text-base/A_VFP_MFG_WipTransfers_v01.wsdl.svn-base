@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:tns="http://www.aztpa.ru/a/vfp/mfg/wiptransfers/v01/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    name="A_VFP_MFG_WipTransfers_v01"
+    targetNamespace="http://www.aztpa.ru/a/vfp/mfg/wiptransfers/v01/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.aztpa.ru/a/vfp/mfg/wiptransfers/v01/">
+      <xsd:element name="synchronizeTransferDocs">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="sourceDepartment" type="tns:Department"
+                minOccurs="1" maxOccurs="1" />
+            <xsd:element name="transferDocs" type="tns:TransferDocs" minOccurs="1" maxOccurs="1"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="synchronizeTransferDocsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="result" type="tns:ActionResult" minOccurs="1" maxOccurs="1"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    
+      <xsd:complexType name="TransferDoc">
+        <xsd:sequence>
+            <xsd:element name="year" type="xsd:int" minOccurs="1"
+                maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="month" type="xsd:int" minOccurs="1"
+                maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="docNum" type="xsd:string" minOccurs="1"
+                maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="docDate" type="xsd:date" minOccurs="1"
+                maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="lastUpdateDate" type="xsd:dateTime"
+                minOccurs="1" maxOccurs="1">
+            </xsd:element>
+
+            <xsd:element name="destination" type="tns:Department"
+                minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="docLines" type="tns:DocLines"
+                minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="dispatcher" type="xsd:string"
+                minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="site" type="xsd:int" minOccurs="0" maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    
+      <xsd:complexType name="Department">
+        <xsd:sequence>
+            <xsd:element name="depCode" type="xsd:string"
+                minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="depName" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    
+      <xsd:complexType name="DocLine">
+        <xsd:sequence>
+            <xsd:element name="itemCode" type="xsd:string"
+                minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="itemName" type="xsd:string"
+                minOccurs="1" maxOccurs="1">
+            </xsd:element>
+
+            <xsd:element name="quantity" type="xsd:double"
+                minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="itemCost" type="xsd:double"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="materialCode" type="xsd:string"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="materialName" type="xsd:string"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="materialSort" type="xsd:string"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="meltCode" type="xsd:string"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="physicalProperties" type="xsd:string"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="chemicalProperties" type="xsd:string"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="itemsPerBillet" type="xsd:int"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="outsourceItemCode" type="xsd:string"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="outsourceItemName" type="xsd:string"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="outsourceItemWeight" type="xsd:double" minOccurs="0" maxOccurs="1"></xsd:element>
+            <xsd:element name="finishedGoodFigure" type="xsd:string"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+
+            <xsd:element name="certificate" type="xsd:string"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="itemSize" type="xsd:string"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="notes" type="xsd:string" minOccurs="0"
+                maxOccurs="1">
+            </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    
+      <xsd:complexType name="DocLines">
+        <xsd:sequence>
+            <xsd:element name="docLine" type="tns:DocLine" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    
+      <xsd:complexType name="TransferDocs">
+        <xsd:sequence>
+            <xsd:element name="transferDoc" type="tns:TransferDoc" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="getLastSyncDateForShop">
+        <xsd:complexType>
+            <xsd:sequence>
+
+                <xsd:element name="SourceDepartmentCode" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getLastSyncDateForShopResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+
+                <xsd:element name="lastSyncDate" type="xsd:dateTime" minOccurs="1" maxOccurs="1"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    
+      <xsd:complexType name="ActionResult">
+        <xsd:sequence>
+            <xsd:element name="status" minOccurs="1" maxOccurs="1">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="SUCCESS"></xsd:enumeration>
+                        <xsd:enumeration value="ERROR"></xsd:enumeration>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="returnCode" type="xsd:string"
+                minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="message" type="xsd:string" minOccurs="0" maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="synchronizeTransferDocsRequest">
+    <wsdl:part element="tns:synchronizeTransferDocs" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="synchronizeTransferDocsResponse">
+    <wsdl:part element="tns:synchronizeTransferDocsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getLastSyncDateForShopRequest">
+    <wsdl:part name="parameters" element="tns:getLastSyncDateForShop"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLastSyncDateForShopResponse">
+    <wsdl:part name="parameters" element="tns:getLastSyncDateForShopResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="WipTransfersPortType">
+    <wsdl:operation name="synchronizeTransferDocs">
+      <wsdl:input message="tns:synchronizeTransferDocsRequest"/>
+      <wsdl:output message="tns:synchronizeTransferDocsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getLastSyncDateForShop">
+        <wsdl:input message="tns:getLastSyncDateForShopRequest"></wsdl:input>
+        <wsdl:output message="tns:getLastSyncDateForShopResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WipTransfersBindingSOAP"
+    type="tns:WipTransfersPortType">
+    <soap:binding style="document"
+        transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="synchronizeTransferDocs">
+        <soap:operation
+            soapAction="http://www.aztpa.ru/a/vfp/mfg/wiptransfers/v01/synchronizeTransferDocs" />
+        <wsdl:input>
+            <soap:body use="literal" />
+        </wsdl:input>
+        <wsdl:output>
+            <soap:body use="literal" />
+        </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastSyncDateForShop">
+        <soap:operation
+            soapAction="http://www.aztpa.ru/a/vfp/mfg/wiptransfers/v01/getLastSyncDateForShop" />
+        <wsdl:input>
+            <soap:body use="literal" />
+        </wsdl:input>
+        <wsdl:output>
+            <soap:body use="literal" />
+        </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WipTransfers">
+    <wsdl:port binding="tns:WipTransfersBindingSOAP" name="WipTransfersPortSOAP">
+    <!-- http://webserv.aztpa.ru:13001/A_VFP_MFG_WipTransfers_v01/WipTransfers -->
+      <soap:address location="http://localhost:7001/A_VFP_MFG_WipTransfers_v01/WipTransfers"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

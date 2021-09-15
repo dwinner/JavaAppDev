@@ -1,0 +1,217 @@
+package ru.aztpa.a.oaa.mfg.plan.v01.process;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.List;
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
+import ru.aztpa.a.oaa.mfg.plan.v01.EngResolution;
+import ru.aztpa.a.oaa.mfg.plan.v01.Plan;
+import ru.aztpa.a.oaa.mfg.plan.v01.PlanRow;
+import ru.aztpa.a.oaa.mfg.plan.v01.PlanRows;
+import static ru.aztpa.a.oaa.mfg.plan.v01.process.ProcessFields.*;
+
+/**
+ * Вспомогательный (Hard Coded) класс для построения запросов к СУБД
+ * <p/>
+ * @version 1.0.0 04.05.2012
+ * @author jdeveloper@aztpa.ru
+ */
+public class PlanQueryBuilder
+{
+   private Plan plan;
+   private static final String plansTable = "XXODI.XXBI_PLANS";
+   private static final String plansPositionsTable = "XXODI.XXBI_PLANPOSITIONS";
+   private final static DatatypeFactory dtFactory;
+   private final static GregorianCalendar gCalendar = new GregorianCalendar();
+
+   static
+   {
+      try
+      {
+         dtFactory = DatatypeFactory.newInstance();
+      }
+      catch (DatatypeConfigurationException e)
+      {
+         throw new RuntimeException(e);
+      }
+   }
+
+   /**
+    * Инициализация плана
+    * <p/>
+    * @param aPlan План
+    */
+   public PlanQueryBuilder(Plan aPlan)
+   {
+      if (aPlan == null)
+      {
+         throw new AssertionError("Plan Object cannot be null");
+      }
+      plan = aPlan;
+   }
+
+   /**
+    * Построение запроса для вставки строки в таблицу планов.
+    * <p/>
+    * @return Строка, готовая для передачи СУБД.
+    */
+   public String buildInsertPlanQuery()
+   {
+      int planId = processStringToInteger(plan.getPlanIDD());
+
+      String planType = processStringField(plan.getPlanType());
+
+      String approved = plan.getApprovedBySPK();
+      Integer approvedInt = null;
+      if (approved != null)
+      {
+         approved = approved.trim().toUpperCase();
+         if (approved.equals("Y"))
+         {
+            approvedInt = 1;
+         }
+         else if (approved.equals("N"))
+         {
+            approvedInt = 0;
+         }
+      }
+
+      String approvedODP = plan.getApprovedByODP();
+      Integer approvedODPInt = null;
+      if (approvedODP != null)
+      {
+         approvedODP = approvedODP.trim().toUpperCase();
+         if (approvedODP.equals("Y"))
+         {
+            approvedODPInt = 1;
+         }
+         else if (approvedODP.equals("N"))
+         {
+            approvedODPInt = 0;
+         }
+      }
+
+      XMLGregorianCalendar xmlgcPeriod = plan.getPlanPeriod();
+      String periodString = null;
+      if (xmlgcPeriod != null)
+      {
+         GregorianCalendar fromXmlCal = xmlgcPeriod.toGregorianCalendar();
+         periodString = "" + fromXmlCal.get(Calendar.DAY_OF_MONTH)
+            + '.' + (fromXmlCal.get(Calendar.MONTH) + 1)
+            + '.' + fromXmlCal.get(Calendar.YEAR);
+         periodString = "TO_DATE('" + periodString + "', 'DD.MM.YYYY')";
+      }
+
+      String planName = processStringField(plan.getPlanName());
+
+      String qBase = "INSERT INTO " + plansTable + " ( "
+         + "ID, "
+         + "PLANTYPE, "
+         + "APPROVED, "
+         + "APPROVEDODP, "
+         + "PERIOD, "
+         + "PLAN_NAME) ";
+      StringBuilder totalQuery = new StringBuilder(qBase);
+      totalQuery.append(" VALUES ( ");
+      totalQuery.append(planId).append(", ");
+      totalQuery.append(planType).append(", ");
+      totalQuery.append(approvedInt).append(", ");
+      totalQuery.append(approvedODPInt).append(", ");
+      totalQuery.append(periodString).append(", ").append(planName).append(')');
+
+      return totalQuery.toString();
+   }
+
+   /**
+    * Построение запроса для вставки строк в таблицу позиций.
+    * <p/>
+    * @return Массив INSERT-строк, готовая для передачи СУБД. Может быть пустым, если вставлять нечего.
+    */
+   public String[] buildInsertPlanPositionsQuery()
+   {
+      if (plan.getPlanRows() == null)
+      {
+         return new String[0];
+      }
+      PlanRows planRowsObject = plan.getPlanRows();
+      if (planRowsObject.getPlanRow().isEmpty())
+      {
+         return new String[0];
+      }
+      List<PlanRow> planRows = planRowsObject.getPlanRow();
+      List<String> insertQueries = new ArrayList<String>(planRows.size());
+
+      String qBase = "INSERT INTO " + plansPositionsTable + " ( "
+         + "SHIPORDERNUM, "
+         + "ITEM, "
+         + "FIGURE, "
+         + "MONTHQ1, "
+         + "MONTHQ2, "
+         + "MONTHQ3, "
+         + "ID, "
+         + "NUMORDERCARD, "
+         + "DAYSCONSRTPREPARE, "
+         + "DATECONSTR, "
+         + "NUMCONSTRUCTRESOLUTION) ";
+      int planId = processStringToInteger(plan.getPlanIDD());
+
+      for (PlanRow planRow : planRows)
+      {
+         String shipOrderNum = processStringField(planRow.getShipOrderNum());
+
+         String item = planRow.getItemCode();
+         if (item == null)
+         {
+            throw new RuntimeException("Item code cannot be null");
+         }
+         if (item.trim().length() == 0)
+         {
+            throw new RuntimeException("Item code cannot be empty");
+         }
+         item = "'" + item.trim() + "'";
+
+         String figure = planRow.getItemFigure();
+         if (figure == null)
+         {
+            throw new RuntimeException("Item code cannot be null");
+         }
+         if (figure.trim().length() == 0)
+         {
+            throw new RuntimeException("Item code cannot be empty");
+         }
+         figure = "'" + figure.trim() + "'";
+
+         double month1Quantity = planRow.getMonth1Quantity();
+         double month2Quantity = planRow.getMonth2Quantity();
+         double month3Quantity = planRow.getMonth3Quantity();
+
+         String numOrderCard = processStringField(planRow.getOrderCardNum());
+
+         EngResolution engResolution = planRow.getEngResolution();
+         if (engResolution == null)
+         {
+            throw new RuntimeException("Resolution cannot be null");
+         }
+         
+         int daysConstrPrepare = engResolution.getDesignDurationInDays();
+         
+         XMLGregorianCalendar xmlgcCDays = engResolution.getResolutionDate();
+         String constrDays = null;
+         if (xmlgcCDays != null)
+         {
+            GregorianCalendar fromXmlCal = xmlgcCDays.toGregorianCalendar();
+            constrDays = "" + fromXmlCal.get(Calendar.DAY_OF_MONTH)
+               + '.' + (fromXmlCal.get(Calendar.MONTH) + 1)
+               + '.' + fromXmlCal.get(Calendar.YEAR);
+            constrDays = "TO_DATE('" + constrDays + "', 'DD.MM.YYYY')";
+         }
+         
+         String numConstructResolution = processStringField(engResolution.getResolutionNum());
+      }
+
+      return null;
+   }
+}

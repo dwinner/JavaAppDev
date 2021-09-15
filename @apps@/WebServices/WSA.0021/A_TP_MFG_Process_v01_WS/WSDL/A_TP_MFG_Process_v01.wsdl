@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://www.aztpa.ru/a/tp/mfg/process/v01/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="A_TP_MFG_Process_v01"
+	targetNamespace="http://www.aztpa.ru/a/tp/mfg/process/v01/">
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://www.aztpa.ru/a/tp/mfg/process/v01/">
+			<xsd:element name="findProcessListByProfile">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="profile" type="tns:Profile"
+							minOccurs="1" maxOccurs="1" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="findProcessListByProfileResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="process" type="tns:Process"
+							minOccurs="0" maxOccurs="unbounded" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="getProcessDetailById">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="id" type="xsd:long"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="getProcessDetailByIdResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="detail" type="tns:ProcessDetail"
+							minOccurs="1" maxOccurs="1"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+			<xsd:complexType name="Profile">
+				<xsd:sequence>
+					<xsd:element name="processId" type="xsd:long"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="figDSE" type="xsd:string" minOccurs="0"
+						maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="nameDSE" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="figFG" type="xsd:string" minOccurs="0"
+						maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="createdAfter" type="xsd:dateTime"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="createdBefore" type="xsd:dateTime"
+						minOccurs="0" maxOccurs="1"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Process">
+				<xsd:sequence>
+					<xsd:element name="processId" type="xsd:long"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="figDSE" type="xsd:string" minOccurs="1"
+						maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="nameDSE" type="xsd:string"
+						minOccurs="1" maxOccurs="1"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="ProcessDetail">
+				<xsd:sequence>
+					<xsd:element name="processId" type="xsd:long"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="figDSE" type="xsd:string" minOccurs="1"
+						maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="nameDSE" type="xsd:string"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="figFG" type="xsd:string" minOccurs="0"
+						maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="created" type="xsd:dateTime"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="operations" type="tns:Operations"
+						minOccurs="1" maxOccurs="1"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Step">
+				<xsd:sequence>
+					<xsd:element name="stepNum" type="xsd:int" minOccurs="1"
+						maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="stepName" type="xsd:string"
+						minOccurs="1" maxOccurs="1"></xsd:element>
+					<xsd:element name="workTypeCode" type="xsd:int"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="normTime" type="xsd:double"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="addTime" type="xsd:double"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Steps">
+				<xsd:sequence>
+					<xsd:element name="step" type="tns:Step" minOccurs="0"
+						maxOccurs="unbounded"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Operation">
+				<xsd:sequence>
+					<xsd:element name="operId" type="xsd:int" minOccurs="1"
+						maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="operNum" type="xsd:string"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="department" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="site" type="xsd:string" minOccurs="0"
+						maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="operName" type="xsd:string"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="operType" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="operSubtype" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="normTime" type="xsd:double"
+						minOccurs="1" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="equipCode" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="equipModel" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="equipName" type="xsd:string"
+						minOccurs="0" maxOccurs="1">
+					</xsd:element>
+					<xsd:element name="steps" type="tns:Steps" minOccurs="1"
+						maxOccurs="1"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Operations">
+				<xsd:sequence>
+					<xsd:element name="operation" type="tns:Operation"
+						minOccurs="0" maxOccurs="unbounded"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="findProcessListByProfileRequest">
+		<wsdl:part element="tns:findProcessListByProfile" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="findProcessListByProfileResponse">
+		<wsdl:part element="tns:findProcessListByProfileResponse"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="getProcessDetailByIdRequest">
+		<wsdl:part name="parameters" element="tns:getProcessDetailById"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getProcessDetailByIdResponse">
+		<wsdl:part name="parameters" element="tns:getProcessDetailByIdResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="ProcessPortType">
+		<wsdl:operation name="findProcessListByProfile">
+			<wsdl:input message="tns:findProcessListByProfileRequest" />
+			<wsdl:output message="tns:findProcessListByProfileResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getProcessDetailById">
+			<wsdl:input message="tns:getProcessDetailByIdRequest"></wsdl:input>
+			<wsdl:output message="tns:getProcessDetailByIdResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="ProcessBindingSOAP" type="tns:ProcessPortType">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="findProcessListByProfile">
+			<soap:operation
+				soapAction="http://www.aztpa.ru/a/tp/mfg/process/v01/findProcessListByProfile" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getProcessDetailById">
+			<soap:operation
+				soapAction="http://www.aztpa.ru/a/tp/mfg/process/v01/getProcessDetailById" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="Process">
+		<wsdl:port binding="tns:ProcessBindingSOAP" name="ProcessPortSOAP">
+			<soap:address
+				location="http://lptest11.aztpa.ru:10102/A_TP_MFG_Process_v01/Process" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

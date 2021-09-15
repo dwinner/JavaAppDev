@@ -1,0 +1,8 @@
+1) Откройте файл 
+./A_OAA_MFG_Plan_v01_WS/src/ru/aztpa/a/oaa/mfg/plan/v01/PlanHelper.java
+
+2) Измените строку 24
+private final static String CONTEXT_STRING = "ORACLE_JNDI", поставив заместо
+строкового литерала ORACLE_JNDI имя нужного JNDI-контекста;
+
+3) Пересоздайте web-архив для сервиса, если он уже был создан;

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:A_OAA_MFG_ShiftJob_v03_WS" serverId="Oracle WebLogic Server 11gR1 PatchSet 4 at [lptest11.aztpa.ru]"/>
+  <module moduleId="org.eclipse.jst.jee.server:A_OAA_MFG_WipPlan_v01_WS" serverId="Oracle WebLogic Server 11gR1 PatchSet 4 at localhost [base_domain]"/>
+  <module moduleId="org.eclipse.jst.jee.server:A_OAA_ENG_BOM_v01_WS"/>
+  <module moduleId="org.eclipse.jst.jee.server:A_OAA_MFG_Plan_v01_WS" serverId="Oracle WebLogic Server 11gR1 PatchSet 4 at localhost [base_domain]"/>
+  <module moduleId="org.eclipse.jst.jee.server:A_AK_ENG_BOM_v01_WS" serverId="Oracle WebLogic Server 11gR1 PatchSet 4 at localhost [base_domain]"/>
+  <module moduleId="org.eclipse.jst.jee.server:A_OAA_MFG_LegacyData_v01_WS" serverId="Oracle WebLogic Server 11gR1 PatchSet 4 at [lptest11.aztpa.ru]"/>
+</modules>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;A_OAA_MFG_ShiftJob_v03_WS&apos;&#x0D;&#x0A;- Original project: &apos;A_OAA_MFG_ShiftJob_v03_WS&apos;&#x0D;&#x0A;- Original element: &apos;A_OAA_MFG_ShiftJob_v03_WS/src/ru.aztpa.www.a.tp.mfg.process.v01&apos;" description="Delete element" element1="/src&lt;ru.aztpa.www.a.tp.mfg.process.v01" element2="/src&lt;ru.aztpa.www.a.tp.mfg.process" element3="/src&lt;ru.aztpa.www.a.tp.mfg" element4="/src&lt;ru.aztpa.www.a.tp" element5="/src&lt;ru.aztpa.www.a" element6="/src&lt;ru.aztpa.www" elements="6" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1331786478054" subPackages="false" version="1.0"/>
+</session>

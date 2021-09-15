@@ -1,0 +1,66 @@
+package ru.aztpa.a.oaa.mfg.wipplan.v01;
+
+import ru.aztpa.a.oaa.mfg.wipplan.v01.dbconn.DataBaseConnection;
+
+import java.sql.SQLException;
+
+class WipPlanDelegate
+{
+    ActionResult createWipPlan(Shop shop)
+    {
+        ActionResult actionResult = new ActionResult();
+        if (shop == null)
+        {
+            actionResult.setMessage("ERROR");
+            actionResult.setReturnCode("-1");
+            actionResult.setStatus("There is no shop");
+        }
+
+        try
+        {
+            DataBaseConnection connection = null;
+            try
+            {
+                connection = new DataBaseConnection();
+                WipPlanQueryUnit queryExecutor = new WipPlanQueryUnit(connection.getDbConn());
+
+                // Код организации. Для АЗТПА = 71
+                String organizationCode = shop.getOrganizationCode();
+                if (organizationCode == null || (organizationCode = organizationCode.trim()).isEmpty())
+                    throw new RuntimeException("Organization code cannot be null or empty");
+
+                // Номер цеха (например, 0800)
+                String shopCode = shop.getShopCode();
+                if (shopCode == null || (shopCode = shopCode.trim()).isEmpty())
+                    throw new RuntimeException("Shop code cannot be null or empty");
+
+                // Наименование цеха (например, для 0800 это "Механический Цех №8")
+                String shopName = shop.getShopName();
+                if (shopName == null || (shopName = shopName.trim()).isEmpty())
+                    throw new RuntimeException("Shop name cannot be null or empty");
+
+                queryExecutor.importPlanForDepartment(shopCode);
+
+                actionResult.setMessage("SUCCESS");
+                actionResult.setReturnCode("0");
+                actionResult.setStatus("Plan has been imported successfully for department " + shopCode);
+            }
+            finally
+            {
+                if (connection != null)
+                    connection.close();
+            }
+        }
+        catch (SQLException sqlEx)
+        {
+            throw new RuntimeException(sqlEx);
+            /*
+            actionResult.setMessage("SQL Error message: " + sqlEx.getMessage());
+            actionResult.setReturnCode("SQL Error code: " + sqlEx.getErrorCode());
+            actionResult.setStatus("Plan is not created");
+            */
+        }
+
+        return actionResult;
+    }
+}

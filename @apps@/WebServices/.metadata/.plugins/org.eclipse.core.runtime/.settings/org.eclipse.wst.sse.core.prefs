@@ -1,0 +1,5 @@
+#Fri Aug 03 08:26:28 GST 2012
+task-tag-projects-already-scanned=Servers,A_VFP_MFG_WipTransfers_v01_WS,A_OAA_MFG_WipTransfers_v01_WS
+eclipse.preferences.version=1
+modelmanager.maxWaitDuringConcurrentLoad=30000
+task-tags/enabled=true

@@ -1,0 +1,104 @@
+package ru.aztpa.a.tp.mfg.process.v01;
+
+import com.bboytronik.gmail.jndi.CachedConnection;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.List;
+
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
+import static com.bboytronik.gmail.jndi.CachedConnection.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.naming.NamingException;
+
+/**
+ * Оболочка вызовов методов Web-сервиса.
+ * <p/>
+ * @author jdeveloper@aztpa.ru
+ * @version 1.0.0
+ */
+class CalledWrapper
+{
+    private static final String DEFAULT_CONTEXT_NAME = "ZAGTP_BAS";
+    private static Connection cacheConn;
+
+    static
+    {
+        try
+        {
+            cacheConn = getCacheConnection(DEFAULT_CONTEXT_NAME);
+        }
+        catch (NamingException ex)
+        {
+            throw new RuntimeException(ex);
+        }
+        catch (SQLException ex)
+        {
+            throw new RuntimeException(ex);
+        }
+    }
+
+    CalledWrapper()
+    {
+    }
+
+    List<Process> doFindProcessListByProfile(Profile profile) throws SQLException
+    {
+        // TODO: Обработка входящих параметров.
+
+        List<Process> processList = new ArrayList<Process>();
+
+        String actionQuery = "select "
+            + " nomtp, "
+            + " oboz_dse, "
+            + " naim_dse, "
+            + " obozn_izd, "
+            + " date_cr, "
+            + " time_cr, "
+            + " ctot(concat(nvl(date_cr,'1900-01-01'), ' ', nvl(time_cr,'00:00:00.0'))) as created "
+            + " from kattp "
+            + " where 1=1 "
+            + " and nomtp = " + profile.getProcessId()
+            + " and oboz_dse like '" + profile.getFigDSE() + "%'"
+            + " and naim_dse like '" + profile.getNameDSE() + "%'"
+            + " and obozn_izd like '" + profile.getFigFG() + "%'"
+            + " and ctot(concat(nvl(date_cr,'1900-01-01'), ' ', nvl(time_cr,'00:00:00.0'))) > ctot('2012-03-01 00:00:00.0') "
+            + " and ctot(concat(nvl(date_cr,'1900-01-01'), ' ', nvl(time_cr,'00:00:00.0'))) < ctot('2012-03-14 00:00:00.0') ";
+
+        PreparedStatement actionStat;
+        ResultSet actionResult = null;
+        try
+        {
+            actionStat = cacheConn.prepareStatement(actionQuery);
+            actionResult = actionStat.executeQuery();
+
+            while (actionResult.next())
+            {
+                Process currentProcess = new Process();
+            }
+        }
+        finally
+        {
+            if (actionResult != null)
+            {
+                actionResult.close();
+            }
+        }
+
+        return null;
+    }
+
+    ProcessDetail doGetProcessDetailById(long id)
+    {
+        // TODO: replace with your impl here
+        return null;
+    }
+}

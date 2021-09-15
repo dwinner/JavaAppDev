@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:tns="http://www.aztpa.ru/a/oaa/mfg/shiftjob/v03/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ShiftJobs"
+    targetNamespace="http://www.aztpa.ru/a/oaa/mfg/shiftjob/v03/">
+    <wsdl:types>
+        <xsd:schema targetNamespace="http://www.aztpa.ru/a/oaa/mfg/shiftjob/v03/">
+
+            <xsd:complexType name="Shift">
+                <xsd:sequence maxOccurs="1" minOccurs="1">
+                    <xsd:element name="department" type="xsd:string"
+                        maxOccurs="1" minOccurs="1"></xsd:element>
+                    <xsd:element name="shiftDate" type="xsd:dateTime"
+                        maxOccurs="1" minOccurs="1"></xsd:element>
+                    <xsd:element name="shiftNum" type="xsd:int" maxOccurs="1"
+                        minOccurs="1"></xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+
+            <xsd:complexType name="ShiftJobs">
+                <xsd:sequence maxOccurs="1" minOccurs="1">
+                    <xsd:element name="shiftJobNum" type="xsd:int"
+                        maxOccurs="1" minOccurs="1"></xsd:element>
+
+                    <xsd:sequence maxOccurs="1" minOccurs="1">
+                        <xsd:element name="wipEntityNum" type="xsd:string"
+                            maxOccurs="1" minOccurs="1">
+                        </xsd:element>
+                        <xsd:element name="jobLineNumber" type="xsd:int"
+                            maxOccurs="1" minOccurs="1">
+                        </xsd:element>
+                        <xsd:element name="operationCode" type="xsd:string"
+                            maxOccurs="1" minOccurs="1">
+                        </xsd:element>
+                        <xsd:element name="operationDesc" type="xsd:string"
+                            maxOccurs="1" minOccurs="1">
+                        </xsd:element>
+                        <xsd:element name="planingQuantity" type="xsd:double"
+                            maxOccurs="1" minOccurs="1">
+                        </xsd:element>
+                        <xsd:element name="limitTime" type="xsd:double"
+                            maxOccurs="1" minOccurs="1">
+                        </xsd:element>
+                        <xsd:element name="completionQuantity" type="xsd:double"
+                            maxOccurs="1" minOccurs="1">
+                        </xsd:element>
+                        <xsd:element name="rejectingQuantity" type="xsd:double"
+                            maxOccurs="1" minOccurs="1">
+                        </xsd:element>
+                    </xsd:sequence>
+                </xsd:sequence>
+            </xsd:complexType>
+
+            <xsd:complexType name="ShiftDetail">
+                <xsd:sequence maxOccurs="1" minOccurs="1">
+                    <xsd:element name="shiftDetail" type="tns:ShiftJobs"
+                        maxOccurs="unbounded" minOccurs="0"></xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+
+            <xsd:element name="getShiftDetailsByShiftOperationResponse"
+                type="tns:ShiftDetail">
+            </xsd:element>
+
+            <xsd:element name="getShiftDetailsByShiftOperationRequest"
+                type="tns:Shift">
+            </xsd:element>
+
+        </xsd:schema>
+    </wsdl:types>
+
+
+    <wsdl:message name="getShiftDetailsByShiftRequest">
+        <wsdl:part name="ShiftPart" element="tns:getShiftDetailsByShiftOperationRequest"></wsdl:part>
+    </wsdl:message>
+
+    <wsdl:message name="getShiftDetailsByShiftResponse">
+        <wsdl:part name="ShiftDetailPart"
+            element="tns:getShiftDetailsByShiftOperationResponse"></wsdl:part>
+    </wsdl:message>
+
+
+    <wsdl:portType name="ShiftJobs">
+        <wsdl:operation name="getShiftDetailsByShift">
+            <wsdl:input message="tns:getShiftDetailsByShiftRequest" />
+            <wsdl:output message="tns:getShiftDetailsByShiftResponse" />
+        </wsdl:operation>
+    </wsdl:portType>
+
+
+    <wsdl:binding name="ShiftJobsSOAP" type="tns:ShiftJobs">
+        <soap:binding style="document"
+            transport="http://schemas.xmlsoap.org/soap/http" />
+        <wsdl:operation name="getShiftDetailsByShift">
+            <soap:operation
+                soapAction="http://www.aztpa.ru/a/oaa/mfg/shiftjob/v03/getShiftDetailsByShift"
+                style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="ShiftJobs">
+        <wsdl:port binding="tns:ShiftJobsSOAP" name="ShiftJobsSOAP">
+            <soap:address
+                location="http://lptest11.aztpa.ru:10102/A_OAA_MFG_ShiftJob_v02/ShiftJob" />
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
