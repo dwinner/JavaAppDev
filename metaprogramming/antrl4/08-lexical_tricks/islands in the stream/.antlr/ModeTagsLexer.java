@@ -1,4 +1,4 @@
-// Generated from d:\Projects\others\javaAppDev\metaprogramming\antrl4\8-lexical_tricks\islands in the stream\ModeTagsLexer.g4 by ANTLR 4.8
+// Generated from d:\Projects\others\javaAppDev\metaprogramming\antrl4\08-lexical_tricks\islands in the stream\ModeTagsLexer.g4 by ANTLR 4.8
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
