@@ -1,12 +1,19 @@
-public interface Scope {
-    public String getScopeName();
+public interface Scope
+{
+   String getScopeName();
 
-    /** Where to look next for symbols */
-    public Scope getEnclosingScope();
+   /**
+    * Where to look next for symbols
+    */
+   Scope getEnclosingScope();
 
-    /** Define a symbol in the current scope */
-    public void define(Symbol sym);
+   /**
+    * Define a symbol in the current scope
+    */
+   void define(Symbol sym);
 
-    /** Look up name in this scope or in enclosing scope if not here */
-    public Symbol resolve(String name);
+   /**
+    * Look up name in this scope or in enclosing scope if not here
+    */
+   Symbol resolve(String name);
 }

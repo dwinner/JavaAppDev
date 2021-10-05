@@ -1,9 +1,12 @@
-public class LocalScope extends BaseScope {
-    public LocalScope(Scope parent) {
-        super(parent);
-    }
+public class LocalScope extends BaseScope
+{
+   public LocalScope(Scope parent)
+   {
+      super(parent);
+   }
 
-    public String getScopeName() {
-        return "locals";
-    }
+   public String getScopeName()
+   {
+      return "locals";
+   }
 }
