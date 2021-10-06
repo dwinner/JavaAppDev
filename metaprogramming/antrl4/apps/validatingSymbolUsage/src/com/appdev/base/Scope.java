@@ -1,3 +1,5 @@
+package com.appdev.base;
+
 public interface Scope
 {
    String getScopeName();

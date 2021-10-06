@@ -1,3 +1,5 @@
+package com.appdev.base;
+
 /**
  * A generic programming language symbol
  */
@@ -8,9 +10,9 @@ public class Symbol
       tINVALID, tVOID, tINT, tFLOAT
    }
 
-   String name; // All symbols at least have a name
+   public String name; // All symbols at least have a name
    Type type;
-   Scope scope; // All symbols know what scope contains them.
+   public Scope scope; // All symbols know what scope contains them.
 
    public Symbol(String name)
    {

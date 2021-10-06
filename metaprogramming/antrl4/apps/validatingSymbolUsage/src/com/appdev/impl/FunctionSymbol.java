@@ -1,3 +1,8 @@
+package com.appdev.impl;
+
+import com.appdev.base.Scope;
+import com.appdev.base.Symbol;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 

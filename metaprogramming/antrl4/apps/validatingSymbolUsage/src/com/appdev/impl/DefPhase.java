@@ -1,11 +1,19 @@
+package com.appdev.impl;
+
+import com.appdev.CheckSymbols;
+import com.appdev.base.Scope;
+import com.appdev.base.Symbol;
+import com.appdev.grammar.CymbolBaseListener;
+import com.appdev.grammar.CymbolParser;
+
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.ParseTreeProperty;
 
 public class DefPhase extends CymbolBaseListener
 {
-   ParseTreeProperty<Scope> scopes = new ParseTreeProperty<>();
-   GlobalScope globals;
+   public ParseTreeProperty<Scope> scopes = new ParseTreeProperty<>();
+   public GlobalScope globals;
    Scope currentScope; // define symbols in this scope
 
    public void enterFile(CymbolParser.FileContext ctx)
