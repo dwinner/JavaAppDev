@@ -13,7 +13,6 @@ import org.antlr.v4.runtime.tree.ParseTreeWalker;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
 public class Main
 {
@@ -27,28 +26,29 @@ public class Main
          System.exit(0);
       }
 
-      final String grammarPath = "%s%s%s%s%s".formatted(
+      final var grammarPath = "%s%s%s%s%s".formatted(
               System.getProperty("user.dir"), File.separator, G_FOLDER, File.separator, args[0]);
 
       var grammarFile = new File(grammarPath);
-      InputStream srcStream = grammarFile.exists()
+      var srcStream = grammarFile.exists()
               ? new FileInputStream(grammarPath)
               : System.in;
 
-      ANTLRInputStream input = new ANTLRInputStream(srcStream);
-      CymbolLexer lexer = new CymbolLexer(input);
-      CommonTokenStream tokens = new CommonTokenStream(lexer);
-      CymbolParser parser = new CymbolParser(tokens);
+      var input = new ANTLRInputStream(srcStream);
+      var lexer = new CymbolLexer(input);
+      var tokens = new CommonTokenStream(lexer);
+      var parser = new CymbolParser(tokens);
       parser.setBuildParseTree(true);
       ParseTree tree = parser.file();
       // show tree in text form
       // System.out.println(tree.toStringTree(parser));
 
-      ParseTreeWalker walker = new ParseTreeWalker();
-      DefPhase def = new DefPhase();
+      var walker = new ParseTreeWalker();
+      var def = new DefPhase();
       walker.walk(def, tree);
+
       // create next phase and feed symbol table info from def to ref phase
-      RefPhase ref = new RefPhase(def.globals, def.scopes);
+      var ref = new RefPhase(def.globals, def.scopes);
       walker.walk(ref, tree);
    }
 
