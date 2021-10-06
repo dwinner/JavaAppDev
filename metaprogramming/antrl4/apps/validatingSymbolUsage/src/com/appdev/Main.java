@@ -31,7 +31,8 @@ public class Main
               System.getProperty("user.dir"), File.separator, G_FOLDER, File.separator, args[0]);
 
       var grammarFile = new File(grammarPath);
-      InputStream srcStream = grammarFile.exists() ? new FileInputStream(grammarPath)
+      InputStream srcStream = grammarFile.exists()
+              ? new FileInputStream(grammarPath)
               : System.in;
 
       ANTLRInputStream input = new ANTLRInputStream(srcStream);
