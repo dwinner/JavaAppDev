@@ -1,2 +1,0 @@
-exercises.SleepTaskTest
-exercises.SleepTask

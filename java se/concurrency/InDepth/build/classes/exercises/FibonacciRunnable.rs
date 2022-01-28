@@ -1,2 +1,0 @@
-exercises.FibonacciRunnable
-exercises.FibonacciTask

@@ -1,2 +1,0 @@
-exercises.SimpleRunnableTest
-exercises.RunnableImpl
