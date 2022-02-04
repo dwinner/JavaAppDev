@@ -1,7 +1,0 @@
-#Thu Dec 15 22:21:17 MSK 2016
-base.0=F\:\\Public\\JavaAppDev\\Android\\Droid.Roadmap\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_e24cdf6902a69fdbc0b0bd220d471db2780aed3c
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=F\:\\Public\\JavaAppDev\\Android\\Droid.Roadmap\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_703e482a983c7d72ea9f38ebd0e3c5db43349083\\classes.dex
-base.1=F\:\\Public\\JavaAppDev\\Android\\Droid.Roadmap\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_703e482a983c7d72ea9f38ebd0e3c5db43349083
-file.0=F\:\\Public\\JavaAppDev\\Android\\Droid.Roadmap\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_e24cdf6902a69fdbc0b0bd220d471db2780aed3c\\classes.dex
