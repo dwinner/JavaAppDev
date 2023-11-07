@@ -1,0 +1,11 @@
+var x
+
+def f(a): [
+    var y
+    print y
+    print x
+    print a
+    [ var x print x print y]
+]
+
+var z

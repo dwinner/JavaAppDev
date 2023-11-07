@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\Projects\\others\\javaAppDev\\metaprogramming\\antrl4\\antlr.jar",
+        "d:\\Projects\\metaproDev\\Antrl\\antlr.jar"
+    ]
+}

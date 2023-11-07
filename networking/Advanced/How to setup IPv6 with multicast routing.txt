@@ -1,0 +1,31 @@
+1. Check windows registry parameter for Tcpip6:
+
+   a) Win+R, then regedit;
+   b) Go to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\DisabledComponents;
+   c) Change the value from 0xff to 0x20;
+   d) Restart the PC: shutdown /r /t 0;
+   e) Now enter the following command in cmd.exe: netsh int ipv6 show int;
+      you should see at least 2 interfaces, something like that:
+      Idx     Met         MTU          State                Name
+      ---  ----------  ----------  ------------  ---------------------------
+      1          75  4294967295  connected     Loopback Pseudo-Interface 1
+      4          25        1500  connected     Local Area Connection
+2. Check IP configuration:
+
+   a) Enter ipconfig /all in cmd: ipconfig /all;
+   b) If you see under your ethernet adapter something like that:
+      Link-local IPv6 Address . . . . . : fe80::8473:d3fc:635c:af0b%4(Preferred)
+      for Link-local IPv6 Address, than this step is passed;
+      
+3. Enabling multicast for your router:
+   
+   If you are going to test not just only on loopback address, but, i.e., on the local subnet:
+   
+   a) In cmd.exe, try to ping predefined DNS for multicasting: ping all-routers.mcast.net
+   b) If you see "request timed out" and you received "0" bytes, then
+      multicasting is disabled for your router; try the folowing link for solution:
+      https://windowsreport.com/firewall-blocking-multicast/
+   c) If you are able to uncheck the Automatic Metric and set it to 0, than
+      ping all-routers.mcast.net should work fine;
+======================================================================================================
+

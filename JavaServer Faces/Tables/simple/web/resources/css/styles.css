@@ -1,0 +1,25 @@
+.orders
+{
+   border: thin solid black;
+}
+
+.ordersHeader
+{
+   text-align: center;
+   font-style: italic;
+   color: snow;
+   background: teal;
+}
+
+.oddColumn
+{
+   height: 25px;
+   text-align: center;
+   background: mediumturquoise;
+}
+
+.evenColumn
+{
+   text-align: center;
+   background: powderblue;
+}

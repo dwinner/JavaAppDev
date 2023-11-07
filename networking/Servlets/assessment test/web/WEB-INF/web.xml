@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>PreviewServlet</servlet-name>
+        <servlet-class>servlets.PreviewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PdfServlet</servlet-name>
+        <servlet-class>servlets.PdfServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CsvServlet</servlet-name>
+        <servlet-class>servlets.CsvServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PreviewServlet</servlet-name>
+        <url-pattern>/PreviewServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PdfServlet</servlet-name>
+        <url-pattern>/PdfServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CsvServlet</servlet-name>
+        <url-pattern>/CsvServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+         30
+      </session-timeout>
+    </session-config>
+</web-app>

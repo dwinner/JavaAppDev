@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="saturn.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="uranus.xhtml" x="650" y="450" zoom="true"/>
+        <Node id="login.xhtml" x="900" y="300" zoom="true"/>
+        <Node id="planetarium.xhtml" x="400" y="450" zoom="true"/>
+        <Node id="mars.xhtml" x="650" y="300" zoom="true"/>
+        <Node id="sections/planetarium/sidebarLeft.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="sections/planetarium/header.xhtml" x="150" y="600" zoom="true"/>
+        <Node id="venus.xhtml" x="150" y="750" zoom="true"/>
+        <Node id="sections/login/header.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="sections/login/sidebarLeft.xhtml" x="400" y="600" zoom="true"/>
+        <Node id="jupiter.xhtml" x="155" y="146" zoom="true"/>
+        <Node id="templates/masterLayout.xhtml" x="900" y="150" zoom="true"/>
+        <Node id="neptune.xhtml" x="1150" y="150" zoom="true"/>
+        <Node id="mercury.xhtml" x="400" y="150" zoom="true"/>
+        <Node id="earth.xhtml" x="400" y="300" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

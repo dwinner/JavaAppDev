@@ -1,0 +1,15 @@
+LPAREN=1
+RPAREN=2
+OPERATOR=3
+ADD=4
+SUBTRACT=5
+MULTIPLY=6
+DIVIDE=7
+DIGIT=8
+WS=9
+'('=1
+')'=2
+'+'=4
+'-'=5
+'*'=6
+'/'=7
